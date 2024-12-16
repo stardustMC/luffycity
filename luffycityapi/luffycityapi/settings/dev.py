@@ -126,12 +126,12 @@ LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
     'formatters': {
-        'verbose': {
-            'format': '%(levelname)s %(asctime)s %(module)s %(message)s',
+        'simple': {
+            'format': '{levelname} {asctime} {module} {message}',
             'style': '{',
         },
-        'simple': {
-            'format': '%(levelname)s %(message)s',
+        'verbose': {
+            'format': '{levelname} {message}',
             'style': '{',
         }
     },
@@ -162,4 +162,9 @@ LOGGING = {
             'propagate': True,
         }
     }
+}
+
+################# settings below are manually added to REST_FRAMEWORK #################
+REST_FRAMEWORK = {
+    'EXCEPTION_HANDLER': 'luffycityapi.utils.exceptions.exception_handler',
 }
