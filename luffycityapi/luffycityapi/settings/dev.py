@@ -31,22 +31,22 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
+    # 'django.contrib.admin',
     'django.contrib.auth',
-    'django.contrib.contenttypes',
+    # 'django.contrib.contenttypes',
     'django.contrib.sessions',
-    'django.contrib.messages',
+    # 'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
 
 MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
+    # 'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # 'django.contrib.messages.middleware.MessageMiddleware',
+    # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
 ROOT_URLCONF = 'luffycityapi.urls'
@@ -61,7 +61,7 @@ TEMPLATES = [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
+                # 'django.contrib.messages.context_processors.messages',
             ],
         },
     },
@@ -75,8 +75,49 @@ WSGI_APPLICATION = 'luffycityapi.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'luffycity',
+        'USER': 'caoruchen',
+        'PASSWORD': 'crc',
+        'HOST': 'localhost',
+        'PORT': '3306',
+        'POOL_OPTIONS': {
+            'pool_size': 10,
+            'max_overflow': 50,
+        }
+    }
+}
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django_redis.cache.RedisCache',
+        'LOCATION': 'redis://:@127.0.0.1:6379/0',
+        'OPTIONS': {
+            'CLIENT_CLASS': 'django_redis.client.DefaultClient',
+            'CONNECTION_POOL_KWARGS':{
+                'max_connections': 100,
+            }
+        }
+    },
+    'session': {
+        'BACKEND': 'django_redis.cache.RedisCache',
+        'LOCATION': 'redis://:@127.0.0.1:6379/1',
+        'OPTIONS': {
+            'CLIENT_CLASS': 'django_redis.client.DefaultClient',
+            'CONNECTION_POOL_KWARGS':{
+                'max_connections': 100,
+            }
+        }
+    },
+    'sms_code': {
+        'BACKEND': 'django_redis.cache.RedisCache',
+        'LOCATION': 'redis://:@127.0.0.1:6379/2',
+        'OPTIONS': {
+            'CLIENT_CLASS': 'django_redis.client.DefaultClient',
+            'CONNECTION_POOL_KWARGS':{
+                'max_connections': 100,
+            }
+        }
     }
 }
 
@@ -167,4 +208,5 @@ LOGGING = {
 ################# settings below are manually added to REST_FRAMEWORK #################
 REST_FRAMEWORK = {
     'EXCEPTION_HANDLER': 'luffycityapi.utils.exceptions.exception_handler',
+    'UNAUTHENTICATED_USER': None,
 }
