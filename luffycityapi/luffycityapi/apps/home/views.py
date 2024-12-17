@@ -9,5 +9,4 @@ class TestView(APIView):
 
     def get(self, request):
         logger.info("GET request received.")
-        1 / 0
         return Response("Test view returned something.")

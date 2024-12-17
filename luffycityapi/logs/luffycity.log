@@ -12,3 +12,136 @@ INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/settings/dev.py
 INFO Watching for file changes with StatReloader
 INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/settings/dev.py changed, reloading.
 INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/home/apps.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/settings/dev.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/settings/dev.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/settings/dev.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/settings/dev.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/settings/dev.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/urls.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/urls.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/home/urls.py changed, reloading.
+INFO Watching for file changes with StatReloader
+WARNING Not Found: /
+WARNING "GET / HTTP/1.1" 404 2170
+WARNING Not Found: /favicon.ico
+WARNING Not Found: /test/
+WARNING "GET /test/ HTTP/1.1" 404 2203
+WARNING Not Found: /home/
+WARNING "GET /home/ HTTP/1.1" 404 2255
+INFO "GET /home/test/ HTTP/1.1" 200 5129
+INFO "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO "GET /home/test/ HTTP/1.1" 200 5129
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/home/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO GET request received.
+INFO "GET /home/test/ HTTP/1.1" 200 5129
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/home/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/home/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO GET request received.
+ERROR Internal Server Error: /home/test/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/home/views.py", line 11, in get
+    1 / 0
+ZeroDivisionError: division by zero
+ERROR "GET /home/test/ HTTP/1.1" 500 91376
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/utils/exceptions.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO GET request received.
+ERROR Internal Server Error: /home/test/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/home/views.py", line 11, in get
+    1 / 0
+ZeroDivisionError: division by zero
+ERROR "GET /home/test/ HTTP/1.1" 500 105984
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/settings/dev.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/home/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO GET request received.
+ERROR Internal Server Error: /home/test/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/home/views.py", line 12, in get
+    1 / 0
+ZeroDivisionError: division by zero
+ERROR "GET /home/test/ HTTP/1.1" 500 91330
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/utils/exceptions.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/settings/dev.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO GET request received.
+ERROR ZeroDivisionError detected
+ERROR Internal Server Error: /home/test/
+ERROR "GET /home/test/ HTTP/1.1" 500 5168

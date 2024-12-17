@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
+import sys
 from pathlib import Path
 
 from django.conf.global_settings import SESSION_ENGINE, SESSION_CACHE_ALIAS
@@ -17,6 +18,8 @@ from django.conf.global_settings import SESSION_ENGINE, SESSION_CACHE_ALIAS
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# sys.path.insert(0, 'luffycityapi/apps')
+sys.path.insert(0, str(BASE_DIR / 'apps'))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
@@ -27,8 +30,7 @@ SECRET_KEY = 'django-insecure-c@c@$(1)zocl++2o7a&ml6b=co(7dv2!u!#n9d6+sde$y83u+j
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ["*"]
 
 # Application definition
 
@@ -39,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'home',
 ]
 
 MIDDLEWARE = [
@@ -156,7 +160,6 @@ USE_I18N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
@@ -211,6 +214,5 @@ LOGGING = {
 
 ################# settings below are manually added to REST_FRAMEWORK #################
 REST_FRAMEWORK = {
-    'EXCEPTION_HANDLER': 'luffycityapi.utils.exceptions.exception_handler',
-    'UNAUTHENTICATED_USER': None,
+    'EXCEPTION_HANDLER': 'luffycityapi.utils.exceptions.custom_exception_handler',
 }
