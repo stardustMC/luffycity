@@ -145,3 +145,5 @@ INFO GET request received.
 ERROR ZeroDivisionError detected
 ERROR Internal Server Error: /home/test/
 ERROR "GET /home/test/ HTTP/1.1" 500 5168
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
