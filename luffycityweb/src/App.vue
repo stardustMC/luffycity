@@ -3,9 +3,11 @@
 </template>
 
 <script setup>
+import http from "./utils/http.js"
 
-import Header from "./components/Header.vue";
-import Footer from "./components/Footer.vue";
+http.get("/home/test").then(response=> {
+  console.log(response.data)
+})
 </script>
 
 <style scoped>
