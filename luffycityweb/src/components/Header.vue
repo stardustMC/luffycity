@@ -63,7 +63,9 @@
   width: 100%;
   margin: 0 auto;
 }
+.header .content .logo a{
 
+}
 .header .content .logo{
   height: 72px;
   line-height: 72px;
@@ -73,7 +75,9 @@
 }
 .header .content .logo img{
   vertical-align: middle;
-  margin: -40px 40px;
+  margin: -40px;
+  width: 250px;
+  height: 50px;
 }
 .header .nav li{
   float: left;
@@ -83,7 +87,6 @@
   font-size: 16px;
   color: #4a4a4a;
   cursor: pointer;
-  list-style: none;
 }
 .header .nav li span{
   padding-bottom: 16px;

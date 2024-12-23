@@ -235,3 +235,55 @@ INFO GET request received.
 INFO "GET /home/test/ HTTP/1.1" 200 31
 INFO GET request received.
 INFO "GET /home/test/ HTTP/1.1" 200 31
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO "GET /home/test HTTP/1.1" 301 0
+INFO GET request received.
+INFO "GET /home/test/ HTTP/1.1" 200 31
+INFO GET request received.
+INFO "GET /home/test/ HTTP/1.1" 200 31
+INFO GET request received.
+INFO "GET /home/test/ HTTP/1.1" 200 31
+INFO GET request received.
+INFO "GET /home/test/ HTTP/1.1" 200 31
+INFO GET request received.
+INFO "GET /home/test/ HTTP/1.1" 200 31
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/home/models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/settings/dev.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/settings/dev.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/home/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/home/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/home/urls.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/home/urls.py changed, reloading.
+INFO Watching for file changes with StatReloader
+WARNING Not Found: /
+WARNING "GET / HTTP/1.1" 404 2177
+WARNING Not Found: /nav/header/
+WARNING "GET /nav/header/ HTTP/1.1" 404 2228
+WARNING Not Found: /nav/header
+WARNING "GET /nav/header HTTP/1.1" 404 2225
+INFO "GET /home/nav/header HTTP/1.1" 301 0
+INFO "GET /home/nav/header/ HTTP/1.1" 200 6025
+INFO "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 6246

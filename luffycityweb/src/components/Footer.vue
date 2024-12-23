@@ -23,25 +23,28 @@
   height: 128px;
   color: #545C63;
 }
-.footer ul{
+
+.footer ul {
   margin: 0 auto 16px;
   padding-top: 38px;
   width: 930px;
 }
-.footer ul li{
+
+.footer ul li {
   float: left;
   width: 112px;
   margin: 0 10px;
   text-align: center;
   font-size: 14px;
-  list-style: none;
 }
-.footer ul::after{
-  content:"";
-  display:block;
-  clear:both;
+
+.footer ul::after {
+  content: "";
+  display: block;
+  clear: both;
 }
-.footer p{
+
+.footer p {
   text-align: center;
   font-size: 12px;
 }
