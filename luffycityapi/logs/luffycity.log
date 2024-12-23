@@ -385,3 +385,68 @@ INFO "GET /uploads/banner/2022/1.jpg HTTP/1.1" 200 171972
 INFO "GET /uploads/banner/2022/2.jpg HTTP/1.1" 200 176325
 INFO "GET /uploads/banner/2022/3.jpg HTTP/1.1" 200 443034
 INFO "GET /uploads/banner/2022/4.jpg HTTP/1.1" 200 1312893
+INFO Watching for file changes with StatReloader
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /home/banner/ HTTP/1.1" 200 561
+WARNING Not Found: /home/nav/
+WARNING "GET /home/nav/ HTTP/1.1" 404 2781
+INFO "GET /home/nav/header/ HTTP/1.1" 200 6025
+INFO "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO "GET /home/nav/header/ HTTP/1.1" 200 6025
+INFO "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /home/banner/ HTTP/1.1" 200 561
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/banner/ HTTP/1.1" 200 561
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/banner/ HTTP/1.1" 200 561
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO Watching for file changes with StatReloader
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /home/banner/ HTTP/1.1" 200 561
+INFO "GET /home/banner/ HTTP/1.1" 200 561
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /home/banner/ HTTP/1.1" 200 561
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/utils/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /home/banner/ HTTP/1.1" 200 561
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/utils/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /home/banner/ HTTP/1.1" 200 561
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/utils/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/utils/constants.py changed, reloading.
+INFO Watching for file changes with StatReloader

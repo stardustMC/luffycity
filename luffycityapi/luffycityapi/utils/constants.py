@@ -9,3 +9,5 @@ NAV_HEADER_SIZE = 5
 NAV_FOOTER_SIZE = 10
 # maximum number of carousel
 BANNER_SIZE = 10
+# list page cache period
+LIST_PAGE_CACHE_TIME = 60 * 60
