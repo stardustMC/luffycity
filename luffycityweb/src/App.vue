@@ -3,11 +3,7 @@
 </template>
 
 <script setup>
-import http from "./utils/http.js"
 
-http.get("/home/test").then(response=> {
-  console.log(response.data)
-})
 </script>
 
 <style>

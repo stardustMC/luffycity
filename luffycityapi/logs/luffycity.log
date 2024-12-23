@@ -329,3 +329,59 @@ INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
 INFO "GET /home/nav/header/ HTTP/1.1" 200 290
 INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
 INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO Watching for file changes with StatReloader
+WARNING Not Found: /
+WARNING "GET / HTTP/1.1" 404 2303
+INFO "GET /home/banner HTTP/1.1" 301 0
+INFO "GET /home/banner/ HTTP/1.1" 200 6759
+WARNING Not Found: /home/test
+WARNING "GET /home/test HTTP/1.1" 404 2781
+WARNING Not Found: /home/test
+WARNING "GET /home/test HTTP/1.1" 404 2781
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+WARNING Not Found: /home/test
+WARNING "GET /home/test HTTP/1.1" 404 2781
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO Watching for file changes with StatReloader
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/uploads/banner/2022/1.jpg HTTP/1.1" 200 171972
+WARNING Not Found: /favicon.ico
+WARNING Not Found: /home/static/1.jpg
+WARNING "GET /home/static/1.jpg HTTP/1.1" 404 2805
+WARNING Not Found: /favicon.ico
+WARNING Not Found: /home/static/1.jpg
+WARNING "GET /home/static/1.jpg HTTP/1.1" 404 2805
+WARNING "GET /static/1.jpg HTTP/1.1" 404 1781
+WARNING "GET /static/1.jpg HTTP/1.1" 404 1781
+WARNING "GET /static/2.jpg HTTP/1.1" 404 1781
+WARNING "GET /static/2.jpg HTTP/1.1" 404 1781
+WARNING "GET /static/1.jpg HTTP/1.1" 404 1781
+WARNING "GET /static/ HTTP/1.1" 404 1774
+WARNING Not Found: /favicon.ico
+WARNING "GET /static/1 HTTP/1.1" 404 1769
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/urls.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/settings/dev.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/urls.py changed, reloading.
+INFO Watching for file changes with StatReloader
+WARNING "GET /static/1.jpg HTTP/1.1" 404 1781
+WARNING Not Found: /favicon.ico
+INFO "GET /static/2.jpg HTTP/1.1" 200 171972
+WARNING Not Found: /favicon.ico
+INFO Watching for file changes with StatReloader
+INFO "GET /home/banner/ HTTP/1.1" 200 561
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /uploads/banner/2022/5.jpg HTTP/1.1" 200 158646
+INFO "GET /uploads/banner/2022/1.jpg HTTP/1.1" 200 171972
+INFO "GET /uploads/banner/2022/2.jpg HTTP/1.1" 200 176325
+INFO "GET /uploads/banner/2022/3.jpg HTTP/1.1" 200 443034
+INFO "GET /uploads/banner/2022/4.jpg HTTP/1.1" 200 1312893
