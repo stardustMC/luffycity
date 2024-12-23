@@ -450,3 +450,10 @@ INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/utils/views.py 
 INFO Watching for file changes with StatReloader
 INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/utils/constants.py changed, reloading.
 INFO Watching for file changes with StatReloader
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/banner/ HTTP/1.1" 200 561
+INFO Watching for file changes with StatReloader
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/banner/ HTTP/1.1" 200 561

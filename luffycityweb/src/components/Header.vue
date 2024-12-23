@@ -27,7 +27,7 @@
               <span><router-link to="/cart">购物车</router-link></span>
             </div>
             <div class="login-box full-left">
-              <span>登录</span>
+              <span @click="state.show_login=true">登录</span>
               &nbsp;/&nbsp;
               <span>注册</span>
             </div>
@@ -35,10 +35,19 @@
         </div>
       </div>
     </div>
+  <el-dialog :width="600" v-model="state.show_login">
+    <Login></Login>
+  </el-dialog>
 </template>
 
 <script setup>
 import nav from "../api/nav.js"
+import Login from "./Login.vue"
+import {reactive} from "vue";
+
+const state = reactive({
+  show_login: false
+})
 
 nav.get_nav_header_list().then(response=>{
   nav.nav_header_list = response.data;
