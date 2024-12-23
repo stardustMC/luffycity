@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'corsheaders',
 
     'home',
+    'users',
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True
@@ -226,3 +227,5 @@ LOGGING = {
 REST_FRAMEWORK = {
     'EXCEPTION_HANDLER': 'luffycityapi.utils.exceptions.custom_exception_handler',
 }
+
+AUTH_USER_MODEL = "users.User"
