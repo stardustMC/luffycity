@@ -6,7 +6,6 @@ const http = axios.create({
 })
 
 http.interceptors.request.use((config)=> {
-    console.log("before request sent");
     return config
 }, (error)=> {
     console.log("something in request went wrong...");
@@ -14,7 +13,6 @@ http.interceptors.request.use((config)=> {
 })
 
 http.interceptors.response.use((response)=> {
-    console.log("response is about to return");
     return response
 }, (error)=> {
     console.log("server response did not go well...");

@@ -287,3 +287,45 @@ INFO "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
 INFO "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
 INFO "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
 INFO "GET /home/nav/footer/ HTTP/1.1" 200 6246
+INFO Watching for file changes with StatReloader
+WARNING Not Found: /nav/header/
+WARNING Not Found: /home/test
+WARNING "GET /nav/header/ HTTP/1.1" 404 2228
+WARNING "GET /home/test HTTP/1.1" 404 2481
+WARNING Not Found: /home/test
+WARNING "GET /home/test HTTP/1.1" 404 2481
+WARNING Not Found: /nav/header/
+WARNING "GET /nav/header/ HTTP/1.1" 404 2228
+WARNING Not Found: /
+WARNING "GET / HTTP/1.1" 404 2177
+INFO "GET /home/nav/header/ HTTP/1.1" 200 6025
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+WARNING Not Found: /home/test
+WARNING "GET /home/test HTTP/1.1" 404 2481
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+WARNING Not Found: /home/test
+WARNING "GET /home/test HTTP/1.1" 404 2481
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO Watching for file changes with StatReloader
+WARNING Not Found: /home/test
+WARNING "GET /home/test HTTP/1.1" 404 2481
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+WARNING Not Found: /home/test
+WARNING "GET /home/test HTTP/1.1" 404 2481
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
