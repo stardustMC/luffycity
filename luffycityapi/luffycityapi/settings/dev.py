@@ -226,6 +226,18 @@ LOGGING = {
 ################# settings below are manually added to REST_FRAMEWORK #################
 REST_FRAMEWORK = {
     'EXCEPTION_HANDLER': 'luffycityapi.utils.exceptions.custom_exception_handler',
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
+    )
+}
+
+import datetime
+# jwt认证相关配置项
+JWT_AUTH = {
+    # 设置jwt的有效期
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(weeks=1), # 一周有效，
 }
 
 AUTH_USER_MODEL = "users.User"

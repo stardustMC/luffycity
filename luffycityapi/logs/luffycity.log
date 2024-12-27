@@ -473,3 +473,85 @@ INFO "GET /admin/ HTTP/1.1" 200 5151
 INFO "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
 INFO "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
 INFO "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/settings/dev.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/settings/dev.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/settings/dev.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/settings/dev.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/settings/dev.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework_jwt/serializers.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "OPTIONS /users/login/ HTTP/1.1" 200 0
+WARNING Bad Request: /users/login/
+WARNING "POST /users/login/ HTTP/1.1" 400 68
+WARNING Bad Request: /users/login/
+WARNING "POST /users/login/ HTTP/1.1" 400 68
+WARNING Bad Request: /users/login/
+WARNING "POST /users/login/ HTTP/1.1" 400 68
+WARNING Bad Request: /users/login/
+WARNING "POST /users/login/ HTTP/1.1" 400 68
+WARNING Bad Request: /users/login/
+WARNING "POST /users/login/ HTTP/1.1" 400 68
+WARNING Bad Request: /users/login/
+WARNING "POST /users/login/ HTTP/1.1" 400 68
+WARNING Bad Request: /users/login/
+WARNING "POST /users/login/ HTTP/1.1" 400 68
+WARNING Bad Request: /users/login/
+WARNING "POST /users/login/ HTTP/1.1" 400 68
+WARNING Bad Request: /users/login/
+WARNING "POST /users/login/ HTTP/1.1" 400 68
+WARNING Bad Request: /users/login/
+WARNING "POST /users/login/ HTTP/1.1" 400 68
+WARNING Bad Request: /users/login/
+WARNING "POST /users/login/ HTTP/1.1" 400 68
+WARNING Bad Request: /users/login/
+WARNING "POST /users/login/ HTTP/1.1" 400 68
+WARNING Bad Request: /users/login/
+WARNING "POST /users/login/ HTTP/1.1" 400 68
+WARNING Bad Request: /users/login/
+WARNING "POST /users/login/ HTTP/1.1" 400 68
+WARNING Bad Request: /users/login/
+WARNING "POST /users/login/ HTTP/1.1" 400 68
+WARNING Bad Request: /users/login/
+WARNING "POST /users/login/ HTTP/1.1" 400 68
+WARNING Bad Request: /users/login/
+WARNING "POST /users/login/ HTTP/1.1" 400 68
+WARNING Bad Request: /users/login/
+WARNING "POST /users/login/ HTTP/1.1" 400 68
+WARNING Bad Request: /users/login/
+WARNING "POST /users/login/ HTTP/1.1" 400 68
+INFO Watching for file changes with StatReloader
+WARNING Bad Request: /users/login/
+WARNING "POST /users/login/ HTTP/1.1" 400 68
+WARNING Bad Request: /users/login/
+WARNING "POST /users/login/ HTTP/1.1" 400 68
+INFO Watching for file changes with StatReloader
+INFO "POST /users/login/ HTTP/1.1" 200 172
+WARNING Bad Request: /users/login/
+WARNING "POST /users/login/ HTTP/1.1" 400 68
+INFO "POST /users/login/ HTTP/1.1" 200 172
+INFO "GET /home/banner/ HTTP/1.1" 200 561
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "POST /users/login/ HTTP/1.1" 200 172
+INFO "POST /users/login/ HTTP/1.1" 200 172
+INFO "POST /users/login/ HTTP/1.1" 200 172
+INFO "POST /users/login/ HTTP/1.1" 200 172
+INFO "POST /users/login/ HTTP/1.1" 200 172
+INFO "POST /users/login/ HTTP/1.1" 200 172
+INFO "POST /users/login/ HTTP/1.1" 200 172
+INFO "POST /users/login/ HTTP/1.1" 200 172
+INFO "POST /users/login/ HTTP/1.1" 200 172
+INFO "POST /users/login/ HTTP/1.1" 200 172
+INFO "POST /users/login/ HTTP/1.1" 200 172
+INFO "POST /users/login/ HTTP/1.1" 200 172
+INFO "POST /users/login/ HTTP/1.1" 200 172
