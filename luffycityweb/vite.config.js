@@ -11,7 +11,7 @@ export default defineConfig({
           resolvers: [ElementPlusResolver(), ]
       })
   ],
-  server:{
-      host: 'www.luffycity.cn', port: 3000
-  }
+  // server:{
+  //     host: 'www.luffycity.cn', port: 3000
+  // }
 })

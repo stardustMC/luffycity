@@ -238,6 +238,8 @@ import datetime
 JWT_AUTH = {
     # 设置jwt的有效期
     'JWT_EXPIRATION_DELTA': datetime.timedelta(weeks=1), # 一周有效，
+    'JWT_PAYLOAD_HANDLER': 'luffycityapi.utils.authenticate.jwt_payload_handler',
 }
 
 AUTH_USER_MODEL = "users.User"
+AUTHENTICATION_BACKENDS = ('luffycityapi.utils.authenticate.CustomAuthBackend', )
