@@ -709,3 +709,132 @@ INFO "OPTIONS /users/login/ HTTP/1.1" 200 0
 WARNING Bad Request: /users/login/
 WARNING "POST /users/login/ HTTP/1.1" 400 68
 INFO "POST /users/login/ HTTP/1.1" 200 273
+INFO Watching for file changes with StatReloader
+WARNING Not Found: /
+WARNING "GET / HTTP/1.1" 404 2402
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2453
+WARNING Not Found: /home/
+WARNING "GET /home/ HTTP/1.1" 404 2868
+INFO "GET /admin/ HTTP/1.1" 302 0
+INFO "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4181
+INFO "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+INFO "GET /static/admin/css/base.css HTTP/1.1" 200 21310
+INFO "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+INFO "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO "GET /static/admin/css/responsive.css HTTP/1.1" 200 18559
+INFO "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO "GET /static/admin/css/login.css HTTP/1.1" 200 958
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /home/banner/ HTTP/1.1" 200 561
+INFO "GET /uploads/banner/2022/5.jpg HTTP/1.1" 200 158646
+INFO "GET /uploads/banner/2022/1.jpg HTTP/1.1" 200 171972
+INFO "GET /uploads/banner/2022/3.jpg HTTP/1.1" 200 443034
+INFO "GET /uploads/banner/2022/2.jpg HTTP/1.1" 200 176325
+INFO "GET /uploads/banner/2022/4.jpg HTTP/1.1" 200 1312893
+INFO "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO "POST /users/login/ HTTP/1.1" 200 273
+INFO "POST /users/login/ HTTP/1.1" 200 273
+INFO Watching for file changes with StatReloader
+INFO "GET /uploads/banner/2022/5.jpg HTTP/1.1" 304 0
+INFO "GET /uploads/banner/2022/4.jpg HTTP/1.1" 304 0
+INFO "GET /uploads/banner/2022/3.jpg HTTP/1.1" 304 0
+INFO "GET /uploads/banner/2022/1.jpg HTTP/1.1" 304 0
+INFO "GET /uploads/banner/2022/2.jpg HTTP/1.1" 304 0
+INFO Watching for file changes with StatReloader
+INFO "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO "POST /users/login/ HTTP/1.1" 200 273
+INFO "POST /users/login/ HTTP/1.1" 200 273
+INFO "POST /users/login/ HTTP/1.1" 200 273
+INFO "GET /uploads/banner/2022/5.jpg HTTP/1.1" 304 0
+INFO "GET /uploads/banner/2022/4.jpg HTTP/1.1" 304 0
+INFO "GET /uploads/banner/2022/2.jpg HTTP/1.1" 304 0
+INFO "GET /uploads/banner/2022/3.jpg HTTP/1.1" 304 0
+INFO "GET /uploads/banner/2022/1.jpg HTTP/1.1" 304 0
+INFO "POST /users/login/ HTTP/1.1" 200 273
+INFO "GET /uploads/banner/2022/5.jpg HTTP/1.1" 304 0
+INFO "GET /uploads/banner/2022/3.jpg HTTP/1.1" 304 0
+INFO "GET /uploads/banner/2022/4.jpg HTTP/1.1" 304 0
+INFO "GET /uploads/banner/2022/1.jpg HTTP/1.1" 304 0
+INFO "GET /uploads/banner/2022/2.jpg HTTP/1.1" 304 0
+INFO "POST /users/login/ HTTP/1.1" 200 273
+INFO "GET /uploads/banner/2022/5.jpg HTTP/1.1" 304 0
+INFO "GET /uploads/banner/2022/4.jpg HTTP/1.1" 304 0
+INFO "GET /uploads/banner/2022/3.jpg HTTP/1.1" 304 0
+INFO "GET /uploads/banner/2022/2.jpg HTTP/1.1" 304 0
+INFO "GET /uploads/banner/2022/1.jpg HTTP/1.1" 304 0
+INFO "POST /users/login/ HTTP/1.1" 200 273
+INFO "POST /users/login/ HTTP/1.1" 200 273
+INFO "POST /users/login/ HTTP/1.1" 200 273
+INFO "POST /users/login/ HTTP/1.1" 200 273
+WARNING Bad Request: /users/login/
+WARNING "POST /users/login/ HTTP/1.1" 400 68
+INFO "POST /users/login/ HTTP/1.1" 200 293
+INFO "GET /uploads/banner/2022/5.jpg HTTP/1.1" 304 0
+INFO "GET /uploads/banner/2022/3.jpg HTTP/1.1" 304 0
+INFO "GET /uploads/banner/2022/4.jpg HTTP/1.1" 304 0
+INFO "GET /uploads/banner/2022/2.jpg HTTP/1.1" 304 0
+INFO "GET /uploads/banner/2022/1.jpg HTTP/1.1" 304 0
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/banner/ HTTP/1.1" 200 561
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /uploads/banner/2022/5.jpg HTTP/1.1" 304 0
+INFO "GET /uploads/banner/2022/4.jpg HTTP/1.1" 304 0
+INFO "GET /uploads/banner/2022/3.jpg HTTP/1.1" 304 0
+INFO "GET /uploads/banner/2022/2.jpg HTTP/1.1" 304 0
+INFO "GET /uploads/banner/2022/1.jpg HTTP/1.1" 304 0
+INFO "GET /uploads/banner/2022/5.jpg HTTP/1.1" 304 0
+INFO "GET /uploads/banner/2022/4.jpg HTTP/1.1" 304 0
+INFO "GET /uploads/banner/2022/3.jpg HTTP/1.1" 304 0
+INFO "GET /uploads/banner/2022/2.jpg HTTP/1.1" 304 0
+INFO "GET /uploads/banner/2022/1.jpg HTTP/1.1" 304 0
+INFO "POST /users/login/ HTTP/1.1" 200 293
+INFO "POST /users/login/ HTTP/1.1" 200 293
+INFO "GET /uploads/banner/2022/5.jpg HTTP/1.1" 304 0
+INFO "GET /uploads/banner/2022/4.jpg HTTP/1.1" 304 0
+INFO "GET /uploads/banner/2022/3.jpg HTTP/1.1" 304 0
+INFO "GET /uploads/banner/2022/2.jpg HTTP/1.1" 304 0
+INFO "GET /uploads/banner/2022/1.jpg HTTP/1.1" 304 0
+INFO "POST /users/login/ HTTP/1.1" 200 293
+INFO "POST /users/login/ HTTP/1.1" 200 345
+INFO "POST /users/login/ HTTP/1.1" 200 284
+WARNING Not Found: /uploads/banner/2022/3.jpg
+WARNING Not Found: /uploads/banner/2022/4.jpg
+WARNING Not Found: /uploads/banner/2022/5.jpg
+WARNING "GET /uploads/banner/2022/3.jpg HTTP/1.1" 404 2737
+WARNING "GET /uploads/banner/2022/5.jpg HTTP/1.1" 404 2737
+WARNING Not Found: /uploads/banner/2022/1.jpg
+WARNING Not Found: /uploads/banner/2022/2.jpg
+WARNING "GET /uploads/banner/2022/4.jpg HTTP/1.1" 404 2737
+WARNING "GET /uploads/banner/2022/2.jpg HTTP/1.1" 404 2737
+WARNING "GET /uploads/banner/2022/1.jpg HTTP/1.1" 404 2737
+INFO "POST /users/login/ HTTP/1.1" 200 280
+WARNING Not Found: /uploads/banner/2022/3.jpg
+WARNING Not Found: /uploads/banner/2022/4.jpg
+WARNING Not Found: /uploads/banner/2022/1.jpg
+WARNING "GET /uploads/banner/2022/3.jpg HTTP/1.1" 404 2737
+WARNING "GET /uploads/banner/2022/1.jpg HTTP/1.1" 404 2737
+WARNING "GET /uploads/banner/2022/4.jpg HTTP/1.1" 404 2737
+WARNING Not Found: /uploads/banner/2022/2.jpg
+WARNING Not Found: /uploads/banner/2022/5.jpg
+WARNING "GET /uploads/banner/2022/5.jpg HTTP/1.1" 404 2737
+WARNING "GET /uploads/banner/2022/2.jpg HTTP/1.1" 404 2737
+WARNING Not Found: /uploads/banner/2022/2.jpg
+WARNING "GET /uploads/banner/2022/2.jpg HTTP/1.1" 404 2737
+INFO Watching for file changes with StatReloader
+WARNING Not Found: /uploads/banner/2022/5.jpg
+WARNING "GET /uploads/banner/2022/5.jpg HTTP/1.1" 404 2737
+WARNING Not Found: /uploads/banner/2022/4.jpg
+WARNING "GET /uploads/banner/2022/4.jpg HTTP/1.1" 404 2737
+WARNING Not Found: /uploads/banner/2022/3.jpg
+WARNING Not Found: /uploads/banner/2022/1.jpg
+WARNING "GET /uploads/banner/2022/3.jpg HTTP/1.1" 404 2737
+WARNING Not Found: /uploads/banner/2022/2.jpg
+WARNING "GET /uploads/banner/2022/1.jpg HTTP/1.1" 404 2737
+WARNING "GET /uploads/banner/2022/2.jpg HTTP/1.1" 404 2737
+INFO "GET /uploads/banner/2022/5.jpg HTTP/1.1" 200 158646
+INFO "GET /uploads/banner/2022/2.jpg HTTP/1.1" 200 176325
+INFO "GET /uploads/banner/2022/1.jpg HTTP/1.1" 200 171972
+INFO "GET /uploads/banner/2022/3.jpg HTTP/1.1" 200 443034
+INFO "GET /uploads/banner/2022/4.jpg HTTP/1.1" 200 1312893

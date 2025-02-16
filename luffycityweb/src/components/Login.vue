@@ -29,6 +29,9 @@
 <script setup>
 import user from "../api/user.js"
 import {ElMessage} from 'element-plus'
+import {useStore} from "vuex";
+
+const store = useStore();
 
 const emits = defineEmits(["handler_done",])
 
@@ -47,7 +50,18 @@ const loginhandler = ()=>{
       sessionStorage.setItem('token', token);
       localStorage.removeItem('token');
     }
+    // vuex存储用户登录信息，保存token，并根据用户的选择，是否记住密码
+    let payload = response.data.token.split(".")[1]  // 载荷
+    let payload_data = JSON.parse(atob(payload)) // 用户信息
+    console.log(payload_data)
+    store.commit("login", payload_data)
+
     ElMessage.success("Account logged in!");
+    // clear user data, emit signal of login success
+    user.mobile = ""
+    user.username = ""
+    user.password = ""
+    user.code = ""
     emits("handler_done");
   }).catch(error=>{
     ElMessage.error("Logging in failed...");

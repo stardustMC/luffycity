@@ -1,4 +1,5 @@
 import {createRouter, createWebHistory} from "vue-router";
+import store from "../store"
 
 const routes = [
     {
@@ -19,11 +20,31 @@ const routes = [
         name: 'login',
         component: ()=> import("../views/Login.vue")
     },
+    {
+    meta:{
+        title: "luffy2.0-个人中心",
+        keepAlive: true,
+    },
+    path: '/user',
+    name: "User",
+    component: ()=> import("../views/User.vue"),
+  },
 ]
 
 const router = createRouter({
     history: createWebHistory(),
     routes,
+})
+
+// 导航守卫
+router.beforeEach((to, from, next)=>{
+  document.title=to.meta.title
+  // 登录状态验证
+  if (to.meta.authorization && !store.getters.getUserInfo) {
+    next({"name": "Login"})
+  }else{
+    next()
+  }
 })
 
 export default router;
