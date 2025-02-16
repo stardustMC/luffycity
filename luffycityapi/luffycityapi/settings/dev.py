@@ -34,6 +34,7 @@ ALLOWED_HOSTS = ["*"]
 # Application definition
 
 INSTALLED_APPS = [
+    'simpleui',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -43,6 +44,7 @@ INSTALLED_APPS = [
 
     'rest_framework',
     'corsheaders',
+    'ckeditor',
 
     'home',
     'users',
@@ -158,7 +160,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'zh-hans'
 
 TIME_ZONE = 'UTC'
 
@@ -244,3 +246,25 @@ JWT_AUTH = {
 
 AUTH_USER_MODEL = "users.User"
 AUTHENTICATION_BACKENDS = ('luffycityapi.utils.authenticate.CustomAuthBackend', )
+
+# CKEDITOR configurations
+# 上传文件的存储路径
+CKEDITOR_UPLOAD_PATH = "ckeditor/"
+
+# 工具条配置
+CKEDITOR_CONFIGS = {
+    'default': {
+        # 'toolbar': 'full', # full 显示全部工具
+        # 'toolbar': 'Basic', # Basic 显示基本工具
+        'toolbar': 'Custom',  # 自定义工具条的显示数量
+        'toolbar_Custom': [
+            ['Bold', 'Italic', 'Underline', 'Image', 'Styles', 'Format', 'Font', 'Fontsize'],
+            ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'JustifyLeft', 'JustifyCenter',
+             'JustifyRight', 'JustifyBlock'],
+            ['Link', 'Unlink', 'Table'],
+            ['RemoveFormat', 'Source']
+        ],
+        # 设置编辑器的高度
+        'height': 120,
+    },
+}
