@@ -35,6 +35,11 @@ const store = createStore({
     mutations:{
         login(state, user){
             state.user = user;
+        },
+        logout(state){ // 退出登录
+            state.user = {}
+            localStorage.token = null;
+            sessionStorage.token = null;
         }
     }
 })

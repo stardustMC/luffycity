@@ -38,7 +38,7 @@
                     <el-dropdown-item :icon="UserFilled">学习中心</el-dropdown-item>
                     <el-dropdown-item :icon="List">订单列表</el-dropdown-item>
                     <el-dropdown-item :icon="Setting">个人设置</el-dropdown-item>
-                    <el-dropdown-item :icon="Position">注销登录</el-dropdown-item>
+                    <el-dropdown-item @click="logout" :icon="Position">注销登录</el-dropdown-item>
                   </el-dropdown-menu>
                 </template>
               </el-dropdown>
@@ -87,6 +87,11 @@ const login_success = ()=>{
   state.show_login = false;
   state.avatar = store.getters.getUserInfo.avatar;
   state.is_login = true;
+}
+
+const logout = () =>{
+  store.commit("logout");
+  state.is_login = false;
 }
 </script>
 

@@ -838,3 +838,7 @@ INFO "GET /uploads/banner/2022/2.jpg HTTP/1.1" 200 176325
 INFO "GET /uploads/banner/2022/1.jpg HTTP/1.1" 200 171972
 INFO "GET /uploads/banner/2022/3.jpg HTTP/1.1" 200 443034
 INFO "GET /uploads/banner/2022/4.jpg HTTP/1.1" 200 1312893
+INFO Watching for file changes with StatReloader
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/banner/ HTTP/1.1" 200 561
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
