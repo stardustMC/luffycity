@@ -46,6 +46,7 @@ INSTALLED_APPS = [
 
     'home',
     'users',
+    'courses',
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True
