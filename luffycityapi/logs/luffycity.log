@@ -1117,3 +1117,110 @@ INFO "GET /admin/courses/teacher/ HTTP/1.1" 200 30715
 INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
 INFO "GET /admin/courses/course/ HTTP/1.1" 200 27477
 INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+INFO "GET /admin/ HTTP/1.1" 200 19826
+INFO "GET /static/admin/simpleui-x/elementui/theme-chalk/index.css HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/fontawesome-free-6.2.0-web/css/all.min.css HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/css/index.css?_=3.2 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/automatic/dicts.js?_=2025.01.13 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/automatic/segment.js?_=2025.01.13 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/locale/en-us.js?_=2025.01.13 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/waves/waves.min.css?_=2.1 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/js/vue.min.js?_=2025.01.13 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/locale/zh-hans.js?_=2025.01.13 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/elementui/index.js?_=2025.01.13 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/js/cookie.js?_=2025.01.13 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/theme/theme.js?_=2025.01.13 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/waves/waves.min.js?_=2025.01.13 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/js/menu.js?_=2025.01.13 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/js/index.js?_=2025.01.13 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/img/logo.png HTTP/1.1" 200 115997
+INFO "GET /admin/courses/coursecategory/ HTTP/1.1" 200 30249
+INFO "GET /static/admin/simpleui-x/theme/simpleui.css HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/css/base.css?_=2.7 HTTP/1.1" 200 4829
+INFO "GET /static/admin/simpleui-x/js/language.js?_=2.1.2 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/locale/en-us.js?_=2.1.2 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/js/cookie.js HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/locale/zh-hans.js HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/automatic/segment.js HTTP/1.1" 304 0
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+INFO "GET /static/admin/simpleui-x/automatic/dicts.js HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/js/axios.min.js HTTP/1.1" 304 0
+INFO "GET /admin/courses/course/ HTTP/1.1" 200 27477
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+INFO "GET /admin/courses/course/add/ HTTP/1.1" 200 25648
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+INFO "GET /static/ckeditor/ckeditor.css HTTP/1.1" 304 0
+INFO "GET /static/ckeditor/ckeditor-init.js HTTP/1.1" 304 0
+INFO "GET /static/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 304 0
+INFO "GET /static/ckeditor/fixups.js HTTP/1.1" 304 0
+INFO "GET /static/ckeditor/ckeditor/config.js?t=N5UC HTTP/1.1" 304 0
+INFO "GET /static/ckeditor/ckeditor/lang/zh-cn.js?t=N5UC HTTP/1.1" 304 0
+INFO "GET /static/ckeditor/ckeditor/skins/moono-lisa/editor_gecko.css?t=N5UC HTTP/1.1" 304 0
+INFO "GET /static/ckeditor/ckeditor/styles.js?t=N5UC HTTP/1.1" 304 0
+INFO "GET /static/ckeditor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css?t=N5UC HTTP/1.1" 304 0
+INFO "GET /static/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css?t=N5UC HTTP/1.1" 304 0
+INFO "GET /static/ckeditor/ckeditor/plugins/scayt/dialogs/dialog.css?t=N5UC HTTP/1.1" 304 0
+INFO "GET /static/ckeditor/ckeditor/plugins/dialog/styles/dialog.css?t=N5UC HTTP/1.1" 304 0
+INFO "GET /static/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css?t=N5UC HTTP/1.1" 304 0
+INFO "GET /static/ckeditor/ckeditor/skins/moono-lisa/icons.png?t=4a1fb11f44 HTTP/1.1" 200 12237
+INFO "GET /static/ckeditor/ckeditor/contents.css?t=N5UC HTTP/1.1" 304 0
+INFO "GET /admin/courses/coursedirection/add/?_to_field=id&_popup=1 HTTP/1.1" 200 22333
+INFO "GET /static/admin/js/inlines.js HTTP/1.1" 200 15526
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+INFO "GET /static/admin/img/inline-delete.svg HTTP/1.1" 200 560
+INFO "GET /admin/courses/coursedirection/ HTTP/1.1" 200 32931
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+INFO "GET /static/admin/simpleui-x/fontawesome-free-6.2.0-web/webfonts/fa-brands-400.woff2 HTTP/1.1" 304 0
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/settings/dev.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/settings/dev.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/ HTTP/1.1" 200 19862
+WARNING Not Found: /uploads/logo.png
+WARNING "GET /uploads/logo.png HTTP/1.1" 404 2698
+INFO "POST /admin/logout/ HTTP/1.1" 200 161
+INFO "GET /admin/login/ HTTP/1.1" 200 4061
+INFO "GET /static/admin/simpleui-x/css/login.css?_=2.1 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/particles/particles.js HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/js/login.js?_=3.3 HTTP/1.1" 304 0
+WARNING Not Found: /uploads/logo.png
+INFO "GET /static/admin/simpleui-x/particles/app.js HTTP/1.1" 304 0
+WARNING "GET /uploads/logo.png HTTP/1.1" 404 2698
+INFO "GET /static/admin/simpleui-x/img/bg.svg HTTP/1.1" 200 9547
+WARNING Not Found: /uploads/logo.png
+WARNING "GET /uploads/logo.png HTTP/1.1" 404 2698
+INFO "GET /admin/login/ HTTP/1.1" 200 4061
+INFO "GET /uploads/logo.png HTTP/1.1" 200 362358
+INFO "POST /admin/login/ HTTP/1.1" 302 0
+INFO "GET /admin/ HTTP/1.1" 200 19862
+INFO "GET /admin/courses/coursecategory/ HTTP/1.1" 200 30254
+INFO "GET /static/admin/simpleui-x/elementui/theme-chalk/index.css HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/fontawesome-free-6.2.0-web/css/all.min.css HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/css/base.css?_=2.7 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/theme/simpleui.css HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/js/vue.min.js?_=2025.01.13 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/elementui/index.js?_=2025.01.13 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/js/language.js?_=2.1.2 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/locale/en-us.js?_=2.1.2 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/locale/zh-hans.js HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/js/cookie.js HTTP/1.1" 304 0
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+INFO "GET /static/admin/simpleui-x/automatic/dicts.js HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/automatic/segment.js HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/js/axios.min.js HTTP/1.1" 304 0
+INFO "GET /admin/courses/coursechapter/ HTTP/1.1" 200 25375
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/settings/dev.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/settings/dev.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/models.py changed, reloading.
+INFO Watching for file changes with StatReloader

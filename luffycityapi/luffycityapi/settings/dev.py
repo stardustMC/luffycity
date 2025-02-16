@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'ckeditor',
+    'ckeditor_uploader',
+    'stdimage',
 
     'home',
     'users',
@@ -268,3 +270,22 @@ CKEDITOR_CONFIGS = {
         'height': 120,
     },
 }
+
+# admin site UI configurations
+from django.contrib import admin
+admin.AdminSite.site_header = 'caoruchen online education'
+admin.AdminSite.site_title = 'crc online admin management'
+
+# 登录界面logo
+SIMPLEUI_LOGO = '/uploads/logo.png'
+# 快速操作
+SIMPLEUI_HOME_QUICK = True
+# 服务器信息
+SIMPLEUI_HOME_INFO = True
+
+# 关闭simpleui内置的使用分析
+SIMPLEUI_ANALYSIS = False
+# 离线模式
+SIMPLEUI_STATIC_OFFLINE = True
+# 首页图标地址
+SIMPLEUI_INDEX = 'http://www.luffycity.cn:3000/'
