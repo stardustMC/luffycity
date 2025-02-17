@@ -1266,3 +1266,291 @@ INFO "GET /admin/courses/coursedirection/ HTTP/1.1" 200 39998
 INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
 INFO "GET /admin/courses/teacher/ HTTP/1.1" 200 34619
 INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/home/models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /home/banner/ HTTP/1.1" 200 561
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /uploads/banner/2022/1.jpg HTTP/1.1" 200 171972
+INFO "GET /uploads/banner/2022/2.jpg HTTP/1.1" 200 176325
+INFO "GET /admin/ HTTP/1.1" 200 20516
+INFO "GET /static/admin/simpleui-x/css/index.css?_=3.2 HTTP/1.1" 200 6994
+INFO "GET /static/admin/simpleui-x/waves/waves.min.css?_=2.1 HTTP/1.1" 200 3861
+INFO "GET /uploads/logo.png HTTP/1.1" 200 362358
+INFO "GET /static/admin/simpleui-x/fontawesome-free-6.2.0-web/css/all.min.css HTTP/1.1" 200 101784
+INFO "GET /static/admin/simpleui-x/elementui/theme-chalk/index.css HTTP/1.1" 200 238628
+INFO "GET /static/admin/simpleui-x/js/vue.min.js?_=2025.01.13 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/elementui/index.js?_=2025.01.13 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/automatic/dicts.js?_=2025.01.13 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/locale/en-us.js?_=2025.01.13 HTTP/1.1" 200 811
+INFO "GET /static/admin/simpleui-x/js/cookie.js?_=2025.01.13 HTTP/1.1" 200 524
+INFO "GET /static/admin/simpleui-x/automatic/segment.js?_=2025.01.13 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/locale/zh-hans.js?_=2025.01.13 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/theme/theme.js?_=2025.01.13 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/js/menu.js?_=2025.01.13 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/waves/waves.min.js?_=2025.01.13 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/js/index.js?_=2025.01.13 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/fontawesome-free-6.2.0-web/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 25096
+INFO "GET /static/admin/simpleui-x/elementui/theme-chalk/fonts/element-icons.woff HTTP/1.1" 200 28200
+INFO "GET /static/admin/simpleui-x/fontawesome-free-6.2.0-web/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 150472
+INFO "GET /static/admin/simpleui-x/fontawesome-free-6.2.0-web/webfonts/fa-brands-400.woff2 HTTP/1.1" 200 107460
+WARNING Not Found: /favicon.ico
+INFO "GET /admin/courses/teacher/ HTTP/1.1" 200 34619
+INFO "GET /static/admin/simpleui-x/locale/en-us.js?_=2.1.2 HTTP/1.1" 200 811
+INFO "GET /static/admin/simpleui-x/js/cookie.js HTTP/1.1" 200 524
+INFO "GET /static/admin/simpleui-x/css/base.css?_=2.7 HTTP/1.1" 200 4829
+INFO "GET /static/admin/css/changelists.css?_=20180905 HTTP/1.1" 200 6566
+INFO "GET /static/admin/simpleui-x/js/language.js?_=2.1.2 HTTP/1.1" 200 189
+INFO "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO "GET /static/admin/simpleui-x/theme/simpleui.css HTTP/1.1" 200 4270
+INFO "GET /static/admin/css/responsive.css?_=20180905 HTTP/1.1" 200 18559
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+INFO "GET /static/admin/simpleui-x/locale/zh-hans.js HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/automatic/dicts.js HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/automatic/segment.js HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/js/axios.min.js HTTP/1.1" 304 0
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/ HTTP/1.1" 200 20516
+INFO "GET /admin/courses/teacher/ HTTP/1.1" 200 34762
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+WARNING Not Found: /uploads/teacher/avatar.thumb_50x50.jpg
+WARNING "GET /uploads/teacher/avatar.thumb_50x50.jpg HTTP/1.1" 404 2786
+INFO "GET /admin/ HTTP/1.1" 302 0
+INFO "GET /static/admin/simpleui-x/locale/en-us.js?_=2.1.2 HTTP/1.1" 200 811
+INFO "GET /static/admin/simpleui-x/locale/zh-hans.js?_=2025.01.13 HTTP/1.1" 200 1254
+INFO "GET /static/admin/simpleui-x/locale/en-us.js?_=2025.01.13 HTTP/1.1" 200 811
+INFO "GET /static/admin/simpleui-x/theme/theme.js?_=2025.01.13 HTTP/1.1" 200 4274
+INFO "GET /static/admin/simpleui-x/automatic/dicts.js?_=2025.01.13 HTTP/1.1" 200 12677
+INFO "GET /static/admin/simpleui-x/js/language.js?_=2.1.2 HTTP/1.1" 200 189
+INFO "GET /static/admin/simpleui-x/locale/zh-hans.js HTTP/1.1" 200 1254
+INFO "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO "GET /admin/courses/teacher/ HTTP/1.1" 302 0
+INFO "GET /static/admin/simpleui-x/automatic/dicts.js HTTP/1.1" 200 12677
+INFO "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4074
+INFO "GET /admin/login/?next=/admin/courses/teacher/ HTTP/1.1" 200 4106
+INFO "GET /static/admin/simpleui-x/css/index.css.map HTTP/1.1" 304 0
+INFO "GET /admin/ HTTP/1.1" 200 20516
+INFO "GET /admin/courses/teacher/ HTTP/1.1" 200 34762
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+WARNING Not Found: /uploads/teacher/avatar.thumb_50x50.jpg
+WARNING "GET /uploads/teacher/avatar.thumb_50x50.jpg HTTP/1.1" 404 2786
+WARNING Not Found: /uploads/teacher/avatar.thumb_50x50.jpg
+WARNING "GET /uploads/teacher/avatar.thumb_50x50.jpg HTTP/1.1" 404 2786
+INFO "GET /admin/ HTTP/1.1" 200 20516
+INFO "GET /admin/courses/teacher/ HTTP/1.1" 200 34762
+INFO "GET /static/admin/simpleui-x/js/language.js?_=2.1.2 HTTP/1.1" 200 189
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+WARNING Not Found: /uploads/teacher/avatar.thumb_50x50.png
+WARNING "GET /uploads/teacher/avatar.thumb_50x50.png HTTP/1.1" 404 2786
+WARNING Not Found: /uploads/teacher/avatar.thumb_50x50.png
+WARNING "GET /uploads/teacher/avatar.thumb_50x50.png HTTP/1.1" 404 2786
+INFO "GET /admin/courses/teacher/ HTTP/1.1" 200 34762
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+WARNING Not Found: /uploads/teacher/avatar.thumb_50x50.png
+WARNING "GET /uploads/teacher/avatar.thumb_50x50.png HTTP/1.1" 404 2786
+INFO "GET /admin/courses/teacher/ HTTP/1.1" 200 34762
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+WARNING Not Found: /uploads/teacher/avatar.thumb_50x50.png
+WARNING "GET /uploads/teacher/avatar.thumb_50x50.png HTTP/1.1" 404 2786
+INFO "GET /admin/courses/teacher/ HTTP/1.1" 200 34762
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+WARNING Not Found: /uploads/teacher/avatar.thumb_50x50.png
+WARNING "GET /uploads/teacher/avatar.thumb_50x50.png HTTP/1.1" 404 2786
+INFO "GET /admin/courses/teacher/?o=3 HTTP/1.1" 200 35570
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+WARNING Not Found: /uploads/teacher/avatar.thumb_50x50.png
+WARNING "GET /uploads/teacher/avatar.thumb_50x50.png HTTP/1.1" 404 2786
+INFO "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO "GET /admin/courses/teacher/?o=-3 HTTP/1.1" 200 35582
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+WARNING Not Found: /uploads/teacher/avatar.thumb_50x50.png
+WARNING "GET /uploads/teacher/avatar.thumb_50x50.png HTTP/1.1" 404 2786
+INFO "GET /admin/courses/teacher/add/?_changelist_filters=o%3D-3 HTTP/1.1" 200 15223
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+INFO "GET /static/ckeditor/ckeditor.css HTTP/1.1" 304 0
+INFO "GET /static/ckeditor/fixups.js HTTP/1.1" 200 168
+INFO "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO "GET /static/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 304 0
+INFO "GET /static/ckeditor/ckeditor-init.js HTTP/1.1" 304 0
+INFO "GET /static/ckeditor/ckeditor/config.js?t=N5UC HTTP/1.1" 200 336
+INFO "GET /static/ckeditor/ckeditor/skins/moono-lisa/editor_gecko.css?t=N5UC HTTP/1.1" 200 48390
+INFO "GET /static/ckeditor/ckeditor/lang/zh-cn.js?t=N5UC HTTP/1.1" 200 17901
+INFO "GET /static/ckeditor/ckeditor/styles.js?t=N5UC HTTP/1.1" 200 5577
+INFO "GET /static/ckeditor/ckeditor/plugins/scayt/dialogs/dialog.css?t=N5UC HTTP/1.1" 304 0
+INFO "GET /static/ckeditor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css?t=N5UC HTTP/1.1" 304 0
+INFO "GET /static/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css?t=N5UC HTTP/1.1" 304 0
+INFO "GET /static/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css?t=N5UC HTTP/1.1" 304 0
+INFO "GET /static/ckeditor/ckeditor/plugins/dialog/styles/dialog.css?t=N5UC HTTP/1.1" 304 0
+INFO "GET /static/ckeditor/ckeditor/skins/moono-lisa/icons.png?t=4a1fb11f44 HTTP/1.1" 200 12237
+INFO "GET /static/ckeditor/ckeditor/contents.css?t=N5UC HTTP/1.1" 304 0
+INFO "GET /admin/courses/teacher/?o=-3 HTTP/1.1" 200 35582
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+WARNING Not Found: /uploads/teacher/avatar.thumb_50x50.png
+WARNING "GET /uploads/teacher/avatar.thumb_50x50.png HTTP/1.1" 404 2786
+INFO "GET /admin/ HTTP/1.1" 200 20516
+INFO "GET /admin/courses/teacher/ HTTP/1.1" 200 34762
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+WARNING Not Found: /uploads/teacher/avatar.thumb_50x50.png
+WARNING "GET /uploads/teacher/avatar.thumb_50x50.png HTTP/1.1" 404 2786
+INFO "GET /admin/courses/teacher/?o=1 HTTP/1.1" 200 35570
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+WARNING Not Found: /uploads/teacher/avatar.thumb_50x50.png
+WARNING "GET /uploads/teacher/avatar.thumb_50x50.png HTTP/1.1" 404 2786
+INFO "GET /admin/home/banner/ HTTP/1.1" 200 29534
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+INFO "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO "GET /uploads/banner/2022/1.jpg HTTP/1.1" 200 171972
+INFO "GET /uploads/banner/2022/5.jpg HTTP/1.1" 200 158646
+INFO "GET /uploads/banner/2022/2.jpg HTTP/1.1" 200 176325
+INFO "GET /uploads/banner/2022/3.jpg HTTP/1.1" 200 443034
+INFO "GET /uploads/banner/2022/4.jpg HTTP/1.1" 200 1312893
+INFO "GET /admin/home/nav/ HTTP/1.1" 200 33338
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+INFO "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO "GET /admin/courses/coursecategory/ HTTP/1.1" 200 32687
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+INFO "GET /admin/courses/teacher/ HTTP/1.1" 200 34762
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+WARNING Not Found: /uploads/teacher/avatar.thumb_50x50.png
+WARNING "GET /uploads/teacher/avatar.thumb_50x50.png HTTP/1.1" 404 2786
+INFO "GET /admin/courses/teacher/add/ HTTP/1.1" 200 15186
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+INFO "GET /admin/courses/teacher/ HTTP/1.1" 200 34762
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+WARNING Not Found: /uploads/teacher/avatar.thumb_50x50.png
+WARNING "GET /uploads/teacher/avatar.thumb_50x50.png HTTP/1.1" 404 2786
+INFO "GET /admin/courses/teacher/add/ HTTP/1.1" 200 15186
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+INFO "POST /admin/courses/teacher/add/ HTTP/1.1" 302 0
+INFO "GET /admin/courses/teacher/ HTTP/1.1" 200 35746
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+WARNING Not Found: /uploads/teacher/avatar.thumb_50x50.png
+INFO "GET /uploads/teacher/avatar_AGdUQZ0.thumb_50x50.png HTTP/1.1" 200 5910
+WARNING "GET /uploads/teacher/avatar.thumb_50x50.png HTTP/1.1" 404 2786
+INFO "GET /admin/home/banner/ HTTP/1.1" 200 29534
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+INFO "GET /admin/ HTTP/1.1" 302 0
+INFO "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4074
+INFO "GET /static/admin/simpleui-x/css/index.css.map HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/theme/simpleui.css.map HTTP/1.1" 200 1935
+INFO "GET /static/admin/simpleui-x/css/base.css.map HTTP/1.1" 200 2107
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/users/admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/users/admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/users/models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/ HTTP/1.1" 200 21126
+INFO "GET /admin/home/banner/ HTTP/1.1" 200 29534
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+INFO "GET /static/admin/simpleui-x/theme/simpleui.css.map HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/css/base.css.map HTTP/1.1" 304 0
+ERROR Internal Server Error: /admin/users/user/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/db/models/options.py", line 681, in get_field
+    return self.fields_map[field_name]
+KeyError: 'avatar_small'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 272, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 303, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/db/models/options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: User has no field named 'avatar_small'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/contrib/admin/templatetags/base.py", line 45, in render
+    return super().render(context)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/template/library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 336, in result_list
+    "results": list(results(cl)),
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 312, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 303, in __init__
+    super().__init__(*items)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 213, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 285, in lookup_field
+    value = attr()
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/users/models.py", line 22, in avatar_small
+    return mark_safe(f'<img style="border-radius: 100%;" src="{self.avatar.thumb_50x50.url}">')
+AttributeError: 'ImageFieldFile' object has no attribute 'thumb_50x50'
+ERROR "GET /admin/users/user/ HTTP/1.1" 500 451955
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/users/models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/ HTTP/1.1" 200 21126
+INFO "GET /admin/users/user/ HTTP/1.1" 200 35907
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+WARNING Not Found: /uploads/avatar/1.thumb_50x50.jpeg
+WARNING "GET /uploads/avatar/1.thumb_50x50.jpeg HTTP/1.1" 404 2766
+INFO "GET /admin/users/user/add/ HTTP/1.1" 200 11171
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+INFO "GET /admin/users/user/ HTTP/1.1" 200 35907
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+WARNING Not Found: /uploads/avatar/1.thumb_50x50.jpeg
+WARNING "GET /uploads/avatar/1.thumb_50x50.jpeg HTTP/1.1" 404 2766
