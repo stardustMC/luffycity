@@ -184,7 +184,6 @@ class CourseChapter(BaseModel):
     text2.allow_tags = True
     text2.admin_order_field = "orders"
 
-
 class CourseLesson(BaseModel):
     """课程课时"""
     lesson_type_choices = (

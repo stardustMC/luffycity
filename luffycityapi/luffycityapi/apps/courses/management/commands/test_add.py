@@ -4,7 +4,7 @@ import random
 import os, sys
 from faker import Faker
 from django.conf import settings
-from courses.models import Teacher, CourseDirection
+from courses.models import Teacher, CourseDirection, CourseCategory
 from django.core.management.base import BaseCommand, CommandError
 
 faker = Faker(['zh_CN'])
@@ -32,8 +32,10 @@ class Command(BaseCommand):
             self.add_teacher(options)
         elif options['type'] == 'direction':
             self.add_direction(options)
+        elif options['type'] == 'category':
+            self.add_category(options)
         else:
-            raise CommandError("Type must be 'teacher' or 'direction'")
+            raise CommandError("Type must be in ['teacher' 'direction' 'category']")
 
     def add_teacher(self, options):
         for i in range(options['number']):
@@ -54,5 +56,14 @@ class Command(BaseCommand):
                 remark=faker.sentence(),
                 recomment_home_hot=False,
                 recomment_home_top=False,
+            )
+        print(f"{options['number']} items of {options['type']} data added in total.")
+
+    def add_category(self, options):
+        for i in range(options['number']):
+            CourseCategory.objects.create(
+                name=faker.company(),
+                remark=faker.sentence(),
+                direction_id=random.randint(1, 10),
             )
         print(f"{options['number']} items of {options['type']} data added in total.")
