@@ -22,3 +22,4 @@ class CourseInfoModelSerializer(serializers.ModelSerializer):
             "students", "status", "get_status_display",
             "lessons", "pub_lessons", "price", "discount"
         ]
+

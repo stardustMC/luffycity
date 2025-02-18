@@ -1,10 +1,8 @@
 #! /home/caoruchen/anaconda3/envs/luffycity/bin/python
 
 import random
-import os, sys
-from datetime import datetime, timedelta
+from datetime import datetime
 from faker import Faker
-from django.conf import settings
 from courses.models import Teacher, CourseDirection, CourseCategory, Course
 from django.core.management.base import BaseCommand, CommandError
 
@@ -74,7 +72,7 @@ class Command(BaseCommand):
 
     def add_course(self, options):
         for i in range(options['number']):
-            name = faker.name() + "课程"
+            name = faker.job() + "课程"
             Course.objects.create(
                 name=name,
                 orders = 1,
@@ -82,7 +80,7 @@ class Command(BaseCommand):
                 is_deleted=0,
                 created_time=datetime.now(),
                 updated_time=datetime.now(),
-                course_cover=f"course/cover/course-{i + 1}.png",
+                course_cover=f"course/cover/course-{random.randint(1, 20)}.png",
                 course_video="",
                 course_type=random.randint(0, 2),
                 level=random.randint(0, 2),
