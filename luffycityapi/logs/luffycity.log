@@ -2508,3 +2508,27 @@ INFO "GET /courses/1/0/?page=2&size=5&ordering=-id HTTP/1.1" 200 1979
 INFO "GET /courses/1/0/?page=3&size=5&ordering=-id HTTP/1.1" 200 1958
 INFO "GET /courses/1/0/?page=4&size=5&ordering=-id HTTP/1.1" 200 1898
 INFO "GET /courses/1/0/?page=3&size=5&ordering=-id HTTP/1.1" 200 1959
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1893
+INFO "GET /courses/category/4/ HTTP/1.1" 200 334
+INFO "GET /courses/4/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1897
+INFO "GET /courses/category/5/ HTTP/1.1" 200 417
+INFO "GET /courses/5/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1877
+INFO "GET /courses/5/24/?page=1&size=5&ordering=-id HTTP/1.1" 200 52
+INFO "GET /courses/5/34/?page=1&size=5&ordering=-id HTTP/1.1" 200 404
+INFO "GET /courses/5/36/?page=1&size=5&ordering=-id HTTP/1.1" 200 409
+INFO "GET /courses/5/43/?page=1&size=5&ordering=-id HTTP/1.1" 200 52
+INFO "GET /courses/category/9/ HTTP/1.1" 200 425
+INFO "GET /courses/9/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1882
+INFO "GET /courses/9/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1884
+INFO "GET /courses/category/8/ HTTP/1.1" 200 292
+INFO "GET /courses/8/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1902
+INFO "GET /courses/category/7/ HTTP/1.1" 200 204
+INFO "GET /courses/7/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1906
+INFO "GET /courses/category/6/ HTTP/1.1" 200 427
+INFO "GET /courses/6/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1881
+INFO "GET /courses/4/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1895
+INFO "GET /courses/category/4/ HTTP/1.1" 200 334

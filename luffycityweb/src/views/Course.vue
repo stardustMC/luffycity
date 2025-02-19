@@ -28,37 +28,19 @@
                 <div class="one warp">
                     <span class="name">方向：</span>
                     <ul class="items">
-                        <li class="cur"><a href="">全部</a></li>
-                        <li><a href="">前端开发</a></li>
-                        <li><a href="">后端开发</a></li>
-                        <li><a href="">移动开发</a></li>
-                        <li><a href="">计算机基础</a></li>
-                        <li><a href="">前沿技术</a></li>
-                        <li><a href="">云计算&amp;大数据</a></li>
-                        <li><a href="">运维&amp;测试</a></li>
-                        <li><a href="">数据库</a></li>
-                        <li><a href="">UI设计&amp;多媒体</a></li>
-                        <li><a href="">游戏</a></li>
-                        <li><a href="">求职面试</a></li>
+                        <li :class="{cur:courses.current_direction===0}" @click.prevent.stop="courses.current_direction=0"><a href="">全部</a></li>
+                        <li :class="{cur:courses.current_direction===direction.id}"
+                            @click.prevent.stop="courses.current_direction=direction.id"
+                            v-for="direction in courses.direction_list"><a href="">{{direction.name}}</a></li>
                     </ul>
                 </div>
                 <div class="two warp">
                     <span class="name">分类：</span>
                     <ul class="items">
-                        <li class="cur"><a href="">不限</a></li>
-                        <li><a href="">Vue.js</a></li>
-                        <li><a href="">Typescript</a></li>
-                        <li><a href="">React.JS</a></li>
-                        <li><a href="">HTML/CSS</a></li>
-                        <li><a href="">JavaScript</a></li>
-                        <li><a href="">Angular</a></li>
-                        <li><a href="">Node.js</a></li>
-                        <li><a href="">WebApp</a></li>
-                        <li><a href="">小程序</a></li>
-                        <li><a href="">前端工具</a></li>
-                        <li><a href="">CSS</a></li>
-                        <li><a href="">Html5</a></li>
-                        <li><a href="">CSS3</a></li>
+                        <li :class="{cur:courses.current_category===0}" @click.prevent.stop="courses.current_category=0"><a href="">不限</a></li>
+                        <li :class="{cur:courses.current_category===category.id}"
+                            @click.prevent.stop="courses.current_category=category.id"
+                            v-for="category in courses.category_list"><a href="">{{category.name}}</a></li>
                     </ul>
                 </div>
             </div>
@@ -68,92 +50,49 @@
         <div class="main-wrap">
             <div class="filter clearfix">
                 <div class="sort l">
-                  <a href="" class="on">最新</a>
-                  <a href="">销量</a>
-                  <a href="">升级</a>
+                  <a href="" :class="{on:courses.ordering==='-id'}" @click.prevent.stop="courses.ordering=(courses.ordering==='-id'?'':'-id')">最新</a>
+                  <a href="" :class="{on:courses.ordering==='-students'}" @click.prevent.stop="courses.ordering=(courses.ordering==='-students'?'':'-students')">销量</a>
+                  <a href="" :class="{on:courses.ordering==='-orders'}" @click.prevent.stop="courses.ordering=(courses.ordering==='-orders'?'':'-orders')">推荐</a>
                 </div>
                 <div class="other r clearfix"><a class="course-line l" href="" target="_blank">学习路线</a></div>
             </div>
-            <ul class="course-list clearfix">
-              <li class="course-card">
-                <a target="_blank" href="">
-                    <div class="img"><img src="../assets/course-1.png" alt=""></div>
-                    <p class="title ellipsis2">全面的Docker 系统性入门+进阶实践（2021最新版）</p>
-                    <p class="one">
-                        <span>进阶 · 611人报名</span>
-                        <span class="discount r"><i class="name">优惠价</i></span>
-                    </p>
-                    <p class="two clearfix">
-                        <span class="price l red bold">￥428.00</span>
-                        <span class="origin-price l delete-line">￥488.00</span>
-                        <span class="add-shop-cart r"><img class="icon imv2-shopping-cart" src="../assets/cart2.svg">加购物车</span>
-                    </p>
-                </a>
-              </li>
-              <li class="course-card">
-                <a target="_blank" href="">
-                    <div class="img"><img src="../assets/course-2.png" alt=""></div>
-                    <p class="title ellipsis2">Flink+ClickHouse 玩转企业级实时大数据开发，助你实现弯道超车</p>
-                    <p class="one">
-                        <span>进阶 · 246人报名</span>
-                        <span class="discount r"><i class="name">限时优惠</i><i class="countdown">6<span class="day">天</span>01:39:21</i></span>
-                    </p>
-                    <p class="two clearfix">
-                        <span class="price l red bold">￥328.00</span>
-                        <span class="origin-price l delete-line">￥368.00</span>
-                        <span class="add-shop-cart r"><img class="icon imv2-shopping-cart" src="../assets/cart2.svg">加购物车</span>
-                    </p>
-                </a>
-              </li>
-              <li class="course-card">
-                <a target="_blank" href="">
-                    <div class="img"><img src="../assets/course-3.png" alt=""></div>
-                    <p class="title ellipsis2">Flink+ClickHouse 玩转企业级实时大数据开发，助你实现弯道超车</p>
-                    <p class="one">
-                        <span>进阶 · 246人报名</span>
-                        <span class="discount r"><i class="name">限时优惠</i><i class="countdown">16<span class="day">天</span>01:39:21</i></span>
-                    </p>
-                    <p class="two clearfix">
-                        <span class="price l red bold">￥328.00</span>
-                        <span class="origin-price l delete-line">￥368.00</span>
-                        <span class="add-shop-cart r"><img class="icon imv2-shopping-cart" src="../assets/cart2.svg">加购物车</span>
-                    </p>
-                </a>
-              </li>
-              <li class="course-card">
-                <a target="_blank" href="">
-                    <div class="img"><img src="../assets/course-4.png" alt=""></div>
-                    <p class="title ellipsis2">Flink+ClickHouse 玩转企业级实时大数据开发，助你实现弯道超车</p>
-                    <p class="one"><span>进阶 · 246人报名</span></p>
-                    <p class="two clearfix">
-                        <span class="price l red bold">￥399.00</span>
-                        <span class="add-shop-cart r"><img class="icon imv2-shopping-cart" src="../assets/cart2.svg">加购物车</span>
-                    </p>
-                </a>
-              </li>
-              <li class="course-card">
-                <a target="_blank" href="">
-                    <div class="img"><img src="../assets/course-5.png" alt=""></div>
-                    <p class="title ellipsis2">Flink+ClickHouse 玩转企业级实时大数据开发，助你实现弯道超车</p>
-                    <p class="one"><span>进阶 · 246人报名</span></p>
-                    <p class="two clearfix">
-                        <span class="price l red bold">￥399.00</span>
-                        <span class="add-shop-cart r"><img class="icon imv2-shopping-cart" src="../assets/cart2.svg">加购物车</span>
-                    </p>
-                </a>
-              </li>
-
-            </ul>
-            <div class="page">
-                <span class="disabled_page">首页</span>
-                <span class="disabled_page">上一页</span>
-                <a href="" class="active">1</a>
-                <a href="">2</a>
-                <a href="">3</a>
-                <a href="">4</a>
-                <a href="">下一页</a>
-                <a href="">尾页</a>
-            </div>
+          <ul class="course-list clearfix">
+            <li class="course-card" v-for="course_info in courses.course_list">
+              <a target="_blank" href="">
+                <div class="img"><img :src="course_info.course_cover" alt=""></div>
+                <p class="title ellipsis2">{{course_info.name}}</p>
+                <p class="one">
+                  <span>{{course_info.get_level_display}} · {{course_info.students}}人报名</span>
+                  <span class="discount r">
+                    <i class="name" v-if="course_info.discount.type">{{course_info.discount.type}}</i>
+                          <i class="countdown" v-if="course_info.discount.expire">{{parseInt(course_info.discount.expire/86400)}}<span class="day">天</span>{{format0(parseInt(course_info.discount.expire/3600%24))}}:{{format0(parseInt(course_info.discount.expire/60%60))}}:{{format0(parseInt(course_info.discount.expire%60))}}</i>
+                  </span>
+                </p>
+                <p class="two clearfix">
+                  <span class="price l red bold"
+                        v-if="course_info.discount.price">￥{{ parseFloat(course_info.discount.price).toFixed(2) }}</span>
+                  <span class="price l red bold" v-else>￥{{ parseFloat(course_info.price).toFixed(2) }}</span>
+                  <span class="origin-price l delete-line"
+                        v-if="course_info.discount.price">￥{{ parseFloat(course_info.price).toFixed(2) }}</span>
+                  <span class="add-shop-cart r"><img class="icon imv2-shopping-cart" src="../assets/cart2.svg">加购物车</span>
+                </p>
+              </a>
+            </li>
+          </ul>
+          <div class="page" v-if="courses.count > courses.size">
+            <a href="" v-if="courses.has_prev" @click.prevent.stop="courses.page=1">首页</a>
+            <span v-else>首页</span>
+            <a href="" v-if="courses.has_prev" @click.prevent.stop="courses.page--">上一页</a>
+            <span v-else>上一页</span>
+            <a href="" v-if="courses.has_prev" @click.prevent.stop="courses.page--">{{ courses.page - 1 }}</a>
+            <a class="active">{{ courses.page }}</a>
+            <a href="" v-if="courses.has_next" @click.prevent.stop="courses.page++">{{ courses.page + 1 }}</a>
+            <a href="" v-if="courses.has_next" @click.prevent.stop="courses.page++">下一页</a>
+            <span v-else>下一页</span>
+            <a href="" v-if="courses.has_next"
+               @click.prevent.stop="courses.page=Math.ceil(courses.count/courses.size)">尾页</a>
+            <span v-else>尾页</span>
+          </div>
         </div>
     </div>
     <Footer></Footer>
@@ -161,10 +100,54 @@
 </template>
 
 <script setup>
-import {reactive,ref} from "vue"
+import {watch} from "vue"
 import Header from "../components/Header.vue"
 import Footer from "../components/Footer.vue"
+import courses from "../api/course.js";
+import {format0} from "../utils/helper.js";
 
+courses.get_directions().then((response)=>{
+  courses.direction_list = response.data;
+});
+
+const get_direction_categories = ()=>{
+  courses.current_category = 0;
+  courses.get_categories().then((response)=>{
+    courses.category_list = response.data;
+  });
+}
+get_direction_categories();
+
+watch(()=>courses.current_direction, ()=>{
+  courses.ordering = "-id";
+  get_direction_categories();
+  get_courses();
+});
+
+const get_courses = ()=>{
+  courses.get_courses().then(response=>{
+    courses.course_list = response.data.results;
+    // 总数据量
+    courses.count = response.data.count;
+    courses.has_prev = !!response.data.previous; // !!2个非表示把数据转换成布尔值
+    courses.has_next = !!response.data.next;
+    courses.start_timer();
+  })
+}
+get_courses();
+
+watch(()=>courses.current_category, ()=>{
+  courses.ordering = "-id";
+  get_courses();
+})
+
+watch(()=>courses.ordering, ()=>{
+  get_courses();
+})
+
+watch(()=>courses.page, ()=>{
+  get_courses();
+})
 </script>
 
 <style scoped>
@@ -696,5 +679,12 @@ import Footer from "../components/Footer.vue"
 	font-size: 14px;
 	color: #93999f;
 	text-align: center
+}
+
+.type .type-wrap .warp:hover{
+  height: auto;
+}
+.type .type-wrap .warp:hover .items{
+  background-color: #fff;
 }
 </style>

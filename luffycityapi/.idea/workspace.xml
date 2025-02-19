@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fcfba21-9e0a-4079-b630-c27deaeac368" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/luffycity.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/luffycity.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../luffycityweb/src/views/Course.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../luffycityweb/src/views/Course.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +31,12 @@
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/user",
-    "last_opened_file_path": "/home/caoruchen/Desktop/luffycity",
+    "git-widget-placeholder": "feature/course",
+    "last_opened_file_path": "/home/caoruchen/Desktop/luffycity/luffycityapi",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "vue.rearranger.settings.migration": "true"
@@ -82,6 +88,7 @@
       <workItem from="1732638102866" duration="92000" />
       <workItem from="1734275077625" duration="81000" />
       <workItem from="1739683480381" duration="136000" />
+      <workItem from="1739956291235" duration="329000" />
     </task>
     <servers />
   </component>
