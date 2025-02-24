@@ -37,7 +37,16 @@ const routes = [
     path: '/project',
     name: "Course",
     component: ()=> import("../views/Course.vue"),
-  },
+    },
+    {
+        meta: {
+            title: "luffy2.0-课程详情",
+            keepAlive: true,
+        },
+        path: "/project/:id",
+        name: "CourseInfo",
+        component: ()=>import("../views/Info.vue"),
+    }
 ]
 
 const router = createRouter({

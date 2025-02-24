@@ -57,7 +57,7 @@
             </div>
           <ul class="course-list clearfix">
             <li class="course-card" v-for="course_info in courses.course_list">
-              <a target="_blank" href="">
+              <router-link :to="`/project/${course_info.id}`">
                 <div class="img"><img :src="course_info.course_cover" alt=""></div>
                 <p class="title ellipsis2">{{course_info.name}}</p>
                 <p class="one">
@@ -75,7 +75,7 @@
                         v-if="course_info.discount.price">￥{{ parseFloat(course_info.price).toFixed(2) }}</span>
                   <span class="add-shop-cart r"><img class="icon imv2-shopping-cart" src="../assets/cart2.svg">加购物车</span>
                 </p>
-              </a>
+              </router-link>
             </li>
           </ul>
           <div class="page" v-if="courses.count > courses.size">

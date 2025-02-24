@@ -8,7 +8,10 @@ const courses = reactive({
     direction_list: [],
     course_list: [],
     hotword_list: [],
+    chapter_list: [],
     ordering: "-id",
+    course_id: 1,
+    info: {},
     page: 1,
     size: 5,
     count: 0,
@@ -34,6 +37,13 @@ const courses = reactive({
         return http.get(`/courses/${this.current_direction}/${this.current_category}/`, {
             params,
         })
+    },
+    get_course(){
+        console.log(this.course_id)
+        return http.get(`/courses/${this.course_id}/`);
+    },
+    get_chapter_list(){
+        return http.get(`/courses/${this.course_id}/chapters/`);
     },
     start_timer(){
         clearInterval(this.timer);

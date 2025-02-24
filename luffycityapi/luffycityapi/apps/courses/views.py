@@ -1,10 +1,11 @@
 from datetime import datetime
 
-from rest_framework.generics import ListAPIView
+from rest_framework.generics import ListAPIView, RetrieveAPIView
 from rest_framework.filters import OrderingFilter
 from .pagination import CoursePageNumberPagination
-from .models import CourseDirection, CourseCategory, Course
-from .serializers import CourseDirectionModelSerializer, CourseCategoryModelSerializer, CourseInfoModelSerializer
+from .models import CourseDirection, CourseCategory, Course, CourseChapter
+from .serializers import CourseDirectionModelSerializer, CourseCategoryModelSerializer, CourseInfoModelSerializer, \
+    CourseChapterModelSerializer
 
 
 # Create your views here.
@@ -49,7 +50,7 @@ class CourseListAPIView(ListAPIView):
 
 from drf_haystack.viewsets import HaystackViewSet
 from drf_haystack.filters import HaystackFilter
-from .serializers import CourseIndexHaystackSerializer
+from .serializers import CourseIndexHaystackSerializer, CourseRetrieveModelSerializer
 from .models import Course
 from django_redis import get_redis_connection
 import constants
@@ -74,6 +75,25 @@ class CourseSearchViewSet(HaystackViewSet):
             if not is_exists:
                 redis.expire(key, constants.HOT_WORD_EXPIRE * 24 * 3600)
         return super().list(request, *args, **kwargs)
+
+class CourseRetrieveAPIView(RetrieveAPIView):
+    """课程详情信息"""
+    queryset = Course.objects.filter(is_show=True, is_deleted=False).all()
+    serializer_class = CourseRetrieveModelSerializer
+
+class CourseChapterListAPIView(ListAPIView):
+    """课程章节列表"""
+    serializer_class = CourseChapterModelSerializer
+    def get_queryset(self):
+        """列表页数据"""
+        course = int(self.kwargs.get("course", 0))
+        try:
+            Course.objects.filter(pk=course).first()
+        except:
+            return []
+        queryset = CourseChapter.objects.filter(course=course,is_show=True, is_deleted=False).order_by("orders", "id")
+        return queryset.all()
+
 
 from rest_framework.views import APIView
 from rest_framework.response import Response

@@ -3434,3 +3434,265 @@ INFO "GET /courses/search/?page=1&size=5&text=%E6%8A%80%E5%B8%88&ordering=-id HT
 INFO "GET /courses/search/?page=1&size=5&text=%E7%A7%91%E7%A0%94&ordering=-id HTTP/1.1" 200 2553
 INFO "GET /courses/search/?page=1&size=5&text=%E7%BF%BB%E8%AF%91&ordering=-id HTTP/1.1" 200 1030
 INFO "GET /courses/search/?page=1&size=5&text=%E7%BB%8F%E7%BA%AA%E4%BA%BA&ordering=-id HTTP/1.1" 200 1087
+INFO Watching for file changes with StatReloader
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /home/banner/ HTTP/1.1" 200 666
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1850
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/serializers.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/serializers.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/serializers.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/serializers.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1851
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/serializers.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/urls.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /courses/480/chapters/ HTTP/1.1" 200 2
+ERROR Internal Server Error: /courses/480/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/generics.py", line 212, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 571, in data
+    ret = super().data
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 523, in to_representation
+    for field in fields:
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 384, in _readable_fields
+    for field in self.fields.values():
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 372, in fields
+    for key, value in self.get_fields().items():
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 1079, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 1175, in get_field_names
+    assert field_name in fields, (
+AssertionError: The field 'diretion_name' was declared on serializer CourseRetrieveModelSerializer, but has not been included in the 'fields' option.
+ERROR "GET /courses/480/ HTTP/1.1" 500 150766
+INFO "GET /courses/480/chapters/ HTTP/1.1" 200 2
+ERROR Internal Server Error: /courses/480/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/generics.py", line 212, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 571, in data
+    ret = super().data
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 523, in to_representation
+    for field in fields:
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 384, in _readable_fields
+    for field in self.fields.values():
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 372, in fields
+    for key, value in self.get_fields().items():
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 1079, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 1175, in get_field_names
+    assert field_name in fields, (
+AssertionError: The field 'diretion_name' was declared on serializer CourseRetrieveModelSerializer, but has not been included in the 'fields' option.
+ERROR "GET /courses/480/ HTTP/1.1" 500 150766
+WARNING Not Found: /courses/1/
+WARNING "GET /courses/1/ HTTP/1.1" 404 3566
+INFO "GET /courses/1/chapters/ HTTP/1.1" 200 2
+WARNING Not Found: /courses/1/
+WARNING "GET /courses/1/ HTTP/1.1" 404 3566
+INFO "GET /courses/1/chapters/ HTTP/1.1" 200 2
+INFO "GET /courses/480/chapters/ HTTP/1.1" 200 2
+ERROR Internal Server Error: /courses/480/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/generics.py", line 212, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 571, in data
+    ret = super().data
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 523, in to_representation
+    for field in fields:
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 384, in _readable_fields
+    for field in self.fields.values():
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 372, in fields
+    for key, value in self.get_fields().items():
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 1079, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 1175, in get_field_names
+    assert field_name in fields, (
+AssertionError: The field 'diretion_name' was declared on serializer CourseRetrieveModelSerializer, but has not been included in the 'fields' option.
+ERROR "GET /courses/480/ HTTP/1.1" 500 150766
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1851
+INFO "GET /courses/2/chapters/ HTTP/1.1" 200 2
+WARNING Not Found: /courses/2/
+WARNING "GET /courses/2/ HTTP/1.1" 404 3566
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1849
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1849
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1851
+INFO "GET /courses/1/chapters/ HTTP/1.1" 200 2
+WARNING Not Found: /courses/1/
+WARNING "GET /courses/1/ HTTP/1.1" 404 3566
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1849
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1849
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/1/chapters/ HTTP/1.1" 200 2
+WARNING Not Found: /courses/1/
+WARNING "GET /courses/1/ HTTP/1.1" 404 3566
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1849
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1849
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+WARNING Not Found: /courses/3/
+WARNING "GET /courses/3/ HTTP/1.1" 404 3566
+INFO "GET /courses/3/chapters/ HTTP/1.1" 200 2
+WARNING Not Found: /courses/3/
+WARNING "GET /courses/3/ HTTP/1.1" 404 3566
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/serializers.py changed, reloading.
+INFO Watching for file changes with StatReloader
+WARNING Not Found: /courses/3/
+WARNING "GET /courses/3/ HTTP/1.1" 404 3566
+WARNING Not Found: /courses/3/
+WARNING "GET /courses/3/ HTTP/1.1" 404 3566
+INFO "GET /courses/1 HTTP/1.1" 301 0
+WARNING Not Found: /courses/1/
+WARNING "GET /courses/1/ HTTP/1.1" 404 3566
+WARNING Not Found: /courses/1/
+WARNING "GET /courses/1/ HTTP/1.1" 404 3566
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+WARNING Not Found: /courses/1/
+WARNING "GET /courses/1/ HTTP/1.1" 404 3566
+WARNING Not Found: /courses/3/
+WARNING "GET /courses/3/ HTTP/1.1" 404 3566
+INFO "GET /courses/3/chapters/ HTTP/1.1" 200 2
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+WARNING Not Found: /courses/3/
+WARNING "GET /courses/3/ HTTP/1.1" 404 3566
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+WARNING Not Found: /courses/1/
+WARNING "GET /courses/1/ HTTP/1.1" 404 3566
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /courses/300 HTTP/1.1" 301 0
+INFO "GET /courses/300/ HTTP/1.1" 200 7235
+INFO "GET /courses/300/chapters/ HTTP/1.1" 200 2
+INFO "GET /courses/300/ HTTP/1.1" 200 836
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1849
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/479/chapters/ HTTP/1.1" 200 2
+INFO "GET /courses/479/ HTTP/1.1" 200 887
+INFO "GET /courses/479/chapters/ HTTP/1.1" 200 2
+INFO "GET /courses/479/ HTTP/1.1" 200 886
+INFO "GET /courses/479/ HTTP/1.1" 200 886
+INFO "GET /courses/479/chapters/ HTTP/1.1" 200 2
+INFO "GET /courses/479/ HTTP/1.1" 200 886
+INFO "GET /courses/479/chapters/ HTTP/1.1" 200 2
