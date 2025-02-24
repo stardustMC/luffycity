@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from rest_framework.generics import ListAPIView
 from rest_framework.filters import OrderingFilter
 from .pagination import CoursePageNumberPagination
@@ -49,6 +51,9 @@ from drf_haystack.viewsets import HaystackViewSet
 from drf_haystack.filters import HaystackFilter
 from .serializers import CourseIndexHaystackSerializer
 from .models import Course
+from django_redis import get_redis_connection
+import constants
+
 
 class CourseSearchViewSet(HaystackViewSet):
     """课程信息全文搜索视图类"""
@@ -58,3 +63,40 @@ class CourseSearchViewSet(HaystackViewSet):
     filter_backends = [OrderingFilter, HaystackFilter]
     ordering_fields = ('id', 'students', 'orders')
     pagination_class = CoursePageNumberPagination
+
+    def list(self, request, *args, **kwargs):
+        text = request.query_params.get("text")
+        if text:
+            redis = get_redis_connection("hot_words")
+            key = f"{constants.DEFAULT_HOT_WORD}:{datetime.now().strftime('%Y:%m:%d')}"
+            redis.zincrby(key, 1, text)  # 让有序集合中的text搜索关键字次数+1，如果该关键字第一次出现，则为1
+            is_exists = redis.exists(key)
+            if not is_exists:
+                redis.expire(key, constants.HOT_WORD_EXPIRE * 24 * 3600)
+        return super().list(request, *args, **kwargs)
+
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from datetime import datetime, timedelta
+
+class HotWordAPIView(APIView):
+    """搜索热词"""
+    def get(self, request):
+        redis = get_redis_connection("hot_words")
+        # 获取最近指定天数的热词的key
+        key_list = []
+        for i in range(0, constants.HOT_WORD_EXPIRE):
+            date = datetime.now() - timedelta(days=i)
+            year = date.year
+            month = date.month if date.month >= 10 else f"0{date.month}"
+            day = date.day if date.day >= 10 else f"0{date.day}"
+            key = f"{constants.DEFAULT_HOT_WORD}:{year}:{month}:{day}"
+            key_list.append(key)
+
+        # 先删除原有的统计最近几天的热搜词的有序统计集合
+        redis.delete(constants.DEFAULT_HOT_WORD)
+        # 根据date_list找到最近指定天数的所有集合，并完成并集计算，产生新的有序统计集合constants.DEFAULT_HOT_WORD
+        redis.zunionstore(constants.DEFAULT_HOT_WORD, key_list, aggregate="sum")
+        # 按分数store进行倒序显示排名靠前的指定数量的热词
+        word_list = redis.zrevrange(constants.DEFAULT_HOT_WORD, 0, constants.HOT_WORD_LENGTH-1)
+        return Response(word_list)

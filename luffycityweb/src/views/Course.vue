@@ -10,15 +10,14 @@
                 </div>
                 <div class="actual-header-search">
                     <div class="search-inner">
-                        <input class="actual-search-input" placeholder="搜索感兴趣的实战课程内容" type="text" autocomplete="off">
-                        <img class="actual-search-button" src="../assets/search.svg" />
+                        <input class="actual-search-input" v-model="courses.text" placeholder="搜索感兴趣的实战课程内容" type="text" autocomplete="off">
+                        <img class="actual-search-button" src="../assets/search.svg" @click="get_courses" />
                     </div>
                     <div class="actual-searchtags">
                     </div>
                     <div class="search-hot">
                         <span>热搜：</span>
-                        <a href="">Java工程师</a>
-                        <a href="">Vue</a>
+                        <a href="" @click.prevent.stop="search_hot_word(hotword)" v-for="hotword in courses.hotword_list">{{hotword}}</a>
                     </div>
                 </div>
             </div>
@@ -125,7 +124,13 @@ watch(()=>courses.current_direction, ()=>{
 });
 
 const get_courses = ()=>{
-  courses.get_courses().then(response=>{
+  let ret = null;
+  if(courses.text){
+    ret = courses.search_courses();
+  }else{
+    ret = courses.get_courses();
+  }
+  ret.then(response=>{
     courses.course_list = response.data.results;
     // 总数据量
     courses.count = response.data.count;
@@ -135,6 +140,18 @@ const get_courses = ()=>{
   })
 }
 get_courses();
+
+const get_hot_words = ()=>{
+  courses.get_hot_words().then(response=>{
+    courses.hotword_list = response.data;
+  })
+}
+get_hot_words();
+
+const search_hot_word = (hotword)=>{
+  courses.text = hotword;
+  get_courses();
+}
 
 watch(()=>courses.current_category, ()=>{
   courses.ordering = "-id";

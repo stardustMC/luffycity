@@ -2951,3 +2951,486 @@ ERROR "GET /courses/1/13/?page=4&size=5&ordering=-id HTTP/1.1" 500 125845
 INFO "GET /courses/directions/ HTTP/1.1" 200 359
 INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1850
 INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1851
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/7/?page=1&size=5&ordering=-id HTTP/1.1" 200 1495
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/settings/dev.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1850
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B7%A5&ordering=-id HTTP/1.1" 200 2565
+INFO "GET /courses/search/?page=1&size=5&text=%E7%AE%A1%E7%90%86&ordering=-id HTTP/1.1" 200 2766
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B7%A5%E7%A8%8B%E5%B8%88&ordering=-id HTTP/1.1" 200 2700
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B7%A5%E7%A8%8B%E5%B8%88&ordering=-id HTTP/1.1" 200 2700
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B7%A5%E7%A8%8B%E5%B8%88&ordering=-id HTTP/1.1" 200 2700
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B7%A5%E7%A8%8B%E5%B8%88&ordering=-id HTTP/1.1" 200 2700
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B7%A5%E7%A8%8B%E5%B8%88&ordering=-id HTTP/1.1" 200 2700
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B7%A5%E7%A8%8B%E5%B8%88&ordering=-id HTTP/1.1" 200 2700
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B7%A5%E7%A8%8B%E5%B8%88&ordering=-id HTTP/1.1" 200 2700
+INFO "GET /courses/search/?page=1&size=5&text=%E6%8A%80%E5%B8%88&ordering=-id HTTP/1.1" 200 2691
+INFO "GET /courses/search/?page=1&size=5&text=%E6%8A%80%E5%B8%88&ordering=-id HTTP/1.1" 200 2691
+INFO "GET /courses/search/?page=1&size=5&text=%E6%8A%80%E5%B8%88&ordering=-id HTTP/1.1" 200 2691
+INFO "GET /courses/search/?page=1&size=5&text=123&ordering=-id HTTP/1.1" 200 473
+INFO "GET /courses/search/?page=1&size=5&text=%E6%8A%80%E5%B8%88&ordering=-id HTTP/1.1" 200 2691
+INFO "GET /courses/search/?page=2&size=5&text=%E6%8A%80%E5%B8%88&ordering=-id HTTP/1.1" 200 2686
+INFO "GET /courses/search/?page=3&size=5&text=%E6%8A%80%E5%B8%88&ordering=-id HTTP/1.1" 200 2677
+INFO "GET /courses/search/?page=4&size=5&text=%E6%8A%80%E5%B8%88&ordering=-id HTTP/1.1" 200 2786
+ERROR Internal Server Error: /courses/search/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/pagination.py", line 211, in paginate_queryset
+    self.page = paginator.page(page_number)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/paginator.py", line 72, in page
+    number = self.validate_number(number)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/paginator.py", line 54, in validate_number
+    raise EmptyPage(_("That page contains no results"))
+django.core.paginator.EmptyPage: 本页结果为空
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/views.py", line 76, in list
+    return super().list(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/pagination.py", line 216, in paginate_queryset
+    raise NotFound(msg)
+rest_framework.exceptions.NotFound: 无效页面。
+ERROR "GET /courses/search/?page=4&size=5&text=%E7%BF%BB%E8%AF%91&ordering=-id HTTP/1.1" 500 128430
+ERROR Internal Server Error: /courses/search/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/pagination.py", line 211, in paginate_queryset
+    self.page = paginator.page(page_number)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/paginator.py", line 72, in page
+    number = self.validate_number(number)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/paginator.py", line 54, in validate_number
+    raise EmptyPage(_("That page contains no results"))
+django.core.paginator.EmptyPage: 本页结果为空
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/views.py", line 76, in list
+    return super().list(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/pagination.py", line 216, in paginate_queryset
+    raise NotFound(msg)
+rest_framework.exceptions.NotFound: 无效页面。
+ERROR "GET /courses/search/?page=4&size=5&text=%E7%BF%BB%E8%AF%91&ordering=-id HTTP/1.1" 500 128430
+ERROR Internal Server Error: /courses/search/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/pagination.py", line 211, in paginate_queryset
+    self.page = paginator.page(page_number)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/paginator.py", line 72, in page
+    number = self.validate_number(number)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/paginator.py", line 54, in validate_number
+    raise EmptyPage(_("That page contains no results"))
+django.core.paginator.EmptyPage: 本页结果为空
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/views.py", line 76, in list
+    return super().list(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/pagination.py", line 216, in paginate_queryset
+    raise NotFound(msg)
+rest_framework.exceptions.NotFound: 无效页面。
+ERROR "GET /courses/search/?page=4&size=5&text=%E7%BF%BB%E8%AF%91&ordering=-id HTTP/1.1" 500 128430
+ERROR Internal Server Error: /courses/search/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/pagination.py", line 211, in paginate_queryset
+    self.page = paginator.page(page_number)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/paginator.py", line 72, in page
+    number = self.validate_number(number)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/paginator.py", line 54, in validate_number
+    raise EmptyPage(_("That page contains no results"))
+django.core.paginator.EmptyPage: 本页结果为空
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/views.py", line 76, in list
+    return super().list(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/pagination.py", line 216, in paginate_queryset
+    raise NotFound(msg)
+rest_framework.exceptions.NotFound: 无效页面。
+ERROR "GET /courses/search/?page=4&size=5&text=%E7%BF%BB%E8%AF%91&ordering=-id HTTP/1.1" 500 128430
+WARNING Not Found: /courses/hot_words/
+WARNING "GET /courses/hot_words/ HTTP/1.1" 404 4596
+INFO Watching for file changes with StatReloader
+ERROR Internal Server Error: /courses/hot_words/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/asgiref/local.py", line 19, in __getattr__
+    return storage_object[key]
+KeyError: 'hot_word'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/utils/connection.py", line 58, in __getitem__
+    return getattr(self._connections, alias)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/asgiref/local.py", line 118, in __getattr__
+    return getattr(storage, key)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/asgiref/local.py", line 21, in __getattr__
+    raise AttributeError(f"{self!r} object has no attribute {key!r}")
+AttributeError: <asgiref.local._CVar object at 0x7cee03497a00> object has no attribute 'hot_word'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/views.py", line 85, in get
+    redis = get_redis_connection("hot_word")
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django_redis/__init__.py", line 12, in get_redis_connection
+    cache = caches[alias]
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/utils/connection.py", line 61, in __getitem__
+    raise self.exception_class(f"The connection '{alias}' doesn't exist.")
+django.core.cache.backends.base.InvalidCacheBackendError: The connection 'hot_word' doesn't exist.
+ERROR "GET /courses/hot_words/ HTTP/1.1" 500 123674
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 5340
+ERROR Internal Server Error: /courses/search/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/pagination.py", line 211, in paginate_queryset
+    self.page = paginator.page(page_number)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/paginator.py", line 72, in page
+    number = self.validate_number(number)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/paginator.py", line 54, in validate_number
+    raise EmptyPage(_("That page contains no results"))
+django.core.paginator.EmptyPage: 本页结果为空
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/views.py", line 76, in list
+    return super().list(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/pagination.py", line 216, in paginate_queryset
+    raise NotFound(msg)
+rest_framework.exceptions.NotFound: 无效页面。
+ERROR "GET /courses/search/?page=4&size=5&text=%E7%BF%BB%E8%AF%91&ordering=-id HTTP/1.1" 500 128430
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1849
+INFO "GET /courses/category/3/ HTTP/1.1" 200 180
+INFO "GET /courses/3/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1915
+INFO "GET /courses/search/?page=1&size=5&text=%E7%BF%BB%E8%AF%91&ordering=-id HTTP/1.1" 200 1030
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B7%A5%E7%A8%8B%E5%B8%88&ordering=-id HTTP/1.1" 200 2700
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B7%A5%E7%A8%8B%E5%B8%88&ordering=-id HTTP/1.1" 200 2700
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B7%A5%E7%A8%8B%E5%B8%88&ordering=-id HTTP/1.1" 200 2700
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B7%A5%E7%A8%8B%E5%B8%88&ordering=-id HTTP/1.1" 200 2700
+INFO "GET /courses/search/?page=1&size=5&text=%E6%8A%80%E5%B8%88&ordering=-id HTTP/1.1" 200 2691
+INFO "GET /courses/search/?page=1&size=5&text=%E6%8A%80%E5%B8%88&ordering=-id HTTP/1.1" 200 2691
+INFO "GET /courses/search/?page=1&size=5&text=%E6%8A%80%E5%B8%88&ordering=-id HTTP/1.1" 200 2691
+INFO "GET /courses/search/?page=1&size=5&text=%E6%8A%80%E5%B8%88&ordering=-id HTTP/1.1" 200 2691
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B8%88&ordering=-id HTTP/1.1" 200 2605
+INFO "GET /courses/search/?page=1&size=5&text=%E6%8A%80%E5%B8%88&ordering=-id HTTP/1.1" 200 2691
+INFO "GET /courses/search/?page=2&size=5&text=%E6%8A%80%E5%B8%88&ordering=-id HTTP/1.1" 200 2686
+INFO "GET /courses/search/?page=3&size=5&text=%E6%8A%80%E5%B8%88&ordering=-id HTTP/1.1" 200 2677
+INFO "GET /courses/search/?page=4&size=5&text=%E6%8A%80%E5%B8%88&ordering=-id HTTP/1.1" 200 2786
+INFO "GET /courses/search/?page=5&size=5&text=%E6%8A%80%E5%B8%88&ordering=-id HTTP/1.1" 200 2709
+INFO "GET /courses/search/?page=4&size=5&text=%E6%8A%80%E5%B8%88&ordering=-id HTTP/1.1" 200 2786
+INFO "GET /courses/search/?page=3&size=5&text=%E6%8A%80%E5%B8%88&ordering=-id HTTP/1.1" 200 2677
+INFO "GET /courses/search/?page=2&size=5&text=%E6%8A%80%E5%B8%88&ordering=-id HTTP/1.1" 200 2686
+INFO "GET /courses/search/?page=1&size=5&text=%E6%8A%80%E5%B8%88&ordering=-id HTTP/1.1" 200 2691
+INFO "GET /courses/search/?page=1&size=5&text=vue&ordering=-id HTTP/1.1" 200 52
+INFO "GET /courses/search/?page=1&size=5&text=%E6%95%99%E7%BB%83&ordering=-id HTTP/1.1" 200 2557
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 5340
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 5340
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 5340
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B7%A5%E7%A8%8B%E5%B8%88&ordering=-id HTTP/1.1" 200 2700
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B7%A5%E7%A8%8B%E5%B8%88&ordering=-id HTTP/1.1" 200 2700
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B7%A5%E7%A8%8B%E5%B8%88&ordering=-id HTTP/1.1" 200 2700
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B7%A5%E7%A8%8B%E5%B8%88&ordering=-id HTTP/1.1" 200 2700
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B7%A5%E7%A8%8B%E5%B8%88&ordering=-id HTTP/1.1" 200 2700
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B7%A5%E7%A8%8B%E5%B8%88&ordering=-id HTTP/1.1" 200 2700
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B7%A5%E7%A8%8B%E5%B8%88&ordering=-id HTTP/1.1" 200 2700
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B7%A5%E7%A8%8B%E5%B8%88&ordering=-id HTTP/1.1" 200 2700
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 5340
+WARNING Not Found: /favicon.ico
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 5340
+INFO "GET /courses/search/?text=%22%E6%97%B6%E5%88%BB%E4%BF%A1%E6%81%AF%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%22 HTTP/1.1" 200 12624
+INFO "GET /courses/search/?page=1&size=5&text=%E7%BB%8F%E7%BA%AA%E4%BA%BA&ordering=-id HTTP/1.1" 200 1087
+INFO "GET /courses/search/?page=1&size=5&text=%E7%BB%8F%E7%BA%AA%E4%BA%BA&ordering=-id HTTP/1.1" 200 1087
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 5340
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /courses/search/?page=1&size=5&text=%E7%91%9C%E4%BC%BD&ordering=-id HTTP/1.1" 200 2510
+INFO "GET /courses/search/?page=1&size=5&text=%E7%91%9C%E4%BC%BD&ordering=-id HTTP/1.1" 200 2510
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B7%A5%E7%A8%8B%E5%B8%88&ordering=-id HTTP/1.1" 200 2700
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B7%A5%E7%A8%8B%E5%B8%88&ordering=-id HTTP/1.1" 200 2700
+INFO "GET /courses/category/4/ HTTP/1.1" 200 334
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B7%A5%E7%A8%8B%E5%B8%88&ordering=-id HTTP/1.1" 200 2700
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B7%A5%E7%A8%8B%E5%B8%88&ordering=-id HTTP/1.1" 200 2700
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/1/?page=1&size=5&ordering=-id HTTP/1.1" 200 419
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1849
+INFO "GET /courses/0/1/?page=1&size=5&ordering=-id HTTP/1.1" 200 419
+INFO "GET /courses/0/2/?page=1&size=5&ordering=-id HTTP/1.1" 200 786
+INFO "GET /courses/0/3/?page=1&size=5&ordering=-id HTTP/1.1" 200 1118
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1850
+INFO "GET /courses/search/?page=1&size=5&text=%E6%8A%80%E5%B8%88&ordering=-id HTTP/1.1" 200 2691
+INFO "GET /courses/search/?page=2&size=5&text=%E6%8A%80%E5%B8%88&ordering=-id HTTP/1.1" 200 2686
+INFO "GET /courses/search/?page=1&size=5&text=%E6%8A%80%E5%B8%88&ordering=-id HTTP/1.1" 200 2691
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 5340
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 5340
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 5340
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /courses/search/?page=1&size=5&text=%E6%8A%80%E5%B8%88&ordering=-id HTTP/1.1" 200 2691
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 5340
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 5340
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1852
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B7%A5%E7%A8%8B%E5%B8%88&ordering=-id HTTP/1.1" 200 2700
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B7%A5%E7%A8%8B%E5%B8%88&ordering=-id HTTP/1.1" 200 2700
+INFO "GET /courses/search/?page=1&size=5&text=%E6%8A%80%E5%B8%88&ordering=-id HTTP/1.1" 200 2691
+INFO "GET /courses/search/?page=1&size=5&text=%E6%8A%80%E5%B8%88&ordering=-id HTTP/1.1" 200 2691
+INFO "GET /courses/search/?page=1&size=5&text=%E6%8A%80%E5%B8%88&ordering=-id HTTP/1.1" 200 2691
+INFO "GET /courses/search/?page=1&size=5&text=%E6%8A%80%E5%B8%88&ordering=-id HTTP/1.1" 200 2691
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 5340
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 5340
+INFO "GET /courses/search/?page=1&size=5&text=123&ordering=-id HTTP/1.1" 200 473
+INFO "GET /courses/search/?page=1&size=5&text=123&ordering=-id HTTP/1.1" 200 473
+INFO "GET /courses/search/?page=1&size=5&text=%E9%AB%98%E5%B0%94%E5%A4%AB&ordering=-id HTTP/1.1" 200 2566
+INFO "GET /courses/search/?page=2&size=5&text=%E9%AB%98%E5%B0%94%E5%A4%AB&ordering=-id HTTP/1.1" 200 2783
+INFO "GET /courses/search/?page=1&size=5&text=%E9%AB%98%E5%B0%94%E5%A4%AB&ordering=-id HTTP/1.1" 200 2566
+INFO "GET /courses/category/8/ HTTP/1.1" 200 292
+INFO "GET /courses/8/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1902
+INFO "GET /courses/8/0/?page=2&size=5&ordering=-id HTTP/1.1" 200 2018
+INFO "GET /courses/8/0/?page=3&size=5&ordering=-id HTTP/1.1" 200 1966
+INFO "GET /courses/8/0/?page=4&size=5&ordering=-id HTTP/1.1" 200 1175
+INFO "GET /courses/8/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1902
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1850
+INFO "GET /courses/search/?page=1&size=5&text=%E7%A7%91%E7%A0%94&ordering=-id HTTP/1.1" 200 2553
+INFO "GET /courses/search/?page=2&size=5&text=%E7%A7%91%E7%A0%94&ordering=-id HTTP/1.1" 200 2726
+INFO "GET /courses/search/?page=3&size=5&text=%E7%A7%91%E7%A0%94&ordering=-id HTTP/1.1" 200 2741
+INFO "GET /courses/search/?page=4&size=5&text=%E7%A7%91%E7%A0%94&ordering=-id HTTP/1.1" 200 2536
+INFO "GET /courses/search/?page=3&size=5&text=%E7%A7%91%E7%A0%94&ordering=-id HTTP/1.1" 200 2741
+INFO "GET /courses/search/?page=1&size=5&text=%E7%A7%91%E7%A0%94&ordering=-id HTTP/1.1" 200 2553
+INFO "GET /courses/search/?page=1&size=5&text=%E7%A7%91%E7%A0%94&ordering=-id HTTP/1.1" 200 2553
+INFO "GET /courses/search/?page=1&size=5&text=%E7%A7%91%E7%A0%94&ordering=-id HTTP/1.1" 200 2553
+INFO "GET /courses/search/?page=1&size=5&text=%E7%A7%91%E7%A0%94&ordering=-id HTTP/1.1" 200 2553
+INFO "GET /courses/search/?page=1&size=5&text=%E7%A7%91%E7%A0%94&ordering=-id HTTP/1.1" 200 2553
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 5340
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 5340
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /courses/search/?page=1&size=5&text=%E7%A7%91%E7%A0%94&ordering=-id HTTP/1.1" 200 2553
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1849
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B7%A5%E7%A8%8B%E5%B8%88&ordering=-id HTTP/1.1" 200 2700
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B7%A5%E7%A8%8B%E5%B8%88&ordering=-id HTTP/1.1" 200 2700
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B7%A5%E7%A8%8B%E5%B8%88&ordering=-id HTTP/1.1" 200 2700
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B7%A5%E7%A8%8B%E5%B8%88&ordering=-id HTTP/1.1" 200 2700
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B7%A5%E7%A8%8B%E5%B8%88&ordering=-id HTTP/1.1" 200 2700
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B7%A5%E7%A8%8B%E5%B8%88&ordering=-id HTTP/1.1" 200 2700
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B7%A5%E7%A8%8B%E5%B8%88&ordering=-id HTTP/1.1" 200 2700
+INFO "GET /courses/search/?page=1&size=5&text=%E6%8A%80%E5%B8%88&ordering=-id HTTP/1.1" 200 2691
+INFO "GET /courses/search/?page=1&size=5&text=%E6%8A%80%E5%B8%88&ordering=-id HTTP/1.1" 200 2691
+INFO "GET /courses/search/?page=1&size=5&text=%E6%8A%80%E5%B8%88&ordering=-id HTTP/1.1" 200 2691
+INFO "GET /courses/search/?page=1&size=5&text=%E6%8A%80%E5%B8%88&ordering=-id HTTP/1.1" 200 2691
+INFO "GET /courses/search/?page=1&size=5&text=%E6%8A%80%E5%B8%88&ordering=-id HTTP/1.1" 200 2691
+INFO "GET /courses/search/?page=1&size=5&text=%E6%8A%80%E5%B8%88&ordering=-id HTTP/1.1" 200 2691
+INFO "GET /courses/search/?page=1&size=5&text=%E7%A7%91%E7%A0%94&ordering=-id HTTP/1.1" 200 2553
+INFO "GET /courses/search/?page=1&size=5&text=%E7%A7%91%E7%A0%94&ordering=-id HTTP/1.1" 200 2553
+INFO "GET /courses/search/?page=1&size=5&text=%E7%A7%91%E7%A0%94&ordering=-id HTTP/1.1" 200 2553
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 5340
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 5340
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 5340
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /courses/search/?page=1&size=5&text=%E7%A7%91%E7%A0%94&ordering=-id HTTP/1.1" 200 2553
+INFO "GET /courses/search/?page=1&size=5&text=%E7%A7%91%E7%A0%94&ordering=-id HTTP/1.1" 200 2553
+INFO "GET /courses/search/?page=1&size=5&text=%E7%A7%91%E7%A0%94&ordering=-id HTTP/1.1" 200 2553
+INFO "GET /courses/search/?page=1&size=5&text=%E7%A7%91%E7%A0%94&ordering=-id HTTP/1.1" 200 2553
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B7%A5%E7%A8%8B%E5%B8%88&ordering=-id HTTP/1.1" 200 2700
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B7%A5%E7%A8%8B%E5%B8%88&ordering=-id HTTP/1.1" 200 2700
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B7%A5%E7%A8%8B%E5%B8%88&ordering=-id HTTP/1.1" 200 2700
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B7%A5%E7%A8%8B%E5%B8%88&ordering=-id HTTP/1.1" 200 2700
+INFO "GET /courses/search/?page=1&size=5&text=%E7%BE%8E%E5%AE%B9&ordering=-id HTTP/1.1" 200 2531
+INFO "GET /courses/search/?page=1&size=5&text=%E7%BE%8E%E5%AE%B9&ordering=-id HTTP/1.1" 200 2531
+INFO "GET /courses/search/?page=1&size=5&text=%E7%BE%8E%E5%AE%B9&ordering=-id HTTP/1.1" 200 2531
+INFO "GET /courses/search/?page=1&size=5&text=%E7%BE%8E%E5%AE%B9&ordering=-id HTTP/1.1" 200 2531
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 5340
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 5340
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1851
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B7%A5%E7%A8%8B%E5%B8%88&ordering=-id HTTP/1.1" 200 2700
+INFO "GET /courses/search/?page=1&size=5&text=%E7%BB%8F%E7%BA%AA%E4%BA%BA&ordering=-id HTTP/1.1" 200 1087
+INFO "GET /courses/search/?page=1&size=5&text=%E7%BB%8F%E7%BA%AA%E4%BA%BA&ordering=-id HTTP/1.1" 200 1087
+INFO "GET /courses/search/?page=1&size=5&text=%E7%BB%8F%E7%BA%AA%E4%BA%BA&ordering=-id HTTP/1.1" 200 1087
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 5466
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 5466
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1849
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1851
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1849
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1850
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1851
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1851
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1851
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1849
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1852
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1850
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/search/?page=1&size=5&text=%E7%BB%8F%E7%BA%AA%E4%BA%BA&ordering=-id HTTP/1.1" 200 1087
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1852
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/search/?page=1&size=5&text=%E5%B7%A5%E7%A8%8B%E5%B8%88&ordering=-id HTTP/1.1" 200 2700
+INFO "GET /courses/search/?page=1&size=5&text=%E6%8A%80%E5%B8%88&ordering=-id HTTP/1.1" 200 2691
+INFO "GET /courses/search/?page=1&size=5&text=%E7%A7%91%E7%A0%94&ordering=-id HTTP/1.1" 200 2553
+INFO "GET /courses/search/?page=1&size=5&text=%E7%BF%BB%E8%AF%91&ordering=-id HTTP/1.1" 200 1030
+INFO "GET /courses/search/?page=1&size=5&text=%E7%BB%8F%E7%BA%AA%E4%BA%BA&ordering=-id HTTP/1.1" 200 1087

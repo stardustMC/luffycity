@@ -1,4 +1,4 @@
-from django.urls import path,re_path
+from django.urls import path, re_path
 from . import views
 
 from rest_framework import routers
@@ -11,4 +11,5 @@ urlpatterns = [
     # path("category/", views.CourseCategoryListAPIView.as_view(), name="category"),
     re_path("category/(?P<direction>\d+)/", views.CourseCategoryListAPIView.as_view(), name="category"),
     re_path(r"^(?P<direction>\d+)/(?P<category>\d+)/$", views.CourseListAPIView.as_view()),
+    path("hot_words/", views.HotWordAPIView.as_view()),
 ] + router.urls

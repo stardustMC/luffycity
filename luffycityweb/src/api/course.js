@@ -7,6 +7,7 @@ const courses = reactive({
     category_list: [],
     direction_list: [],
     course_list: [],
+    hotword_list: [],
     ordering: "-id",
     page: 1,
     size: 5,
@@ -14,6 +15,8 @@ const courses = reactive({
     has_prev: false,
     has_next: false,
     timer: 0,
+    text: "",
+    // todo: request fails when current page number exceeds, this happens when query parameter changes while page not set to default 1
     get_categories(){
         return http.get(`/courses/category/${this.current_direction}/`);
     },
@@ -41,6 +44,22 @@ const courses = reactive({
             }
         })
         }, 1000);
+    },
+    search_courses(){
+        let params = {
+            page: this.page,
+            size: this.size,
+            text: this.text
+        };
+        if(this.ordering){
+            params.ordering = this.ordering;
+        }
+        return http.get(`/courses/search/`, {
+            params,
+        });
+    },
+    get_hot_words(){
+        return http.get(`/courses/hot_words/`);
     }
 })
 
