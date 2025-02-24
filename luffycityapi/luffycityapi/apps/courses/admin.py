@@ -69,7 +69,7 @@ admin.site.register(CourseCategory, CourseCategoryModelAdmin)
 
 class CourseModelAdmin(admin.ModelAdmin):
     """课程信息的模型管理器"""
-    list_display = ["id", "name", 'course_cover', "course_type", "level", "pub_date", "students", "lessons", "price"]
+    list_display = ["id", "name", 'course_cover_small', "course_type", "level", "pub_date", "students", "lessons", "price"]
     # 分页配置，一夜数据量
     list_per_page = 10
 
