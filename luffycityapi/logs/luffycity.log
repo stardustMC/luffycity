@@ -3699,3 +3699,91 @@ INFO "GET /courses/479/chapters/ HTTP/1.1" 200 2
 INFO Watching for file changes with StatReloader
 INFO "GET /courses/440/chapters/ HTTP/1.1" 200 2335
 INFO "GET /courses/440/ HTTP/1.1" 200 869
+INFO Watching for file changes with StatReloader
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /home/banner/ HTTP/1.1" 200 666
+INFO "GET /courses/440/ HTTP/1.1" 200 817
+INFO "GET /courses/440/chapters/ HTTP/1.1" 200 2335
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1590
+INFO "GET /courses/480/ HTTP/1.1" 200 789
+INFO "GET /courses/480/chapters/ HTTP/1.1" 200 2318
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1590
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1590
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1590
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /courses/480/chapters/ HTTP/1.1" 200 2318
+INFO "GET /courses/480/ HTTP/1.1" 200 789
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1590
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1590
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1590
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1590
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1590
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1869
+INFO "GET /courses/479/ HTTP/1.1" 200 892
+INFO "GET /courses/479/chapters/ HTTP/1.1" 200 2261
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1868
+INFO "GET /courses/477/chapters/ HTTP/1.1" 200 2334
+INFO "GET /courses/477/ HTTP/1.1" 200 786
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/courses/models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /courses/477/chapters/ HTTP/1.1" 200 2334
+INFO "GET /courses/477/ HTTP/1.1" 200 785
+INFO "GET /courses/477/chapters/ HTTP/1.1" 200 2334
+INFO "GET /courses/477/ HTTP/1.1" 200 784
+INFO "GET /courses/477/chapters/ HTTP/1.1" 200 2334
+INFO "GET /courses/477/ HTTP/1.1" 200 786
+INFO "GET /courses/477/ HTTP/1.1" 200 785
+INFO "GET /courses/477/chapters/ HTTP/1.1" 200 2334
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /courses/477/chapters/ HTTP/1.1" 200 2334
+INFO "GET /courses/477/ HTTP/1.1" 200 785
+INFO "GET /courses/477/ HTTP/1.1" 200 785
+INFO "GET /courses/477/chapters/ HTTP/1.1" 200 2334

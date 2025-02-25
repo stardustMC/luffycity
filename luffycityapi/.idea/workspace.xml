@@ -6,6 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="4fcfba21-9e0a-4079-b630-c27deaeac368" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/luffycity.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/luffycity.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luffycityapi/apps/courses/management/commands/test_add.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffycityapi/apps/courses/management/commands/test_add.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luffycityapi/apps/courses/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffycityapi/apps/courses/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../luffycityweb/src/views/Course.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../luffycityweb/src/views/Course.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../luffycityweb/src/views/Info.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../luffycityweb/src/views/Info.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,29 +41,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Django Server.luffycityapi.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/course&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/settings/dev.py&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Django Server.luffycityapi.executor": "Run",
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "feature/discount",
+    "last_opened_file_path": "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/settings/dev.py",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;,
-      &quot;redis&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "redis"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="luffycityapi" type="Python.DjangoServer" factoryName="Django server">
       <module name="luffycityapi" />

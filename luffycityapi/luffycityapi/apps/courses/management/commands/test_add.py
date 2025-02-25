@@ -3,7 +3,7 @@
 import random
 from datetime import datetime
 from faker import Faker
-from courses.models import Teacher, CourseDirection, CourseCategory, Course, CourseChapter, CourseLesson
+from courses.models import Teacher, CourseDirection, CourseCategory, Course, CourseChapter, CourseLesson, CourseActivityPrice
 from django.core.management.base import BaseCommand, CommandError
 
 faker = Faker(['zh_CN'])
@@ -12,7 +12,8 @@ class Command(BaseCommand):
 
     def __init__(self):
         super(Command, self).__init__()
-        self.fields = ["teacher", "direction", "category", "course"]
+        self.fields = ["teacher", "direction", "category"]
+        self.option_fields = ["course", "discounts"]
         self.default_amount = 10
         self.default_chapter = 5
         self.default_lesson = 3
@@ -35,10 +36,13 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         data_type = options['type']
-        if data_type in self.fields:
+        if data_type in self.fields + self.option_fields:
             if hasattr(self, "add_%s" % data_type):
                 getattr(self, "add_%s" % data_type)(options)
-                print(f"{options['number']} items of {data_type} data added in total.")
+                if data_type in self.fields:
+                    print(f"{options['number']} items of {data_type} data added in total.")
+                else:
+                    print("data items added according to current course records")
             else:
                 raise CommandError(f"Type {data_type} is in fields but not implemented.")
         else:
@@ -136,3 +140,13 @@ class Command(BaseCommand):
                         chapter_id=instance.id,
                         course_id=idx,
                     )
+
+    def add_discounts(self, options):
+        queryset = Course.objects.all().order_by("id")
+        min_id, max_id = queryset.first().id, queryset.last().id
+        for idx in range(min_id, max_id + 1):
+            CourseActivityPrice.objects.create(
+                course_id=idx,
+                discount_id=random.randint(1, 3),
+                activity_id=1
+            )

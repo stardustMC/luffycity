@@ -111,13 +111,53 @@ class Course(BaseModel):
 
     @property
     def discount(self):
-        # todo 将来通过计算获取当前课程的折扣优惠相关的信息
-        import random
-        return {
-            "type": ["限时优惠", "限时减免"].pop(random.randint(0, 1)),  # 优惠类型
-            "expire": random.randint(100000, 1200000),  # 优惠倒计时
-            "price": float(self.price - random.randint(1, 10) * 10),  # 优惠价格
-        }
+        """通过计算获取当前课程的折扣优惠相关的信息"""
+        # 获取折扣优惠相关的信息
+        now_time = datetime.now()  # 活动__结束时间 > 当前时间  and 活动__开始时间 < 当前时间（29）
+        # 获取当前课程参与的最新活动记录
+        last_activity_log = self.price_list.filter(
+            activity__end_time__gt=now_time,
+            activity__start_time__lt=now_time
+        ).order_by("-id").first()
+
+        type_text = ""  # 优惠类型的默认值
+        price = -1  # 优惠价格
+        expire = 0  # 优惠剩余时间
+
+        if last_activity_log:
+            # 获取优惠类型的提示文本
+            type_text = last_activity_log.discount.discount_type.name
+
+            # 获取限时活动剩余时间戳[单位：s]
+            expire = last_activity_log.activity.end_time.timestamp() - now_time.timestamp()
+
+            # 判断当前课程的价格是否满足优惠条件
+            course_price = float(self.price)
+            condition_price = float(last_activity_log.discount.condition)
+            if course_price >= condition_price:
+                # 计算本次课程参与了优惠以后的价格
+                sale = last_activity_log.discount.sale
+                if sale == "0":
+                    # 免费，则最终价格为0
+                    price = 0
+                elif sale[0] == "*":
+                    # 折扣
+                    price = course_price * float(sale[1:])
+                elif sale[0] == "-":
+                    # 减免
+                    price = course_price - float(sale[1:])
+
+                price = float(f"{price:.2f}")
+
+        data = {}
+        if type_text:
+            data["type"] = type_text
+        if expire > 0:
+            data["expire"] = expire
+        if price != -1:
+            data["price"] = price
+
+        return data
 
     def discount_json(self):
         return json.dumps(self.discount)
@@ -259,7 +299,6 @@ class Activity(BaseModel):
     def __str__(self):
         return self.name
 
-
 class DiscountType(BaseModel):
     remark = models.CharField(max_length=250, blank=True, null=True, verbose_name="备注信息")
 
@@ -270,7 +309,6 @@ class DiscountType(BaseModel):
 
     def __str__(self):
         return self.name
-
 
 class Discount(BaseModel):
     discount_type = models.ForeignKey("DiscountType", on_delete=models.CASCADE, related_name='discount_list', db_constraint=False, verbose_name="优惠类型")
@@ -287,7 +325,6 @@ class Discount(BaseModel):
 
     def __str__(self):
         return "价格优惠:%s,优惠条件:%s,优惠公式: %s" % (self.discount_type.name, self.condition, self.sale)
-
 
 class CourseActivityPrice(BaseModel):
     activity = models.ForeignKey("Activity", on_delete=models.CASCADE, related_name='price_list', db_constraint=False, verbose_name="活动")
