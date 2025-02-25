@@ -19,13 +19,13 @@
             <h3 class="course-name">{{courses.info.name}}</h3>
             <p class="data">{{courses.info.students}}人在学&nbsp;&nbsp;&nbsp;&nbsp;课程总时长：{{courses.info.lessons}}课时/180小时&nbsp;&nbsp;&nbsp;&nbsp;难度：{{courses.info.get_level_display}}</p>
             <div class="sale-time">
-              <p class="sale-type">限时免费</p>
-              <p class="expire">距离结束：仅剩 01天 04小时 33分 <span class="second">08</span> 秒</p>
+              <p class="sale-type">{{courses.info.discount.type}}</p>
+              <p class="expire">距离结束：仅剩{{expiring.days}}天 {{expiring.hours}}小时 {{ expiring.minutes }}分 <span class="second">{{ expiring.seconds }}</span> 秒</p>
             </div>
-            <p class="course-price">
+            <p class="course-price" v-if="courses.info.discount.price>=0">
               <span>活动价</span>
-              <span class="discount">¥0.00</span>
-              <span class="original">¥29.00</span>
+              <span class="discount">¥{{courses.info.discount.price}}</span>
+              <span class="original">¥{{courses.info.price}}</span>
             </p>
             <div class="buy">
               <div class="buy-btn">
@@ -101,7 +101,7 @@
 </template>
 
 <script setup>
-import {reactive,ref,watch} from "vue"
+import {computed, reactive, ref, watch} from "vue"
 import {useRoute, useRouter} from "vue-router"
 import Header from "../components/Header.vue"
 import Footer from "../components/Footer.vue"
@@ -146,7 +146,7 @@ if(courses.course_id > 0){
       message: "非法的URL地址，无法获取课程信息！",
       duration: 1000,
       onClose(){
-        // router.go(-1);
+        router.go(-1);
       }
     })
   })
@@ -167,6 +167,21 @@ if(courses.course_id > 0){
     })
 }
 
+const expiring = computed(()=>{
+  let remaining_seconds = courses.info.discount.expire;
+
+  let days = Math.floor(remaining_seconds / (3600 * 24));
+  remaining_seconds %= 3600 * 24;
+  let hours = Math.floor(remaining_seconds / 3600);
+  remaining_seconds %= 3600;
+  let minutes = Math.floor(remaining_seconds / 60);
+  return {
+    days: days,
+    hours: hours,
+    minutes: minutes,
+    seconds: Math.floor(courses.info.discount.expire % 60)
+  }
+});
 
 const onPlay = (event)=>{
   console.log(player.value.getCurrentTime());
