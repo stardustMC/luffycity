@@ -3,7 +3,7 @@
 import random
 from datetime import datetime
 from faker import Faker
-from courses.models import Teacher, CourseDirection, CourseCategory, Course
+from courses.models import Teacher, CourseDirection, CourseCategory, Course, CourseChapter, CourseLesson
 from django.core.management.base import BaseCommand, CommandError
 
 faker = Faker(['zh_CN'])
@@ -14,6 +14,8 @@ class Command(BaseCommand):
         super(Command, self).__init__()
         self.fields = ["teacher", "direction", "category", "course"]
         self.default_amount = 10
+        self.default_chapter = 5
+        self.default_lesson = 3
 
     def add_arguments(self, parser):
         parser.add_argument(
@@ -100,3 +102,37 @@ class Command(BaseCommand):
                 direction_id=random.randint(1, 10),
                 teacher_id=random.randint(1, 6),
             )
+
+    def add_lessons(self, options):
+        queryset = Course.objects.all().order_by("id")
+        min_id, max_id = queryset.first().id, queryset.last().id
+        for idx in range(min_id, max_id + 1):
+            for chapter in range(self.default_chapter):
+                instance = CourseChapter.objects.create(
+                    name=f"第{chapter + 1}章节",
+                    is_show=1,
+                    is_deleted=0,
+                    created_time=datetime.now(),
+                    updated_time=datetime.now(),
+                    orders=chapter + 1,
+                    summary=faker.sentence(),
+                    pub_date=datetime.now(),
+                    course_id=idx,
+                )
+                for lesson in range(self.default_lesson):
+                    CourseLesson.objects.create(
+                        name=f"第{lesson + 1}课时",
+                        is_show=1,
+                        is_deleted=0,
+                        created_time=datetime.now(),
+                        updated_time=datetime.now(),
+                        orders=lesson + 1,
+                        lesson_type=2,
+                        lesson_link="1.mp4",
+                        duration=f"{random.randint(1, 60)}:{random.randint(1, 60)}",
+                        pub_date=datetime.now(),
+                        free_trail=random.randint(0, 1),
+                        recomment=random.randint(0, 1),
+                        chapter_id=instance.id,
+                        course_id=idx,
+                    )

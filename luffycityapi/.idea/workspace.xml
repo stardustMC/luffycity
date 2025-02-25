@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4fcfba21-9e0a-4079-b630-c27deaeac368" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/luffycity.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/luffycity.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luffycityapi/apps/courses/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffycityapi/apps/courses/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luffycityapi/apps/courses/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffycityapi/apps/courses/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luffycityapi/apps/courses/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffycityapi/apps/courses/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luffycityapi/apps/courses/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffycityapi/apps/courses/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../luffycityweb/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../luffycityweb/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../luffycityweb/src/api/course.js" beforeDir="false" afterPath="$PROJECT_DIR$/../luffycityweb/src/api/course.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../luffycityweb/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../luffycityweb/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../luffycityweb/src/views/Course.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../luffycityweb/src/views/Course.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../luffycityweb/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../luffycityweb/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luffycityapi/apps/courses/management/commands/test_add.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffycityapi/apps/courses/management/commands/test_add.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../luffycityweb/src/views/Info.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../luffycityweb/src/views/Info.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
