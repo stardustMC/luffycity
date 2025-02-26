@@ -25,7 +25,10 @@
           <div class="login-bar logined-bar" v-show="state.is_login">
             <div class="shop-cart ">
               <img src="../assets/cart.svg" alt="" />
+<!--              <span><router-link to="/cart">购物车</router-link></span>-->
+              <el-badge type="danger" :value="store.state.cart_count" class="item">
               <span><router-link to="/cart">购物车</router-link></span>
+              </el-badge>
             </div>
             <div class="login-box ">
               <router-link to="">我的课堂</router-link>
@@ -74,7 +77,7 @@ import {useStore} from "vuex";
 const store = useStore();
 
 const state = reactive({
-  is_login: false,
+  is_login: true,
   show_login: false,
   avatar: "",
 })

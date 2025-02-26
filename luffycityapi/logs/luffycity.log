@@ -3787,3 +3787,831 @@ INFO "GET /courses/477/chapters/ HTTP/1.1" 200 2334
 INFO "GET /courses/477/ HTTP/1.1" 200 785
 INFO "GET /courses/477/ HTTP/1.1" 200 785
 INFO "GET /courses/477/chapters/ HTTP/1.1" 200 2334
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/cart/urls.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/banner/ HTTP/1.1" 200 666
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO "POST /users/login/ HTTP/1.1" 200 273
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1870
+INFO "POST /users/login/ HTTP/1.1" 200 273
+INFO "OPTIONS /cart HTTP/1.1" 200 0
+ERROR Internal Server Error: /cart
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to api.luffycity.cn:8000/cart/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR "POST /cart HTTP/1.1" 500 76955
+ERROR Internal Server Error: /cart
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to api.luffycity.cn:8000/cart/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR "POST /cart HTTP/1.1" 500 76955
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/cart/urls.py changed, reloading.
+INFO Watching for file changes with StatReloader
+WARNING Not Found: /cart
+WARNING "POST /cart HTTP/1.1" 404 2762
+WARNING Not Found: /cart
+WARNING "POST /cart HTTP/1.1" 404 2762
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/cart/urls.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1870
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1869
+INFO "POST /users/login/ HTTP/1.1" 200 273
+INFO "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/request.py", line 231, in user
+    self._authenticate()
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/request.py", line 384, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework_jwt/authentication.py", line 28, in authenticate
+    jwt_value = self.get_jwt_value(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework_jwt/authentication.py", line 99, in get_jwt_value
+    raise exceptions.AuthenticationFailed(msg)
+rest_framework.exceptions.AuthenticationFailed: Invalid Authorization header. Credentials string should not contain spaces.
+ERROR "POST /cart/ HTTP/1.1" 500 119309
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1867
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1867
+ERROR Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/request.py", line 231, in user
+    self._authenticate()
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/request.py", line 384, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework_jwt/authentication.py", line 28, in authenticate
+    jwt_value = self.get_jwt_value(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework_jwt/authentication.py", line 99, in get_jwt_value
+    raise exceptions.AuthenticationFailed(msg)
+rest_framework.exceptions.AuthenticationFailed: Invalid Authorization header. Credentials string should not contain spaces.
+ERROR "POST /cart/ HTTP/1.1" 500 119309
+INFO "POST /users/login/ HTTP/1.1" 200 273
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1870
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1870
+INFO "POST /users/login/ HTTP/1.1" 200 273
+ERROR Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/request.py", line 231, in user
+    self._authenticate()
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/request.py", line 384, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework_jwt/authentication.py", line 28, in authenticate
+    jwt_value = self.get_jwt_value(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework_jwt/authentication.py", line 99, in get_jwt_value
+    raise exceptions.AuthenticationFailed(msg)
+rest_framework.exceptions.AuthenticationFailed: Invalid Authorization header. Credentials string should not contain spaces.
+ERROR "POST /cart/ HTTP/1.1" 500 119309
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1867
+INFO "POST /users/login/ HTTP/1.1" 200 273
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1866
+INFO "POST /users/login/ HTTP/1.1" 200 273
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1870
+INFO "POST /users/login/ HTTP/1.1" 200 273
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1867
+INFO "POST /users/login/ HTTP/1.1" 200 273
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1870
+INFO "POST /users/login/ HTTP/1.1" 200 273
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO Watching for file changes with StatReloader
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1868
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1868
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1869
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1870
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /users/login/ HTTP/1.1" 200 273
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1871
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1869
+INFO "POST /users/login/ HTTP/1.1" 200 273
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1868
+INFO "POST /users/login/ HTTP/1.1" 200 273
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1868
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1867
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1871
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1871
+INFO Watching for file changes with StatReloader
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1869
+INFO "GET /courses/category/2/ HTTP/1.1" 200 148
+INFO "GET /courses/2/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1920
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/cart/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1869
+INFO "GET /courses/category/5/ HTTP/1.1" 200 417
+INFO "GET /courses/5/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1904
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO Watching for file changes with StatReloader
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/banner/ HTTP/1.1" 200 666
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1865
+INFO "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/jwt/api_jws.py", line 180, in _load
+    signing_input, crypto_segment = jwt.rsplit(b'.', 1)
+ValueError: not enough values to unpack (expected 2, got 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework_jwt/authentication.py", line 33, in authenticate
+    payload = jwt_decode_handler(jwt_value)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework_jwt/utils.py", line 104, in jwt_decode_handler
+    unverified_payload = jwt.decode(token, None, False)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/jwt/api_jwt.py", line 84, in decode
+    payload, _, _, _ = self._load(jwt)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/jwt/api_jws.py", line 183, in _load
+    raise DecodeError('Not enough segments')
+jwt.exceptions.DecodeError: Not enough segments
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/request.py", line 231, in user
+    self._authenticate()
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/request.py", line 384, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework_jwt/authentication.py", line 39, in authenticate
+    raise exceptions.AuthenticationFailed(msg)
+rest_framework.exceptions.AuthenticationFailed: Error decoding signature.
+ERROR "POST /cart/ HTTP/1.1" 500 136343
+INFO "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO "POST /users/login/ HTTP/1.1" 200 288
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1869
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /users/login/ HTTP/1.1" 200 288
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1867
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "GET /courses/0/0/?page=2&size=5&ordering=-id HTTP/1.1" 200 1977
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /users/login/ HTTP/1.1" 200 288
+INFO "GET /courses/0/0/?page=3&size=5&ordering=-id HTTP/1.1" 200 1999
+ERROR Internal Server Error: /courses/0/5/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/pagination.py", line 211, in paginate_queryset
+    self.page = paginator.page(page_number)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/paginator.py", line 72, in page
+    number = self.validate_number(number)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/paginator.py", line 54, in validate_number
+    raise EmptyPage(_("That page contains no results"))
+django.core.paginator.EmptyPage: 本页结果为空
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/pagination.py", line 216, in paginate_queryset
+    raise NotFound(msg)
+rest_framework.exceptions.NotFound: 无效页面。
+ERROR "GET /courses/0/5/?page=3&size=5&ordering=-id HTTP/1.1" 500 127199
+INFO "GET /courses/category/7/ HTTP/1.1" 200 204
+INFO "GET /courses/7/0/?page=3&size=5&ordering=-id HTTP/1.1" 200 1984
+INFO "GET /courses/7/0/?page=3&size=5&ordering=-id HTTP/1.1" 200 1985
+ERROR Internal Server Error: /courses/7/58/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/pagination.py", line 211, in paginate_queryset
+    self.page = paginator.page(page_number)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/paginator.py", line 72, in page
+    number = self.validate_number(number)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/paginator.py", line 54, in validate_number
+    raise EmptyPage(_("That page contains no results"))
+django.core.paginator.EmptyPage: 本页结果为空
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/pagination.py", line 216, in paginate_queryset
+    raise NotFound(msg)
+rest_framework.exceptions.NotFound: 无效页面。
+ERROR "GET /courses/7/58/?page=3&size=5&ordering=-id HTTP/1.1" 500 126566
+ERROR Internal Server Error: /courses/7/54/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/pagination.py", line 211, in paginate_queryset
+    self.page = paginator.page(page_number)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/paginator.py", line 72, in page
+    number = self.validate_number(number)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/paginator.py", line 54, in validate_number
+    raise EmptyPage(_("That page contains no results"))
+django.core.paginator.EmptyPage: 本页结果为空
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/pagination.py", line 216, in paginate_queryset
+    raise NotFound(msg)
+rest_framework.exceptions.NotFound: 无效页面。
+ERROR "GET /courses/7/54/?page=3&size=5&ordering=-id HTTP/1.1" 500 126566
+ERROR Internal Server Error: /courses/7/47/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/pagination.py", line 211, in paginate_queryset
+    self.page = paginator.page(page_number)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/paginator.py", line 72, in page
+    number = self.validate_number(number)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/paginator.py", line 54, in validate_number
+    raise EmptyPage(_("That page contains no results"))
+django.core.paginator.EmptyPage: 本页结果为空
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/pagination.py", line 216, in paginate_queryset
+    raise NotFound(msg)
+rest_framework.exceptions.NotFound: 无效页面。
+ERROR "GET /courses/7/47/?page=3&size=5&ordering=-id HTTP/1.1" 500 126566
+ERROR Internal Server Error: /courses/7/23/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/pagination.py", line 211, in paginate_queryset
+    self.page = paginator.page(page_number)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/paginator.py", line 72, in page
+    number = self.validate_number(number)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/paginator.py", line 54, in validate_number
+    raise EmptyPage(_("That page contains no results"))
+django.core.paginator.EmptyPage: 本页结果为空
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/pagination.py", line 216, in paginate_queryset
+    raise NotFound(msg)
+rest_framework.exceptions.NotFound: 无效页面。
+ERROR "GET /courses/7/23/?page=3&size=5&ordering=-id HTTP/1.1" 500 126730
+INFO "GET /courses/7/0/?page=3&size=5&ordering=-id HTTP/1.1" 200 1984
+ERROR Internal Server Error: /courses/7/23/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/pagination.py", line 211, in paginate_queryset
+    self.page = paginator.page(page_number)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/paginator.py", line 72, in page
+    number = self.validate_number(number)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/paginator.py", line 54, in validate_number
+    raise EmptyPage(_("That page contains no results"))
+django.core.paginator.EmptyPage: 本页结果为空
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/pagination.py", line 216, in paginate_queryset
+    raise NotFound(msg)
+rest_framework.exceptions.NotFound: 无效页面。
+ERROR "GET /courses/7/23/?page=3&size=5&ordering=-id HTTP/1.1" 500 126730
+ERROR Internal Server Error: /courses/7/47/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/pagination.py", line 211, in paginate_queryset
+    self.page = paginator.page(page_number)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/paginator.py", line 72, in page
+    number = self.validate_number(number)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/paginator.py", line 54, in validate_number
+    raise EmptyPage(_("That page contains no results"))
+django.core.paginator.EmptyPage: 本页结果为空
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/pagination.py", line 216, in paginate_queryset
+    raise NotFound(msg)
+rest_framework.exceptions.NotFound: 无效页面。
+ERROR "GET /courses/7/47/?page=3&size=5&ordering=-id HTTP/1.1" 500 126566
+ERROR Internal Server Error: /courses/7/47/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/pagination.py", line 211, in paginate_queryset
+    self.page = paginator.page(page_number)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/paginator.py", line 72, in page
+    number = self.validate_number(number)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/paginator.py", line 54, in validate_number
+    raise EmptyPage(_("That page contains no results"))
+django.core.paginator.EmptyPage: 本页结果为空
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/pagination.py", line 216, in paginate_queryset
+    raise NotFound(msg)
+rest_framework.exceptions.NotFound: 无效页面。
+ERROR "GET /courses/7/47/?page=2&size=5&ordering=-id HTTP/1.1" 500 126566
+INFO "GET /courses/7/47/?page=1&size=5&ordering=-id HTTP/1.1" 200 52
+INFO "GET /courses/7/54/?page=1&size=5&ordering=-id HTTP/1.1" 200 52
+INFO "GET /courses/7/58/?page=1&size=5&ordering=-id HTTP/1.1" 200 52
+INFO "GET /courses/7/54/?page=1&size=5&ordering=-id HTTP/1.1" 200 52
+INFO "GET /courses/category/6/ HTTP/1.1" 200 427
+INFO "GET /courses/6/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1916
+INFO "GET /courses/6/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1915
+INFO "GET /courses/6/14/?page=1&size=5&ordering=-id HTTP/1.1" 200 52
+INFO "GET /courses/6/7/?page=1&size=5&ordering=-id HTTP/1.1" 200 422
+INFO "GET /courses/6/4/?page=1&size=5&ordering=-id HTTP/1.1" 200 52
+INFO "GET /courses/6/3/?page=1&size=5&ordering=-id HTTP/1.1" 200 52
+INFO "GET /courses/6/4/?page=1&size=5&ordering=-id HTTP/1.1" 200 52
+INFO "GET /courses/6/7/?page=1&size=5&ordering=-id HTTP/1.1" 200 422
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /users/login/ HTTP/1.1" 200 288
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1868
+INFO "GET /courses/category/9/ HTTP/1.1" 200 425
+INFO "GET /courses/9/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1865
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /cart/ HTTP/1.1" 201 50
+INFO "POST /cart/ HTTP/1.1" 201 50
+INFO "POST /users/login/ HTTP/1.1" 200 289
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1868
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1866
+INFO "GET /courses/category/10/ HTTP/1.1" 200 629
+INFO "GET /courses/10/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1913
+INFO "POST /cart/ HTTP/1.1" 201 50
+INFO "POST /cart/ HTTP/1.1" 201 50
+INFO "POST /cart/ HTTP/1.1" 201 50
+INFO "POST /users/login/ HTTP/1.1" 200 289
+INFO "GET /courses/10/6/?page=1&size=5&ordering=-id HTTP/1.1" 200 52
+INFO "GET /courses/10/15/?page=1&size=5&ordering=-id HTTP/1.1" 200 52
+INFO "GET /courses/10/19/?page=1&size=5&ordering=-id HTTP/1.1" 200 52
+INFO "GET /courses/10/21/?page=1&size=5&ordering=-id HTTP/1.1" 200 52
+INFO "GET /courses/10/29/?page=1&size=5&ordering=-id HTTP/1.1" 200 52
+INFO "GET /courses/10/64/?page=1&size=5&ordering=-id HTTP/1.1" 200 403
+INFO "GET /courses/10/66/?page=1&size=5&ordering=-id HTTP/1.1" 200 52
+INFO "GET /courses/10/29/?page=1&size=5&ordering=-id HTTP/1.1" 200 52
+INFO "GET /courses/10/64/?page=1&size=5&ordering=-id HTTP/1.1" 200 403
+INFO "POST /cart/ HTTP/1.1" 201 50
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1869
+INFO "GET /courses/category/1/ HTTP/1.1" 200 286
+INFO "GET /courses/1/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1960
+INFO "GET /courses/1/13/?page=1&size=5&ordering=-id HTTP/1.1" 200 413
+INFO "POST /cart/ HTTP/1.1" 201 50
+WARNING Bad Request: /users/login/
+WARNING "POST /users/login/ HTTP/1.1" 400 67
+WARNING Bad Request: /users/login/
+WARNING "POST /users/login/ HTTP/1.1" 400 67
+WARNING Bad Request: /users/login/
+WARNING "POST /users/login/ HTTP/1.1" 400 67
+WARNING Bad Request: /users/login/
+WARNING "POST /users/login/ HTTP/1.1" 400 67
+WARNING Bad Request: /users/login/
+WARNING "POST /users/login/ HTTP/1.1" 400 67
+WARNING Bad Request: /users/login/
+WARNING "POST /users/login/ HTTP/1.1" 400 67
+WARNING Bad Request: /users/login/
+WARNING "POST /users/login/ HTTP/1.1" 400 67
+INFO "POST /users/login/ HTTP/1.1" 200 360
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "GET /courses/category/2/ HTTP/1.1" 200 148
+INFO "GET /courses/2/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1922
+INFO "GET /courses/2/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1919
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 52
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1868
+INFO "POST /users/login/ HTTP/1.1" 200 289
+INFO "GET /courses/0/35/?page=1&size=5&ordering=-id HTTP/1.1" 200 409
+ERROR Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/jwt/api_jws.py", line 180, in _load
+    signing_input, crypto_segment = jwt.rsplit(b'.', 1)
+ValueError: not enough values to unpack (expected 2, got 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework_jwt/authentication.py", line 33, in authenticate
+    payload = jwt_decode_handler(jwt_value)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework_jwt/utils.py", line 104, in jwt_decode_handler
+    unverified_payload = jwt.decode(token, None, False)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/jwt/api_jwt.py", line 84, in decode
+    payload, _, _, _ = self._load(jwt)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/jwt/api_jws.py", line 183, in _load
+    raise DecodeError('Not enough segments')
+jwt.exceptions.DecodeError: Not enough segments
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/request.py", line 231, in user
+    self._authenticate()
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/request.py", line 384, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework_jwt/authentication.py", line 39, in authenticate
+    raise exceptions.AuthenticationFailed(msg)
+rest_framework.exceptions.AuthenticationFailed: Error decoding signature.
+ERROR "POST /cart/ HTTP/1.1" 500 136343
+INFO "POST /users/login/ HTTP/1.1" 200 360
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "GET /courses/category/1/ HTTP/1.1" 200 286
+INFO "GET /courses/1/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1963
+INFO "GET /courses/1/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1963
+INFO "GET /courses/1/12/?page=1&size=5&ordering=-id HTTP/1.1" 200 52
+INFO "GET /courses/1/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1963
+INFO "GET /courses/436/ HTTP/1.1" 200 872
+INFO "GET /courses/436/chapters/ HTTP/1.1" 200 2284
+INFO "GET /courses/436/ HTTP/1.1" 200 871
+INFO "GET /courses/436/chapters/ HTTP/1.1" 200 2284

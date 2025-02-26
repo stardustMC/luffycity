@@ -7,7 +7,8 @@ const store = createStore({
         return {
             user: {
 
-            }
+            },
+            cart_count: 0
         }
     },
     getters: {
@@ -40,6 +41,9 @@ const store = createStore({
             state.user = {}
             localStorage.token = null;
             sessionStorage.token = null;
+        },
+        cart_count(state, count){
+            state.cart_count = count;
         }
     }
 })

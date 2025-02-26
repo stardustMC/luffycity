@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fcfba21-9e0a-4079-b630-c27deaeac368" name="Changes" comment="" />
+    <list default="true" id="4fcfba21-9e0a-4079-b630-c27deaeac368" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/luffycityapi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/luffycityapi.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/luffycity.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/luffycity.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luffycityapi/settings/dev.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffycityapi/settings/dev.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luffycityapi/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffycityapi/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luffycityapi/utils/authenticate.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffycityapi/utils/authenticate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luffycityapi/utils/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffycityapi/utils/exceptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../luffycityweb/src/components/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../luffycityweb/src/components/Header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../luffycityweb/src/components/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../luffycityweb/src/components/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../luffycityweb/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../luffycityweb/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../luffycityweb/src/views/Course.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../luffycityweb/src/views/Course.vue" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,8 +52,8 @@
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/discount",
-    "last_opened_file_path": "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/settings/dev.py",
+    "git-widget-placeholder": "feature/cart",
+    "last_opened_file_path": "/home/caoruchen/Desktop/luffycity/luffycityapi",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -109,6 +121,8 @@
       <workItem from="1740306070966" duration="3819000" />
       <workItem from="1740377752151" duration="12540000" />
       <workItem from="1740414331941" duration="7388000" />
+      <workItem from="1740547804987" duration="7373000" />
+      <workItem from="1740579443694" duration="944000" />
     </task>
     <servers />
   </component>

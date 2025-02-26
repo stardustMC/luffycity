@@ -1,3 +1,4 @@
+from django_redis import get_redis_connection
 from rest_framework_jwt.utils import jwt_payload_handler as payload_handler
 from django.contrib.auth.backends import ModelBackend, UserModel
 from django.db.models import Q
@@ -22,6 +23,13 @@ def jwt_payload_handler(user):
 
     return payload
 
+def jwt_response_payload_handler(token, user=None, request=None):
+    redis = get_redis_connection("cart")
+    cart_count = redis.hlen(f"cart_{user.id}")
+    return {
+        'token': token,
+        'cart_count': cart_count,
+    }
 
 def get_user_by_account(account):
 
