@@ -5,17 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4fcfba21-9e0a-4079-b630-c27deaeac368" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/luffycityapi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/luffycityapi.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/luffycity.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/luffycity.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luffycityapi/settings/dev.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffycityapi/settings/dev.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luffycityapi/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffycityapi/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luffycityapi/apps/cart/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffycityapi/apps/cart/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/luffycityapi/utils/authenticate.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffycityapi/utils/authenticate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luffycityapi/utils/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffycityapi/utils/exceptions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../luffycityweb/src/components/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../luffycityweb/src/components/Header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../luffycityweb/src/components/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../luffycityweb/src/components/Login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../luffycityweb/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../luffycityweb/src/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../luffycityweb/src/views/Course.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../luffycityweb/src/views/Course.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../luffycityweb/src/api/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/../luffycityweb/src/api/cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../luffycityweb/src/api/course.js" beforeDir="false" afterPath="$PROJECT_DIR$/../luffycityweb/src/api/course.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../luffycityweb/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../luffycityweb/src/router/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,29 +42,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Django Server.luffycityapi.executor": "Run",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/cart",
-    "last_opened_file_path": "/home/caoruchen/Desktop/luffycity/luffycityapi",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Django Server.luffycityapi.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/cart&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/caoruchen/Desktop/luffycity/luffycityapi&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql",
-      "redis"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;,
+      &quot;redis&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="luffycityapi" type="Python.DjangoServer" factoryName="Django server">
       <module name="luffycityapi" />
@@ -122,7 +118,8 @@
       <workItem from="1740377752151" duration="12540000" />
       <workItem from="1740414331941" duration="7388000" />
       <workItem from="1740547804987" duration="7373000" />
-      <workItem from="1740579443694" duration="944000" />
+      <workItem from="1740579443694" duration="9037000" />
+      <workItem from="1740630169701" duration="2918000" />
     </task>
     <servers />
   </component>

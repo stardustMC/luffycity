@@ -32,7 +32,6 @@ def jwt_response_payload_handler(token, user=None, request=None):
     }
 
 def get_user_by_account(account):
-
     """
     根据帐号信息获取user模型实例对象
     :param account: 账号信息，可以是用户名，也可以是手机号，甚至其他的可用于识别用户身份的字段信息

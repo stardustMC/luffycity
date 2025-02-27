@@ -30,13 +30,13 @@ const routes = [
     component: ()=> import("../views/User.vue"),
     },
     {
-    meta:{
-        title: "luffy2.0-课程列表",
-        keepAlive: true,
-    },
-    path: '/project',
-    name: "Course",
-    component: ()=> import("../views/Course.vue"),
+        meta: {
+            title: "luffy2.0-课程列表",
+            keepAlive: true,
+        },
+        path: '/project',
+        name: "Course",
+        component: () => import("../views/Course.vue"),
     },
     {
         meta: {
@@ -46,6 +46,15 @@ const routes = [
         path: "/project/:id",
         name: "CourseInfo",
         component: ()=>import("../views/Info.vue"),
+    },
+    {
+        meta: {
+            title: "luffy2.0-购物车列表",
+            keepAlive: true,
+        },
+        path: "/cart",
+        name: "Cart",
+        component: ()=>import("../views/Cart.vue"),
     }
 ]
 
