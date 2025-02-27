@@ -5286,3 +5286,55 @@ INFO "PATCH /cart/ HTTP/1.1" 200 41
 INFO "PATCH /cart/ HTTP/1.1" 200 41
 INFO "PUT /cart/ HTTP/1.1" 200 45
 INFO "PATCH /cart/ HTTP/1.1" 200 41
+INFO Watching for file changes with StatReloader
+INFO "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO "GET /cart/ HTTP/1.1" 200 4060
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/cart/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/cart/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/cart/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /cart/ HTTP/1.1" 200 4058
+INFO "OPTIONS /cart/?course_id=481 HTTP/1.1" 200 0
+INFO "DELETE /cart/?course_id=481 HTTP/1.1" 200 38
+INFO "GET /cart/ HTTP/1.1" 200 3826
+INFO "GET /cart/ HTTP/1.1" 200 3827
+INFO "GET /cart/ HTTP/1.1" 200 3828
+INFO "GET /cart/ HTTP/1.1" 200 3829
+INFO "OPTIONS /cart/?course_id=387 HTTP/1.1" 200 0
+INFO "DELETE /cart/?course_id=387 HTTP/1.1" 200 38
+INFO "GET /cart/ HTTP/1.1" 200 3543
+INFO "OPTIONS /cart/?course_id=419 HTTP/1.1" 200 0
+INFO "DELETE /cart/?course_id=419 HTTP/1.1" 200 38
+INFO "GET /cart/ HTTP/1.1" 200 3268
+INFO "GET /cart/ HTTP/1.1" 200 3270
+INFO "GET /cart/ HTTP/1.1" 200 3270
+INFO "GET /cart/ HTTP/1.1" 200 3265
+INFO "OPTIONS /cart/?course_id=426 HTTP/1.1" 200 0
+INFO "DELETE /cart/?course_id=426 HTTP/1.1" 200 38
+INFO "DELETE /cart/?course_id=426 HTTP/1.1" 200 38
+INFO "DELETE /cart/?course_id=426 HTTP/1.1" 200 38
+INFO "GET /cart/ HTTP/1.1" 200 3007
+INFO "GET /cart/ HTTP/1.1" 200 3002
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/cart/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /cart/ HTTP/1.1" 200 3004
+INFO "GET /cart/ HTTP/1.1" 200 3004
+INFO "OPTIONS /cart/?course_id=433 HTTP/1.1" 200 0
+INFO "DELETE /cart/?course_id=433 HTTP/1.1" 200 54
+INFO "GET /cart/ HTTP/1.1" 200 2736
+INFO "GET /cart/ HTTP/1.1" 200 2737
+INFO "OPTIONS /cart/?course_id=473 HTTP/1.1" 200 0
+INFO "DELETE /cart/?course_id=473 HTTP/1.1" 200 53
+INFO "GET /cart/ HTTP/1.1" 200 2473
+INFO "GET /cart/ HTTP/1.1" 200 2474
+INFO "GET /cart/ HTTP/1.1" 200 2473
+INFO "GET /cart/ HTTP/1.1" 200 2473
+INFO "OPTIONS /cart/?course_id=453 HTTP/1.1" 200 0
+INFO "DELETE /cart/?course_id=453 HTTP/1.1" 200 53
+INFO "PUT /cart/ HTTP/1.1" 200 45
+INFO "OPTIONS /cart/?course_id=455 HTTP/1.1" 200 0
+INFO "DELETE /cart/?course_id=455 HTTP/1.1" 200 53

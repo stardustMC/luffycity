@@ -38,6 +38,16 @@ const cart = reactive({
             }
         })
     },
+    cart_delete(course_id, token){
+        return http.delete("/cart/", {
+            params:{
+                course_id,  // course_id: course_id,的简写
+            },
+            headers: {
+                Authorization: "jwt " + token
+            }
+        })
+    },
     total_price: computed(()=>{
         let total = 0;
         cart.cart_list.forEach(course=>{

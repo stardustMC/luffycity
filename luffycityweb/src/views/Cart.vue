@@ -48,7 +48,7 @@
             <div class="price" v-else>
               <div class="discount-price"><em>￥</em><span>{{ course.price.toFixed(2) }}</span></div>
             </div>
-              <div class="item-4"><el-icon :size="26" class="close"><Close /></el-icon></div>
+              <div class="item-4"><el-icon :size="26" class="close" @click="cart_delete(course.id)"><Close /></el-icon></div>
           </div>
           <div class="cart-body-bot fixed">
             <div class=" cart-body-bot-box">
@@ -83,6 +83,7 @@ import Footer from "../components/Footer.vue"
 import cart from "../api/cart"
 import { ElMessage } from 'element-plus'
 import course from "../api/course.js";
+import store from "../store/index.js";
 
 const get_cart_list = ()=>{
   let token = localStorage.getItem("token") || sessionStorage.getItem("token");
@@ -104,7 +105,7 @@ const on_select_change = (value, course_id)=>{
   cart.course_select_change(course_id, value, token).then(response=>{
     if(response.status !== 200){
       // todo: should sync course select state with database
-      console.log("something wrong with server");
+      ElMessage.error("something wrong with server");
     }
   })
   if(!value){
@@ -112,12 +113,26 @@ const on_select_change = (value, course_id)=>{
   }
 }
 
+const cart_delete = (course_id)=>{
+  let token = localStorage.getItem("token") || sessionStorage.getItem("token");
+  cart.cart_delete(course_id, token).then(response=>{
+    if(response.status !== 200){
+      // todo: should sync course select state with database
+      ElMessage.error("something wrong with server");
+    }else{
+      cart.cart_list.splice(cart.cart_list.findIndex(course=>course.id===course_id), 1)
+      ElMessage.info("removed from cart~");
+      store.commit("cart_count", response.data.cart_count)
+    }
+  })
+}
+
 const on_select_all_change = (value)=>{
   let token = localStorage.getItem("token") || sessionStorage.getItem("token");
   cart.course_select_all_change(value, token).then(response=>{
     if(response.status !== 200){
       // todo: should sync course select state with database
-      console.log("something wrong with server");
+      ElMessage.error("something wrong with server");
     }
   })
 }

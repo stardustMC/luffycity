@@ -81,3 +81,13 @@ class CartAPIView(APIView):
         pipe.execute()
 
         return Response({"errmsg": "course all select state changed."}, status=status.HTTP_200_OK)
+
+    def delete(self, request):
+        user_id = request.user.id
+        course_id = request.query_params.get('course_id')
+
+        redis = get_redis_connection('cart')
+        redis.hdel('cart_%s' % user_id, course_id)
+
+        cart_count = redis.hlen('cart_%s' % user_id)
+        return Response({"errmsg": "course removed from cart.", "cart_count": cart_count}, status=status.HTTP_200_OK)
