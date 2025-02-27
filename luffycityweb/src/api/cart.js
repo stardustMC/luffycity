@@ -19,6 +19,15 @@ const cart = reactive({
             }
         });
     },
+    course_select_change(course_id, token){
+        return http.patch("/cart/", {
+            course_id: course_id
+        }, {
+            headers: {
+                Authorization: "jwt " + token
+            }
+        })
+    },
     total_price: computed(()=>{
         let total = 0;
         cart.cart_list.forEach(course=>{

@@ -27,7 +27,7 @@
         <div class="cart-body-table">
           <div class="item" v-for="course in cart.cart_list">
               <div class="item-1">
-                  <el-checkbox v-model="course.selected" @change="value=>on_select_change(value)"></el-checkbox>
+                  <el-checkbox v-model="course.selected" @change="value=>on_select_change(value, course.id)"></el-checkbox>
               </div>
               <div class="item-2">
                   <router-link :to="`/project/${course.id}`" class="img-box l">
@@ -99,7 +99,14 @@ const get_cart_list = ()=>{
 }
 get_cart_list();
 
-const on_select_change = (value)=>{
+const on_select_change = (value, course_id)=>{
+  let token = localStorage.getItem("token") || sessionStorage.getItem("token");
+  cart.course_select_change(course_id, token).then(response=>{
+    if(response.status !== 200){
+      // todo: should sync course select state with database
+      console.log("something wrong with server");
+    }
+  })
   if(!value){
     state.checked = value;
   }

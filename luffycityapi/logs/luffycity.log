@@ -5220,3 +5220,25 @@ INFO "GET /cart/ HTTP/1.1" 200 4058
 INFO "GET /cart/ HTTP/1.1" 200 4061
 INFO "GET /cart/ HTTP/1.1" 200 4060
 INFO "GET /cart/ HTTP/1.1" 200 4056
+INFO Watching for file changes with StatReloader
+INFO "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/cart/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/cart/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/cart/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /cart/ HTTP/1.1" 200 4061
+ERROR redis数据库异常！[<cart.views.CartAPIView object at 0x7097c9de0e20>] Invalid input of type: 'bool'. Convert to a bytes, string, int or float first.
+ERROR Insufficient Storage: /cart/
+ERROR "PATCH /cart/ HTTP/1.1" 507 41
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/cart/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /cart/ HTTP/1.1" 200 4061
+INFO "PATCH /cart/ HTTP/1.1" 200 41
+INFO "PATCH /cart/ HTTP/1.1" 200 41
+INFO "PATCH /cart/ HTTP/1.1" 200 41
+INFO "GET /cart/ HTTP/1.1" 200 4058
+INFO "GET /cart/ HTTP/1.1" 200 4061

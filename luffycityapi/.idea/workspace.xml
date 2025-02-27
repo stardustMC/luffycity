@@ -8,10 +8,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/luffycity.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/luffycity.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/luffycityapi/apps/cart/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffycityapi/apps/cart/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luffycityapi/utils/authenticate.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffycityapi/utils/authenticate.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../luffycityweb/src/api/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/../luffycityweb/src/api/cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../luffycityweb/src/api/course.js" beforeDir="false" afterPath="$PROJECT_DIR$/../luffycityweb/src/api/course.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../luffycityweb/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../luffycityweb/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../luffycityweb/src/views/Cart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../luffycityweb/src/views/Cart.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +117,8 @@
       <workItem from="1740414331941" duration="7388000" />
       <workItem from="1740547804987" duration="7373000" />
       <workItem from="1740579443694" duration="9037000" />
-      <workItem from="1740630169701" duration="2918000" />
+      <workItem from="1740630169701" duration="3605000" />
+      <workItem from="1740655282829" duration="1199000" />
     </task>
     <servers />
   </component>

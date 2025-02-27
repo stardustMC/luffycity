@@ -50,3 +50,21 @@ class CartAPIView(APIView):
         redis.hset('cart_%s' % user_id, course_id, selected)
         cart_count = redis.hlen('cart_%s' % user_id)
         return Response({"errmsg": "course added to cart~", "cart_count": cart_count}, status=status.HTTP_201_CREATED)
+
+    def patch(self, request):
+        user_id = request.user.id
+        course_id = int(request.data.get('course_id'))
+        selected = int(bool(request.data.get('selected')))
+
+        redis = get_redis_connection('cart')
+        try:
+            Course.objects.get(pk=course_id)
+        except Course.DoesNotExist:
+            redis.hdel('cart_%s' % user_id, course_id)
+            return Response({"errmsg": "course not found, probably has been removed"}, status=status.HTTP_404_NOT_FOUND)
+
+        redis.hset('cart_%s' % user_id, course_id, selected)
+        return Response({"errmsg": "course select state patched."}, status=status.HTTP_200_OK)
+
+    def put(self, request):
+        pass
