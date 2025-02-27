@@ -19,7 +19,7 @@
       </div>
       <div class="cart-body" id="cartBody">
         <div class="cart-body-title">
-          <div class="item-1 l"><el-checkbox v-model="state.checked">全选</el-checkbox></div>
+          <div class="item-1 l"><el-checkbox v-model="state.checked" @change="value=>on_select_all_change(value)">全选</el-checkbox></div>
           <div class="item-2 l"><span class="course">课程</span></div>
           <div class="item-3 l"><span>金额</span></div>
           <div class="item-4 l"><span>操作</span></div>
@@ -84,10 +84,6 @@ import cart from "../api/cart"
 import { ElMessage } from 'element-plus'
 import course from "../api/course.js";
 
-let state = reactive({
-  checked: true,
-})
-
 const get_cart_list = ()=>{
   let token = localStorage.getItem("token") || sessionStorage.getItem("token");
   cart.get_cart_list(token).then(response => {
@@ -99,9 +95,13 @@ const get_cart_list = ()=>{
 }
 get_cart_list();
 
+let state = reactive({
+  checked: false,
+})
+
 const on_select_change = (value, course_id)=>{
   let token = localStorage.getItem("token") || sessionStorage.getItem("token");
-  cart.course_select_change(course_id, token).then(response=>{
+  cart.course_select_change(course_id, value, token).then(response=>{
     if(response.status !== 200){
       // todo: should sync course select state with database
       console.log("something wrong with server");
@@ -110,6 +110,16 @@ const on_select_change = (value, course_id)=>{
   if(!value){
     state.checked = value;
   }
+}
+
+const on_select_all_change = (value)=>{
+  let token = localStorage.getItem("token") || sessionStorage.getItem("token");
+  cart.course_select_all_change(value, token).then(response=>{
+    if(response.status !== 200){
+      // todo: should sync course select state with database
+      console.log("something wrong with server");
+    }
+  })
 }
 
 watch(()=>state.checked, ()=>{

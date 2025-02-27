@@ -19,9 +19,19 @@ const cart = reactive({
             }
         });
     },
-    course_select_change(course_id, token){
+    course_select_change(course_id, selected, token){
         return http.patch("/cart/", {
-            course_id: course_id
+            course_id: course_id,
+            selected: selected
+        }, {
+            headers: {
+                Authorization: "jwt " + token
+            }
+        })
+    },
+    course_select_all_change(selected, token){
+        return http.put("/cart/", {
+            selected: selected
         }, {
             headers: {
                 Authorization: "jwt " + token

@@ -67,4 +67,17 @@ class CartAPIView(APIView):
         return Response({"errmsg": "course select state patched."}, status=status.HTTP_200_OK)
 
     def put(self, request):
-        pass
+        user_id = request.user.id
+        selected = int(bool(request.data.get('selected')))
+
+        redis = get_redis_connection('cart')
+        cart_hash = redis.hgetall('cart_%s' % user_id)
+        cart_list = [int(k.decode("utf-8")) for k in cart_hash]
+
+        pipe = redis.pipeline()
+        pipe.multi()
+        for course_id in cart_list:
+            redis.hset('cart_%s' % user_id, course_id, selected)
+        pipe.execute()
+
+        return Response({"errmsg": "course all select state changed."}, status=status.HTTP_200_OK)
