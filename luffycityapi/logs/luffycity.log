@@ -5338,3 +5338,4 @@ INFO "DELETE /cart/?course_id=453 HTTP/1.1" 200 53
 INFO "PUT /cart/ HTTP/1.1" 200 45
 INFO "OPTIONS /cart/?course_id=455 HTTP/1.1" 200 0
 INFO "DELETE /cart/?course_id=455 HTTP/1.1" 200 53
+INFO Watching for file changes with StatReloader

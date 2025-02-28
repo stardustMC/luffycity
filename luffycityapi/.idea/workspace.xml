@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fcfba21-9e0a-4079-b630-c27deaeac368" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/luffycity.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/luffycity.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luffycityapi/apps/cart/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/luffycityapi/apps/cart/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../luffycityweb/src/api/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/../luffycityweb/src/api/cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../luffycityweb/src/views/Cart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../luffycityweb/src/views/Cart.vue" afterDir="false" />
-    </list>
+    <list default="true" id="4fcfba21-9e0a-4079-b630-c27deaeac368" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
