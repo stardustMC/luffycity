@@ -46,6 +46,15 @@ const routes = [
         path: "/project/:id",
         name: "CourseInfo",
         component: ()=>import("../views/Info.vue"),
+    },
+    {
+        meta: {
+            title: "luffy2.0-Order",
+            keepAlive: true,
+        },
+        path: "/order",
+        name: "Order",
+        component: ()=>import("../views/Order.vue"),
     }
 ]
 

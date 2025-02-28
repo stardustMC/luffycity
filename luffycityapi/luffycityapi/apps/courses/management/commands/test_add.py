@@ -13,7 +13,7 @@ class Command(BaseCommand):
     def __init__(self):
         super(Command, self).__init__()
         self.fields = ["teacher", "direction", "category"]
-        self.option_fields = ["course", "discounts"]
+        self.option_fields = ["course", "discounts", "lessons"]
         self.default_amount = 10
         self.default_chapter = 5
         self.default_lesson = 3
@@ -102,14 +102,15 @@ class Command(BaseCommand):
                 price=faker.random_number(4, True),
                 recomment_home_hot=0,
                 recomment_home_top=0,
-                category_id=random.randint(1, 70),
+                category_id=random.randint(1, 60),
                 direction_id=random.randint(1, 10),
-                teacher_id=random.randint(1, 6),
+                teacher_id=random.randint(1, 10),
             )
 
     def add_lessons(self, options):
         queryset = Course.objects.all().order_by("id")
         min_id, max_id = queryset.first().id, queryset.last().id
+        print(min_id, max_id)
         for idx in range(min_id, max_id + 1):
             for chapter in range(self.default_chapter):
                 instance = CourseChapter.objects.create(
