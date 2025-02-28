@@ -5739,3 +5739,4 @@ INFO "GET /home/banner/ HTTP/1.1" 200 666
 INFO "OPTIONS /cart/order/ HTTP/1.1" 200 0
 INFO "GET /cart/order/ HTTP/1.1" 200 820
 INFO "GET /cart/order/ HTTP/1.1" 200 819
+INFO Watching for file changes with StatReloader
