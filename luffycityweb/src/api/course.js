@@ -39,7 +39,6 @@ const courses = reactive({
         })
     },
     get_course(){
-        console.log(this.course_id)
         return http.get(`/courses/${this.course_id}/`);
     },
     get_chapter_list(){

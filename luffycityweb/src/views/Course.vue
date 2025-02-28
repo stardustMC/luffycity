@@ -73,7 +73,9 @@
                   <span class="price l red bold" v-else>￥{{ parseFloat(course_info.price).toFixed(2) }}</span>
                   <span class="origin-price l delete-line"
                         v-if="course_info.discount.price>=0">￥{{ parseFloat(course_info.price).toFixed(2) }}</span>
-                  <span class="add-shop-cart r"><img class="icon imv2-shopping-cart" src="../assets/cart2.svg">加购物车</span>
+                  <span class="add-shop-cart r" @click.prevent.stop="add_cart(course_info)">
+                    <img class="icon imv2-shopping-cart" src="../assets/cart2.svg">加购物车
+                  </span>
                 </p>
               </router-link>
             </li>
@@ -103,7 +105,10 @@ import {watch} from "vue"
 import Header from "../components/Header.vue"
 import Footer from "../components/Footer.vue"
 import courses from "../api/course.js";
+import cart from "../api/cart.js"
 import {format0} from "../utils/helper.js";
+import {ElMessage} from "element-plus";
+import store from "../store/index.js";
 
 courses.get_directions().then((response)=>{
   courses.direction_list = response.data;
@@ -151,6 +156,22 @@ get_hot_words();
 const search_hot_word = (hotword)=>{
   courses.text = hotword;
   get_courses();
+}
+
+const add_cart = (course_info) =>{
+  let token = localStorage.getItem("token") || sessionStorage.getItem("token");
+  cart.add_course_to_cart(course_info.id, token).then(response=>{
+    store.commit("cart_count", response.data.cart_count);
+    ElMessage.success(response.data.errmsg);
+  }).catch(err => {
+    console.log(err);
+    if(err.response.status === 401){
+      store.commit("logout");
+      ElMessage.error("You may not have logged in or account expired. Try again after logging in.");
+    }else{
+      ElMessage.error("Operation failed...");
+    }
+  })
 }
 
 watch(()=>courses.current_category, ()=>{

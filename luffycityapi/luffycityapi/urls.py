@@ -19,6 +19,7 @@ from django.urls import path, include, re_path
 from django.conf import settings
 from django.views.static import serve
 
+from luffycityapi.apps import cart
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -27,4 +28,5 @@ urlpatterns = [
     re_path(r'uploads/(?P<path>.*)', serve, {"document_root": settings.MEDIA_ROOT}),
     path('courses/', include('courses.urls')),
     path('ckeditor/', include('ckeditor_uploader.urls')),
+    path('cart/', include('cart.urls')),
 ]
