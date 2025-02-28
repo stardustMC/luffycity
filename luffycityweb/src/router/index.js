@@ -55,7 +55,16 @@ const routes = [
         path: "/cart",
         name: "Cart",
         component: ()=>import("../views/Cart.vue"),
-    }
+    },
+    {
+        meta: {
+            title: "luffy2.0-OrderPay",
+            keepAlive: true,
+        },
+        path: "/order",
+        name: "Order",
+        component: ()=>import("../views/Order.vue"),
+    },
 ]
 
 const router = createRouter({

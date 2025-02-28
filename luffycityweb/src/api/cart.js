@@ -3,6 +3,7 @@ import {reactive, computed} from "vue";
 
 const cart = reactive({
     cart_list: [],
+    cart_selected_list: [],
     add_course_to_cart(course_id, token){
         return http.post("/cart/", {
             course_id: course_id
@@ -14,6 +15,13 @@ const cart = reactive({
     },
     get_cart_list(token){
         return http.get("/cart/", {
+            headers: {
+                Authorization: "jwt " + token
+            }
+        });
+    },
+    get_cart_selected_list(token){
+        return http.get("/cart/order/", {
             headers: {
                 Authorization: "jwt " + token
             }
@@ -58,6 +66,20 @@ const cart = reactive({
                     total += course.price;
                 }
             }
+        })
+        return total;
+    }),
+    total_selected_discount_price: computed(()=>{
+        let total = 0;
+        cart.cart_selected_list.forEach(course=>{
+            total += course.discount.price || course.price;
+        })
+        return total;
+    }),
+    total_selected_price: computed(()=>{
+        let total = 0;
+        cart.cart_selected_list.forEach(course=>{
+            total += course.price;
         })
         return total;
     })

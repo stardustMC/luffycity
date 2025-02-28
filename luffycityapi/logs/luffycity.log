@@ -5339,3 +5339,403 @@ INFO "PUT /cart/ HTTP/1.1" 200 45
 INFO "OPTIONS /cart/?course_id=455 HTTP/1.1" 200 0
 INFO "DELETE /cart/?course_id=455 HTTP/1.1" 200 53
 INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+WARNING Not Found: /
+WARNING "GET / HTTP/1.1" 404 2731
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 2782
+INFO "GET /admin HTTP/1.1" 301 0
+INFO "GET /admin/ HTTP/1.1" 302 0
+INFO "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4074
+INFO "GET /static/admin/simpleui-x/fontawesome-free-6.2.0-web/css/all.min.css HTTP/1.1" 200 101784
+INFO "GET /static/admin/simpleui-x/elementui/theme-chalk/index.css HTTP/1.1" 200 238628
+INFO "GET /static/admin/simpleui-x/css/login.css?_=2.1 HTTP/1.1" 200 500
+INFO "GET /static/admin/simpleui-x/js/vue.min.js?_=2025.01.13 HTTP/1.1" 200 93675
+INFO "GET /static/admin/simpleui-x/js/login.js?_=3.3 HTTP/1.1" 200 669
+INFO "GET /static/admin/simpleui-x/particles/app.js HTTP/1.1" 200 3728
+INFO "GET /static/admin/simpleui-x/particles/particles.js HTTP/1.1" 200 51264
+INFO "GET /static/admin/simpleui-x/elementui/index.js?_=2025.01.13 HTTP/1.1" 200 586253
+INFO "GET /uploads/logo.png HTTP/1.1" 200 362358
+INFO "GET /static/admin/simpleui-x/img/bg.svg HTTP/1.1" 200 9547
+INFO "GET /static/admin/simpleui-x/fontawesome-free-6.2.0-web/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 150472
+ERROR redis数据库异常！[<home.views.NavHeaderListAPIView object at 0x7a064b06c430>] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR Insufficient Storage: /home/nav/header/
+ERROR "GET /home/nav/header/ HTTP/1.1" 507 41
+ERROR redis数据库异常！[<home.views.BannerListAPIView object at 0x7a064b019970>] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR Insufficient Storage: /home/banner/
+ERROR "GET /home/banner/ HTTP/1.1" 507 41
+ERROR redis数据库异常！[<home.views.NavFooterListAPIView object at 0x7a064b009f70>] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR Insufficient Storage: /home/nav/footer/
+ERROR "GET /home/nav/footer/ HTTP/1.1" 507 41
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+ERROR Internal Server Error: /home/banner/
+Traceback (most recent call last):
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/core/files/storage/handler.py", line 35, in __getitem__
+    return self._storages[alias]
+KeyError: 'default'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/core/files/storage/handler.py", line 52, in create_storage
+    storage_cls = import_string(backend)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/utils/module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/utils/module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django_oss_storage/backends.py", line 17, in <module>
+    from django.utils.encoding import force_text, force_bytes
+ImportError: cannot import name 'force_text' from 'django.utils.encoding' (/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/utils/encoding.py)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/utils/views.py", line 11, in get
+    return super().get(request, *args, **kwargs)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 795, in data
+    ret = super().data
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 713, in to_representation
+    return [
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 714, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 538, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/fields.py", line 1545, in to_representation
+    url = value.url
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/db/models/fields/files.py", line 67, in url
+    return self.storage.url(self.name)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/utils/functional.py", line 266, in inner
+    self._setup()
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/core/files/storage/__init__.py", line 42, in _setup
+    self._wrapped = storages[DEFAULT_STORAGE_ALIAS]
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/core/files/storage/handler.py", line 43, in __getitem__
+    storage = self.create_storage(params)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/core/files/storage/handler.py", line 54, in create_storage
+    raise InvalidStorageError(f"Could not find backend {backend!r}: {e}") from e
+django.core.files.storage.handler.InvalidStorageError: Could not find backend 'django_oss_storage.backends.OssMediaStorage': cannot import name 'force_text' from 'django.utils.encoding' (/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/utils/encoding.py)
+ERROR "GET /home/banner/ HTTP/1.1" 500 219432
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 2
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+ERROR Internal Server Error: /courses/0/0/
+Traceback (most recent call last):
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/core/files/storage/handler.py", line 35, in __getitem__
+    return self._storages[alias]
+KeyError: 'default'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/core/files/storage/handler.py", line 52, in create_storage
+    storage_cls = import_string(backend)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/utils/module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/utils/module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django_oss_storage/backends.py", line 17, in <module>
+    from django.utils.encoding import force_text, force_bytes
+ImportError: cannot import name 'force_text' from 'django.utils.encoding' (/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/utils/encoding.py)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 795, in data
+    ret = super().data
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 713, in to_representation
+    return [
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 714, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 538, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/fields.py", line 1545, in to_representation
+    url = value.url
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/db/models/fields/files.py", line 67, in url
+    return self.storage.url(self.name)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/utils/functional.py", line 266, in inner
+    self._setup()
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/core/files/storage/__init__.py", line 42, in _setup
+    self._wrapped = storages[DEFAULT_STORAGE_ALIAS]
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/core/files/storage/handler.py", line 43, in __getitem__
+    storage = self.create_storage(params)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/core/files/storage/handler.py", line 54, in create_storage
+    raise InvalidStorageError(f"Could not find backend {backend!r}: {e}") from e
+django.core.files.storage.handler.InvalidStorageError: Could not find backend 'django_oss_storage.backends.OssMediaStorage': cannot import name 'force_text' from 'django.utils.encoding' (/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/utils/encoding.py)
+ERROR "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 500 214530
+INFO "GET /courses/category/2/ HTTP/1.1" 200 148
+ERROR Internal Server Error: /courses/2/0/
+Traceback (most recent call last):
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/core/files/storage/handler.py", line 35, in __getitem__
+    return self._storages[alias]
+KeyError: 'default'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/core/files/storage/handler.py", line 52, in create_storage
+    storage_cls = import_string(backend)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/utils/module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/utils/module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django_oss_storage/backends.py", line 17, in <module>
+    from django.utils.encoding import force_text, force_bytes
+ImportError: cannot import name 'force_text' from 'django.utils.encoding' (/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/utils/encoding.py)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 795, in data
+    ret = super().data
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 713, in to_representation
+    return [
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 714, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 538, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/fields.py", line 1545, in to_representation
+    url = value.url
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/db/models/fields/files.py", line 67, in url
+    return self.storage.url(self.name)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/utils/functional.py", line 266, in inner
+    self._setup()
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/core/files/storage/__init__.py", line 42, in _setup
+    self._wrapped = storages[DEFAULT_STORAGE_ALIAS]
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/core/files/storage/handler.py", line 43, in __getitem__
+    storage = self.create_storage(params)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/core/files/storage/handler.py", line 54, in create_storage
+    raise InvalidStorageError(f"Could not find backend {backend!r}: {e}") from e
+django.core.files.storage.handler.InvalidStorageError: Could not find backend 'django_oss_storage.backends.OssMediaStorage': cannot import name 'force_text' from 'django.utils.encoding' (/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/utils/encoding.py)
+ERROR "GET /courses/2/0/?page=1&size=5&ordering=-id HTTP/1.1" 500 214750
+ERROR Internal Server Error: /courses/2/68/
+Traceback (most recent call last):
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/core/files/storage/handler.py", line 35, in __getitem__
+    return self._storages[alias]
+KeyError: 'default'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/core/files/storage/handler.py", line 52, in create_storage
+    storage_cls = import_string(backend)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/utils/module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/utils/module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django_oss_storage/backends.py", line 17, in <module>
+    from django.utils.encoding import force_text, force_bytes
+ImportError: cannot import name 'force_text' from 'django.utils.encoding' (/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/utils/encoding.py)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 795, in data
+    ret = super().data
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 713, in to_representation
+    return [
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 714, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 538, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/fields.py", line 1545, in to_representation
+    url = value.url
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/db/models/fields/files.py", line 67, in url
+    return self.storage.url(self.name)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/utils/functional.py", line 266, in inner
+    self._setup()
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/core/files/storage/__init__.py", line 42, in _setup
+    self._wrapped = storages[DEFAULT_STORAGE_ALIAS]
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/core/files/storage/handler.py", line 43, in __getitem__
+    storage = self.create_storage(params)
+  File "/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/core/files/storage/handler.py", line 54, in create_storage
+    raise InvalidStorageError(f"Could not find backend {backend!r}: {e}") from e
+django.core.files.storage.handler.InvalidStorageError: Could not find backend 'django_oss_storage.backends.OssMediaStorage': cannot import name 'force_text' from 'django.utils.encoding' (/home/caoruchen/miniconda3/envs/luffycity/lib/python3.8/site-packages/django/utils/encoding.py)
+ERROR "GET /courses/2/68/?page=1&size=5&ordering=-id HTTP/1.1" 500 212655
+INFO Watching for file changes with StatReloader
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 2
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1871
+INFO Watching for file changes with StatReloader
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 2
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1868
+INFO "GET /home/banner/ HTTP/1.1" 200 666
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 2
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1870
+INFO "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO "POST /users/login/ HTTP/1.1" 200 288
+INFO "GET /courses/0/5/?page=1&size=5&ordering=-id HTTP/1.1" 200 1505
+INFO "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO "GET /cart/ HTTP/1.1" 200 860
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /cart/ HTTP/1.1" 200 859
+INFO "GET /cart/ HTTP/1.1" 200 859
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 2
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1871
+INFO "GET /cart/ HTTP/1.1" 200 859
+INFO "GET /cart/ HTTP/1.1" 200 860
+INFO "GET /cart/ HTTP/1.1" 200 856
+INFO "GET /cart/ HTTP/1.1" 200 858
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/cart/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/cart/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/cart/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/cart/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "OPTIONS /cart/order/ HTTP/1.1" 200 0
+WARNING Not Found: /cart/order/
+WARNING "GET /cart/order/ HTTP/1.1" 404 3014
+WARNING Not Found: /cart/order/
+WARNING "GET /cart/order/ HTTP/1.1" 404 3014
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/cart/urls.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "OPTIONS /cart/order/ HTTP/1.1" 200 0
+INFO "GET /cart/order/ HTTP/1.1" 200 820
+INFO "GET /cart/order/ HTTP/1.1" 200 821
+INFO "GET /cart/order/ HTTP/1.1" 200 818
+INFO "GET /cart/order/ HTTP/1.1" 200 821
+INFO "GET /cart/order/ HTTP/1.1" 200 821
+INFO Watching for file changes with StatReloader
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/banner/ HTTP/1.1" 200 666
+INFO "OPTIONS /cart/order/ HTTP/1.1" 200 0
+INFO "GET /cart/order/ HTTP/1.1" 200 820
+INFO "GET /cart/order/ HTTP/1.1" 200 819

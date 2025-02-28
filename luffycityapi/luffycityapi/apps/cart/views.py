@@ -91,3 +91,29 @@ class CartAPIView(APIView):
 
         cart_count = redis.hlen('cart_%s' % user_id)
         return Response({"errmsg": "course removed from cart.", "cart_count": cart_count}, status=status.HTTP_200_OK)
+
+class CartOrderAPIView(APIView):
+    permission_classes = [IsAuthenticated,]
+
+    def get(self, request):
+        user_id = request.user.id
+        redis = get_redis_connection('cart')
+        cart_hash = redis.hgetall('cart_%s' % user_id)
+        cart_dict = {int(k.decode("utf-8")): int(v.decode("utf-8")) for k, v in cart_hash.items() if v}
+        print(cart_dict)
+        course_id_list = cart_dict.keys()
+        course_list = Course.objects.filter(pk__in=course_id_list, is_deleted=False, is_show=True).all()
+        if len(course_list) < 1:
+            return Response({"errmsg": "cart is empty! try shopping first~"}, status=status.HTTP_204_NO_CONTENT)
+
+        data = []
+        for course in course_list:
+            data.append({
+                "id": course.id,
+                "name": course.name,
+                "course_cover": course.course_cover.url,
+                "price": float(course.price),
+                "discount": course.discount,
+                "course_type": course.get_course_type_display(),
+            })
+        return Response({"errmsg": "courses in cart returned", "cart": data}, status=status.HTTP_200_OK)
