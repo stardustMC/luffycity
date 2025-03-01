@@ -223,6 +223,7 @@ import Header from "../components/Header.vue"
 import Footer from "../components/Footer.vue"
 import {useStore} from "vuex";
 import cart from "../api/cart.js"
+import order from "../api/order.js"
 
 let store = useStore();
 
@@ -248,6 +249,13 @@ const get_selected = () => {
   })
 }
 get_selected();
+
+const create_order = () =>{
+  let token = localStorage.getItem("token") || sessionStorage.getItem("token");
+  order.create_order(token).then(response=>{
+
+  })
+}
 
 // 监听用户选择的支付方式
 watch(
