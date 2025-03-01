@@ -201,7 +201,7 @@
               <p class="r rw price"><em>￥</em><span id="js-pay-price">{{cart.total_selected_discount_price}}</span></p>
               <p class="r price-text">应付：</p>
             </div>
-            <span class="r btn btn-red submit-btn">提交订单</span>
+            <span class="r btn btn-red submit-btn" @click="create_order">提交订单</span>
 					</div>
           <div class="pay-add-sign">
             <ul class="clearfix">
@@ -223,6 +223,9 @@ import Header from "../components/Header.vue"
 import Footer from "../components/Footer.vue"
 import {useStore} from "vuex";
 import cart from "../api/cart.js"
+import order from "../api/order.js"
+import {ElMessage} from "element-plus";
+import router from "../router/index.js";
 
 let store = useStore();
 
@@ -248,6 +251,20 @@ const get_selected = () => {
   })
 }
 get_selected();
+
+const create_order = () =>{
+  let token = localStorage.getItem("token") || sessionStorage.getItem("token");
+  order.create_order(token).then(response=>{
+    if(response.status !== 201){
+      // todo: handle order create failure
+      ElMessage.error("Order create failed...Please try again.")
+    }else{
+      ElMessage.success("Order accepted~");
+      store.commit("cart_count", response.data.cart_count);
+      router.push("/cart/");
+    }
+  })
+}
 
 // 监听用户选择的支付方式
 watch(
