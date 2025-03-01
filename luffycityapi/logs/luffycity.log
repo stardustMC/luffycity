@@ -3787,3 +3787,4 @@ INFO "GET /courses/477/chapters/ HTTP/1.1" 200 2334
 INFO "GET /courses/477/ HTTP/1.1" 200 785
 INFO "GET /courses/477/ HTTP/1.1" 200 785
 INFO "GET /courses/477/chapters/ HTTP/1.1" 200 2334
+INFO Watching for file changes with StatReloader
