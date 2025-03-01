@@ -42,7 +42,7 @@ const loginhandler = ()=>{
   }
 
   user.login().then(response=>{
-    let token = response.data
+    let token = response.data.token;
     if(user.remember){
       localStorage.setItem('token', token);
       sessionStorage.removeItem('token');
@@ -50,11 +50,15 @@ const loginhandler = ()=>{
       sessionStorage.setItem('token', token);
       localStorage.removeItem('token');
     }
+
     // vuex存储用户登录信息，保存token，并根据用户的选择，是否记住密码
     let payload = response.data.token.split(".")[1]  // 载荷
     let payload_data = JSON.parse(atob(payload)) // 用户信息
     console.log(payload_data)
     store.commit("login", payload_data)
+
+    let cart_count = response.data.cart_count;
+    store.commit("cart_count", cart_count);
 
     ElMessage.success("Account logged in!");
     // clear user data, emit signal of login success

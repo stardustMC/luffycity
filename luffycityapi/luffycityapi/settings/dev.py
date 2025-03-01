@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'home',
     'users',
     'courses',
+    'cart',
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True
@@ -141,6 +142,13 @@ CACHES = {
     "hot_words":{
         'BACKEND': 'django_redis.cache.RedisCache',
         'LOCATION': 'redis://:@127.0.0.1:6379/3',
+        'OPTIONS': {
+            'CLIENT_CLASS': 'django_redis.client.DefaultClient',
+        }
+    },
+    "cart":{
+        'BACKEND': 'django_redis.cache.RedisCache',
+        'LOCATION': 'redis://:@127.0.0.1:6379/4',
         'OPTIONS': {
             'CLIENT_CLASS': 'django_redis.client.DefaultClient',
         }
@@ -256,6 +264,7 @@ JWT_AUTH = {
     # 设置jwt的有效期
     'JWT_EXPIRATION_DELTA': datetime.timedelta(weeks=1), # 一周有效，
     'JWT_PAYLOAD_HANDLER': 'luffycityapi.utils.authenticate.jwt_payload_handler',
+    'JWT_RESPONSE_PAYLOAD_HANDLER': 'luffycityapi.utils.authenticate.jwt_response_payload_handler',
 }
 
 AUTH_USER_MODEL = "users.User"
