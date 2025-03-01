@@ -73,8 +73,8 @@ class OrderModelSerializer(serializers.ModelSerializer):
                 cart_hash = {key: value for key, value in cart_hash.items() if value == b'0'}
                 pipe = redis.pipeline()
                 pipe.multi()
-                redis.hdel(f"cart_{user_id}")
-                redis.hset(f"cart_{user_id}", mapping=cart_hash)
+                pipe.delete(f"cart_{user_id}")
+                pipe.hset(f"cart_{user_id}", mapping=cart_hash)
                 pipe.execute()
             except Exception as e:
                 logging.error("order create failed! %s" % e)

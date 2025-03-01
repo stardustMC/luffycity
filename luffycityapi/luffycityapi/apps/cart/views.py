@@ -99,9 +99,8 @@ class CartOrderAPIView(APIView):
         user_id = request.user.id
         redis = get_redis_connection('cart')
         cart_hash = redis.hgetall('cart_%s' % user_id)
-        cart_dict = {int(k.decode("utf-8")): int(v.decode("utf-8")) for k, v in cart_hash.items() if v}
-        print(cart_dict)
-        course_id_list = cart_dict.keys()
+        course_id_list = [int(k.decode("utf-8")) for k, v in cart_hash.items() if v == b'1']
+
         course_list = Course.objects.filter(pk__in=course_id_list, is_deleted=False, is_show=True).all()
         if len(course_list) < 1:
             return Response({"errmsg": "cart is empty! try shopping first~"}, status=status.HTTP_204_NO_CONTENT)
