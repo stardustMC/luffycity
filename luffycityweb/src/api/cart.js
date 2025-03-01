@@ -72,7 +72,11 @@ const cart = reactive({
     total_selected_discount_price: computed(()=>{
         let total = 0;
         cart.cart_selected_list.forEach(course=>{
-            total += course.discount.price || course.price;
+            if(course.discount.price >= 0){
+                total += course.discount.price
+            }else{
+                total += course.price;
+            }
         })
         return total;
     }),
