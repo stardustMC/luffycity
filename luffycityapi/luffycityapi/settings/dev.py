@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'courses',
     'cart',
     'orders',
+    'coupon',
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True
