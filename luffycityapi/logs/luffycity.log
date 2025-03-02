@@ -3927,3 +3927,129 @@ INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/coupon/adm
 INFO Watching for file changes with StatReloader
 INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/coupon/admin.py changed, reloading.
 INFO Watching for file changes with StatReloader
+INFO code 400, message Bad request version ('Y©±¶XSò/8\x83o\x84\x91í\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO "GET /admin/ HTTP/1.1" 200 24288
+WARNING Not Found: /favicon.ico
+INFO code 400, message Bad request version ('ß\x03}C\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO "GET /admin/coupon/coupon/ HTTP/1.1" 200 120687
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+INFO code 400, message Bad request version ('õ_g\x8e\x91±å]DaÎa\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request version ('\x05¡\xad\xadoáÉPóÛ\x9b\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request version ('¨ðuÕ)\x89\x86Vì¢âGDÕ\x11\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request version ('7\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request version ('4Qð\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request version (':!"\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request version ('\x8anà\x02\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request version ('°\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request version ('\x95J,xAã\x9fbÅBc\x8b#Ã\x03ïP\x899ÍÅ@E\x92øÞ#\x9d+\x94Ýî\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO "GET /admin/coupon/coupon/?p=2 HTTP/1.1" 200 122991
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+INFO code 400, message Bad request version ('¬\xadU\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO "GET /admin/coupon/coupon/?p=1 HTTP/1.1" 200 123313
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+INFO code 400, message Bad request version ('\x8aNÇã!¼\x99f\x83#µc\x8f!í\x07ÉåuPSP¶à\x80\x83\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request version ('3\x8d\\\x84ùØ³ü_\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request version ('\x99\x7fäï\x9eÀÖÿè7zZºÖ¹\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request version ('P\x9a]0yO\x99à\x86\x16EM]u')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request version ('Ç\x14Åi3\x04t')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request version ('u¿w¨-pp£\x89\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO "GET /admin/coupon/couponlog/ HTTP/1.1" 200 26595
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+INFO code 400, message Bad request syntax ('\x16\x03\x01\x07h\x01\x00\x07d\x03\x03\x92·ieÓOyóJîmcÊ²ëu¾G%\x19râÜ')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request version ('@F')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request version ('©fÍ¼%!w\x82¨\x00\x9br\x8bi\x171j)Ã;\x98ª\x1aà¨{{¦\x97è:£\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request version ('u.\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request version ('r\x92=t\x9dWÖÀ2\x18´\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x07h\x01\x00\x07d\x03\x039\x82c\x9b¨cR¨ú)N¤è')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request version ('-R^>Æ(pÆ\x04o&¸ö\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request version ('n)Ð\x07\x9b69~,oùG\x84lÌ\x16\x8d¬\x12è\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request version ('æ(\x96\x87:>f\x17.#\x89"\x99<Ùõi\x9b0®(')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request syntax ('\x16\x03\x01\x07h\x01\x00\x07d\x03\x03¦¼1aÐr\x9eBO_\x8d¿ç¨fÝ®\x12\x0e\x9bË@')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request version ('3a¤\x13UÑÜç\x15ÆªÑ@\x19:Óà\x03I\x19\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO "GET /admin/coupon/coupon/200/change/?_changelist_filters=p%3D1 HTTP/1.1" 200 326178
+INFO "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+INFO "GET /static/admin/js/calendar.js HTTP/1.1" 200 8466
+INFO "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO "GET /static/admin/js/inlines.js HTTP/1.1" 200 15526
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+INFO "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO "GET /static/admin/css/widgets.css HTTP/1.1" 200 11921
+INFO "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO "GET /static/admin/img/inline-delete.svg HTTP/1.1" 200 560
+INFO code 400, message Bad request version ('Ä¬>â\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO "GET /admin/coupon/coupon/?p=1 HTTP/1.1" 200 123313
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+INFO code 400, message Bad request version ('\'>\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request version ('ºD\x86\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request version ('SßÖJo\x84g0Emá\x97/\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request syntax ('\x16\x03\x01\x07h\x01\x00\x07d\x03\x03Ðv\x99l¯')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request version ('¥\x10\x7fÖJ\x1a8iR*°ü\x8f\x89Þ\x9aà[ÇS\x13Ï4{ù&\xad\x07\x80\x9aÐ°\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request version ('\x8d\\GÈ3~í1\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request version ('¥\x17\x05ÆyFÄ\x95Û\x7f\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x07h\x01\x00\x07d\x03\x03Ï\x1a¯\x82£2\x87Á\x9a\x16¨\x93Õ\x01ì¥c]ªð\x14')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request version ('ddöUâÃ^Y$í(>\x88\x945µ\x19\xad¯O\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO "GET /admin/coupon/couponlog/add/ HTTP/1.1" 200 27452
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+INFO code 400, message Bad request version ('Ñ;\x01°3\x05¢\x15\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/ HTTP/1.1" 200 24288
+INFO code 400, message Bad request version ('(g¸m9«VU\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+WARNING Not Found: /favicon.ico
+INFO "GET /admin/coupon/coupon/ HTTP/1.1" 200 121387
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+INFO code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x07h\x01\x00\x07d\x03\x038¦\x10g0\x12M\x83\x9cÛQ\x0f\x01·Â\x18É¦¾éx\x0eî#È\x8c³"!*\x90â')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request version ('¨\x0f\x07\\wÎ\x99nß9ú\x7fñÄ6§\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO "GET /admin/coupon/coupon/?p=2 HTTP/1.1" 200 123697
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+INFO code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x07h\x01\x00\x07d\x03\x03×')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO "GET /admin/coupon/coupon/?p=3 HTTP/1.1" 200 28897
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560

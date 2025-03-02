@@ -1,9 +1,12 @@
+from faker import Faker
 from random import randint
 from datetime import datetime, timedelta
 from django.core.management import BaseCommand
 from courses.models import Course, CourseDirection, CourseCategory
 from coupon.models import Coupon, CouponDirection, CouponCourseCat, CouponCourse
 
+
+faker = Faker(["zh-CN"])
 
 class Command(BaseCommand):
 
@@ -15,7 +18,7 @@ class Command(BaseCommand):
         self.direction_range = queryset.first().id, queryset.last().id
         queryset = CourseCategory.objects.all().order_by("id")
         self.category_range = queryset.first().id, queryset.last().id
-        self.total = Coupon.objects.count()
+        self.total = Coupon.objects.all().order_by("id").first().id
 
     def add_arguments(self, parser):
         parser.add_argument(
@@ -36,6 +39,7 @@ class Command(BaseCommand):
             total = (20, 50, 100)[randint(0, 2)]
             coupon_type = randint(0, 3)
             Coupon.objects.create(
+                name=faker.canton_name() + " Coupon",
                 discount=discount,
                 sale=('-' if discount == 1 else '*') + str(value),
                 coupon_type = coupon_type,
