@@ -82,7 +82,6 @@ import Header from "../components/Header.vue"
 import Footer from "../components/Footer.vue"
 import cart from "../api/cart"
 import { ElMessage } from 'element-plus'
-import course from "../api/course.js";
 import store from "../store/index.js";
 
 const get_cart_list = ()=>{

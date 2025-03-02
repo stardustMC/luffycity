@@ -3792,3 +3792,138 @@ INFO "GET /cart/ HTTP/1.1" 200 3231
 INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/urls.py changed, reloading.
 INFO Watching for file changes with StatReloader
 INFO "GET /cart/ HTTP/1.1" 200 3234
+INFO Watching for file changes with StatReloader
+INFO "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /cart/ HTTP/1.1" 200 1400
+INFO code 400, message Bad request version ('«ËÞ¥îÓ!rm\x99\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request version (',.\\\x97\x8ek\x13\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request version ('\x05\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request version ('ù=\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO "GET /admin/ HTTP/1.1" 302 0
+INFO "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4074
+INFO "GET /static/admin/simpleui-x/fontawesome-free-6.2.0-web/css/all.min.css HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/elementui/theme-chalk/index.css HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/css/login.css?_=2.1 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/js/vue.min.js?_=2025.01.13 HTTP/1.1" 304 0
+INFO "GET /uploads/logo.png HTTP/1.1" 200 362358
+INFO "GET /static/admin/simpleui-x/particles/particles.js HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/elementui/index.js?_=2025.01.13 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/js/login.js?_=3.3 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/particles/app.js HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/img/bg.svg HTTP/1.1" 200 9547
+INFO "GET /static/admin/simpleui-x/fontawesome-free-6.2.0-web/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 150472
+WARNING Not Found: /favicon.ico
+INFO "GET /static/admin/simpleui-x/elementui/theme-chalk/fonts/element-icons.woff HTTP/1.1" 200 28200
+INFO code 400, message Bad request version ("\x13'*")
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO "GET /admin/ HTTP/1.1" 200 24288
+INFO "GET /static/admin/simpleui-x/css/index.css?_=3.2 HTTP/1.1" 200 6994
+INFO "GET /static/admin/simpleui-x/waves/waves.min.css?_=2.1 HTTP/1.1" 200 3861
+INFO "GET /static/admin/simpleui-x/automatic/dicts.js?_=2025.01.13 HTTP/1.1" 200 12677
+INFO "GET /static/admin/simpleui-x/automatic/segment.js?_=2025.01.13 HTTP/1.1" 200 1194
+INFO "GET /static/admin/simpleui-x/locale/en-us.js?_=2025.01.13 HTTP/1.1" 200 811
+INFO "GET /static/admin/simpleui-x/theme/theme.js?_=2025.01.13 HTTP/1.1" 200 4274
+INFO "GET /static/admin/simpleui-x/locale/zh-hans.js?_=2025.01.13 HTTP/1.1" 200 1254
+INFO "GET /static/admin/simpleui-x/js/cookie.js?_=2025.01.13 HTTP/1.1" 200 524
+INFO "GET /static/admin/simpleui-x/js/menu.js?_=2025.01.13 HTTP/1.1" 200 1216
+INFO "GET /static/admin/simpleui-x/waves/waves.min.js?_=2025.01.13 HTTP/1.1" 200 6329
+INFO "GET /static/admin/simpleui-x/js/index.js?_=2025.01.13 HTTP/1.1" 200 21589
+INFO "GET /static/admin/simpleui-x/fontawesome-free-6.2.0-web/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 25096
+INFO "GET /static/admin/simpleui-x/fontawesome-free-6.2.0-web/webfonts/fa-brands-400.woff2 HTTP/1.1" 200 107460
+INFO code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x07h\x01\x00\x07d\x03\x03!``!Ê\x7f\x01\x80\x8f\x92\x02¡Þ;ãîë®nÏ\x83&ÛT\x83k|ÇÄ9õ|')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO "GET /admin/courses/coursedirection/ HTTP/1.1" 200 40002
+INFO "GET /static/admin/simpleui-x/css/base.css?_=2.7 HTTP/1.1" 200 4829
+INFO "GET /static/admin/simpleui-x/theme/simpleui.css HTTP/1.1" 200 4270
+INFO "GET /static/admin/css/base.css?_=2.7 HTTP/1.1" 200 21310
+INFO "GET /static/admin/simpleui-x/locale/en-us.js?_=2.1.2 HTTP/1.1" 200 811
+INFO "GET /static/admin/simpleui-x/locale/zh-hans.js HTTP/1.1" 200 1254
+INFO "GET /static/admin/css/changelists.css?_=20180905 HTTP/1.1" 200 6566
+INFO "GET /static/admin/simpleui-x/js/cookie.js HTTP/1.1" 200 524
+INFO "GET /static/admin/simpleui-x/js/language.js?_=2.1.2 HTTP/1.1" 200 189
+INFO "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+INFO "GET /static/admin/js/core.js HTTP/1.1" 200 5682
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+INFO "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+INFO "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+INFO "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO "GET /static/admin/css/responsive.css?_=20180905 HTTP/1.1" 200 18559
+INFO "GET /static/admin/simpleui-x/automatic/dicts.js HTTP/1.1" 200 12677
+INFO "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 200 89795
+INFO "GET /static/admin/simpleui-x/automatic/segment.js HTTP/1.1" 200 1194
+INFO "GET /static/admin/simpleui-x/js/axios.min.js HTTP/1.1" 200 14237
+INFO "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO code 400, message Bad request version ('L6ú\x96\x8fâú')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request syntax ('\x16\x03\x01\x07h\x01\x00\x07d\x03\x03Gñ±')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request version ('Xf\x81\x8fW4\x9d\x040+ÖÊrÂIr0\x7f\x03Ë&\x1bü\x81ïtÆ¦ð\x86{U\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request version ('\x17Ø¼½\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request version ('\x07_¹Oû¯5Á\x8dã\'\x83\x9bÎ\x17Ltµ\x066Ï\x05/ã\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request version ('\x94\x87uIÈN^\x14\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request version ('A¾\x03\x97ãtë[¾\x12\x04\x82\x83\x8cU\x06')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO "GET /admin/coupon/coupon/ HTTP/1.1" 200 27178
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+INFO code 400, message Bad request version ('\x11¼4UUn9\x17\x88\x961k')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO "GET /admin/coupon/couponlog/ HTTP/1.1" 200 26595
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+INFO code 400, message Bad request version ('e\x9c÷\x9dQf¸ïì\x14Ö¾\x80]\x08\'/´4(\xadbD)yif\x82\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO "GET /admin/ HTTP/1.1" 302 0
+INFO "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4074
+INFO "GET /static/admin/simpleui-x/css/login.css?_=2.1 HTTP/1.1" 200 500
+INFO "GET /static/admin/simpleui-x/js/login.js?_=3.3 HTTP/1.1" 200 669
+INFO "GET /static/admin/simpleui-x/particles/app.js HTTP/1.1" 200 3728
+INFO "GET /static/admin/simpleui-x/particles/particles.js HTTP/1.1" 200 51264
+INFO "GET /static/admin/simpleui-x/fontawesome-free-6.2.0-web/css/all.min.css HTTP/1.1" 200 101784
+INFO "GET /static/admin/simpleui-x/js/vue.min.js?_=2025.01.13 HTTP/1.1" 200 93675
+INFO "GET /static/admin/simpleui-x/elementui/theme-chalk/index.css HTTP/1.1" 200 238628
+INFO "GET /static/admin/simpleui-x/elementui/index.js?_=2025.01.13 HTTP/1.1" 200 586253
+INFO "GET /uploads/logo.png HTTP/1.1" 200 362358
+INFO "GET /static/admin/simpleui-x/img/bg.svg HTTP/1.1" 200 9547
+INFO "GET /static/admin/simpleui-x/fontawesome-free-6.2.0-web/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 150472
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/coupon/admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/coupon/admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/coupon/admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/coupon/admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/coupon/admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/coupon/admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/coupon/admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/coupon/admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/coupon/admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/coupon/admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/coupon/admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/coupon/admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/coupon/admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/coupon/admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
