@@ -4053,3 +4053,116 @@ INFO code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x07h\x01\x00\x07
 ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
 INFO "GET /admin/coupon/coupon/?p=3 HTTP/1.1" 200 28897
 INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+INFO Watching for file changes with StatReloader
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/banner/ HTTP/1.1" 200 666
+INFO "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO "GET /cart/ HTTP/1.1" 200 3233
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 2
+INFO "GET /courses/directions/ HTTP/1.1" 200 359
+INFO "GET /courses/category/0/ HTTP/1.1" 200 3333
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1868
+INFO "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO "POST /users/login/ HTTP/1.1" 200 289
+INFO "GET /cart/ HTTP/1.1" 200 3234
+INFO "GET /admin/ HTTP/1.1" 200 24288
+INFO "GET /uploads/logo.png HTTP/1.1" 200 362358
+INFO "GET /static/admin/simpleui-x/elementui/theme-chalk/index.css HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/fontawesome-free-6.2.0-web/css/all.min.css HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/css/index.css?_=3.2 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/js/vue.min.js?_=2025.01.13 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/automatic/segment.js?_=2025.01.13 HTTP/1.1" 200 1194
+INFO "GET /static/admin/simpleui-x/automatic/dicts.js?_=2025.01.13 HTTP/1.1" 200 12677
+INFO "GET /static/admin/simpleui-x/waves/waves.min.css?_=2.1 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/elementui/index.js?_=2025.01.13 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/locale/en-us.js?_=2025.01.13 HTTP/1.1" 200 811
+INFO "GET /static/admin/simpleui-x/locale/zh-hans.js?_=2025.01.13 HTTP/1.1" 200 1254
+INFO "GET /static/admin/simpleui-x/js/cookie.js?_=2025.01.13 HTTP/1.1" 200 524
+INFO "GET /static/admin/simpleui-x/theme/theme.js?_=2025.01.13 HTTP/1.1" 200 4274
+INFO "GET /static/admin/simpleui-x/waves/waves.min.js?_=2025.01.13 HTTP/1.1" 200 6329
+INFO "GET /static/admin/simpleui-x/js/menu.js?_=2025.01.13 HTTP/1.1" 200 1216
+INFO "GET /static/admin/simpleui-x/js/index.js?_=2025.01.13 HTTP/1.1" 200 21589
+INFO "GET /static/admin/simpleui-x/fontawesome-free-6.2.0-web/webfonts/fa-brands-400.woff2 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/fontawesome-free-6.2.0-web/webfonts/fa-regular-400.woff2 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/elementui/theme-chalk/fonts/element-icons.woff HTTP/1.1" 200 28200
+INFO "GET /static/admin/simpleui-x/fontawesome-free-6.2.0-web/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 150472
+INFO code 400, message Bad request version ('Z\x892\x9f(È]}#\x8c\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO code 400, message Bad request version ('\x81oÿºáÉQüBz.u.á\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+ERROR You're accessing the development server over HTTPS, but it only supports HTTP.
+WARNING Not Found: /
+WARNING "GET / HTTP/1.1" 404 2946
+INFO "GET /coupons/ HTTP/1.1" 200 14508
+INFO "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+ERROR Internal Server Error: /coupons/avail/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/coupon/views.py", line 20, in get
+    available_coupons = get_available_coupons(request.user.id)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/coupon/services.py", line 46, in get_available_coupons
+    coupon_type = int(coupon["type"])
+KeyError: 'type'
+ERROR "GET /coupons/avail/ HTTP/1.1" 500 112255
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/coupon/services.py changed, reloading.
+INFO Watching for file changes with StatReloader
+ERROR Internal Server Error: /coupons/avail/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/coupon/views.py", line 20, in get
+    available_coupons = get_available_coupons(request.user.id)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/coupon/services.py", line 53, in get_available_coupons
+    include_directions = {int(item["direction_id"]) for item in coupon["to_direction"]}
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/coupon/services.py", line 53, in <setcomp>
+    include_directions = {int(item["direction_id"]) for item in coupon["to_direction"]}
+KeyError: 'direction_id'
+ERROR "GET /coupons/avail/ HTTP/1.1" 500 116846
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/coupon/services.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /coupons/avail/ HTTP/1.1" 200 5402
+INFO Watching for file changes with StatReloader
+INFO "GET /coupons/avail/ HTTP/1.1" 200 5402
+INFO "PUT /cart/ HTTP/1.1" 200 45
+INFO "GET /coupons/avail/ HTTP/1.1" 200 14023
+INFO Watching for file changes with StatReloader
