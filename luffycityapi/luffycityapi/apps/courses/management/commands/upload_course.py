@@ -12,8 +12,7 @@ class Command(BaseCommand):
 
     def __init__(self):
         super(Command, self).__init__()
-        self.fields = ["teacher", "direction", "category"]
-        self.option_fields = ["course", "discounts"]
+        self.fields = ["teacher", "direction", "category", "course", "actprice"]
         self.default_amount = 10
         self.default_chapter = 5
         self.default_lesson = 3
@@ -36,13 +35,12 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         data_type = options['type']
-        if data_type in self.fields + self.option_fields:
+        if data_type in self.fields:
             if hasattr(self, "add_%s" % data_type):
-                getattr(self, "add_%s" % data_type)(options)
-                if data_type in self.fields:
-                    print(f"{options['number']} items of {data_type} data added in total.")
-                else:
-                    print("data items added according to current course records")
+                try:
+                    getattr(self, "add_%s" % data_type)(options)
+                except Exception as e:
+                    print("command failed due to %s" % e, "Maybe should use 'truncate' to clear table")
             else:
                 raise CommandError(f"Type {data_type} is in fields but not implemented.")
         else:
@@ -71,9 +69,9 @@ class Command(BaseCommand):
     def add_category(self, options):
         for i in range(options['number']):
             CourseCategory.objects.create(
-                name=faker.company(),
+                name=faker.job_male()[:3] + faker.job_female()[:3],
                 remark=faker.sentence(),
-                direction_id=random.randint(1, 10),
+                direction_id=random.randint(1, CourseDirection.objects.count()),
             )
 
     def add_course(self, options):
@@ -102,13 +100,12 @@ class Command(BaseCommand):
                 price=faker.random_number(4, True),
                 recomment_home_hot=0,
                 recomment_home_top=0,
-                category_id=random.randint(1, 70),
-                direction_id=random.randint(1, 10),
+                category_id=random.randint(1, CourseCategory.objects.count()),
+                direction_id=random.randint(1, CourseDirection.objects.count()),
                 teacher_id=random.randint(1, 6),
             )
 
-    def add_lessons(self, options):
-        queryset = Course.objects.all().order_by("id")
+        queryset = Course.objects.all().filter(is_deleted=False).order_by("id")
         min_id, max_id = queryset.first().id, queryset.last().id
         for idx in range(min_id, max_id + 1):
             for chapter in range(self.default_chapter):
@@ -141,12 +138,16 @@ class Command(BaseCommand):
                         course_id=idx,
                     )
 
-    def add_discounts(self, options):
-        queryset = Course.objects.all().order_by("id")
-        min_id, max_id = queryset.first().id, queryset.last().id
-        for idx in range(min_id, max_id + 1):
+    def add_actprice(self, options):
+        course_total = Course.objects.filter().count()
+        for idx in range(1, course_total + 1):
+            # 三分之一的课程不参与优惠活动
+            if idx % 3:
+                continue
+            discount_id = random.randint(1, 3)
             CourseActivityPrice.objects.create(
+                name=["九折大优惠", "免费送课", "满减促销"][discount_id - 1],
                 course_id=idx,
-                discount_id=random.randint(1, 3),
+                discount_id=discount_id,
                 activity_id=1
             )

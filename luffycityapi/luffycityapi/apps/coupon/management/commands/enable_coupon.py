@@ -20,15 +20,13 @@ class Command(BaseCommand):
         )
 
     def handle(self, *args, **options):
-        coupon_amount = Coupon.objects.all().count()
-        order_amount = Order.objects.all().count()
+        coupon_amount = Coupon.objects.count()
         for i in range(options["amount"]):
             user_id = randint(1, 3)
             instance = CouponLog.objects.create(
                 name=faker.sentence(),
                 user_id=user_id,
                 coupon_id=randint(1, coupon_amount),
-                order_id=randint(1, order_amount),
                 use_time=datetime.now(),
                 use_status = 0
             )

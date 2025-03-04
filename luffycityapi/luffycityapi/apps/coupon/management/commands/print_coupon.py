@@ -12,15 +12,9 @@ class Command(BaseCommand):
 
     def __init__(self):
         super(Command, self).__init__()
-        queryset = Course.objects.all().order_by("id")
-        self.course_range = queryset.first().id, queryset.last().id
-        queryset = CourseDirection.objects.all().order_by("id")
-        self.direction_range = queryset.first().id, queryset.last().id
-        queryset = CourseCategory.objects.all().order_by("id")
-        self.category_range = queryset.first().id, queryset.last().id
-        self.total = 0
-        if Coupon.objects.count():
-            self.total = Coupon.objects.order_by("id").first().id
+        self.course_count = Course.objects.count()
+        self.direction_count = CourseDirection.objects.count()
+        self.category_count = CourseCategory.objects.count()
 
     def add_arguments(self, parser):
         parser.add_argument(
@@ -38,15 +32,15 @@ class Command(BaseCommand):
                 value = randint(200, 1000)
             else:
                 value = randint(50, 99) / 100
-            total = (20, 50, 100)[randint(0, 2)]
+
             coupon_type = randint(0, 3)
-            Coupon.objects.create(
-                name=faker.job() + " Coupon",
+            coupon = Coupon.objects.create(
+                name=faker.job() + " 优惠券",
                 discount=discount,
                 sale=('-' if discount == 1 else '*') + str(value),
                 coupon_type = coupon_type,
-                total = total,
-                has_total = total,
+                total = 50,
+                has_total = 50,
                 start_time = datetime.now(),
                 end_time = datetime.now() + timedelta(days=30 * 6),
                 get_type = randint(0, 1),
@@ -55,32 +49,28 @@ class Command(BaseCommand):
             )
             # course direction specified
             if coupon_type == 1:
-                l, r = self.direction_range[0], self.direction_range[1]
-                for i in range((r - l) // 5 + 1):
+                for i in range(self.direction_count // 5 + 1):
                     CouponDirection.objects.create(
-                        direction_id=randint(l, r),
+                        direction_id=randint(1, self.direction_count),
                         # we just printed it
-                        coupon_id=self.total + 1,
+                        coupon_id=coupon.id,
                         created_time=datetime.now(),
                     )
             # course category specified
             elif coupon_type == 2:
-                l, r = self.course_range[0], self.course_range[1]
-                for i in range((r - l) // 6 + 1):
+                for i in range(self.category_count // 8 + 1):
                     CouponCourseCat.objects.create(
-                        category_id=randint(l, r),
+                        category_id=randint(1, self.category_count),
                         # we just printed it
-                        coupon_id=self.total + 1,
+                        coupon_id=coupon.id,
                         created_time=datetime.now(),
                     )
             # course specified
             elif coupon_type == 3:
-                l, r = self.course_range[0], self.course_range[1]
-                for i in range((r - l) // 10 + 1):
+                for i in range(self.course_count // 10 + 1):
                     CouponCourse.objects.create(
-                        course_id=randint(l, r),
+                        course_id=randint(1, self.course_count),
                         # we just printed it
-                        coupon_id=self.total + 1,
+                        coupon_id=coupon.id,
                         created_time=datetime.now(),
                     )
-            self.total += 1

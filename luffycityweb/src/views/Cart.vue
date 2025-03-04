@@ -38,16 +38,15 @@
                     <p class="package-item" v-if="course.discount.type">优惠价</p>
                   </dl>
               </div>
-
               <div class="item-3" v-if="course.discount.price>=0">
                   <div class="price">
                       <span class="discount-price"><em>￥</em><span>{{course.discount.price}}</span></span><br>
                       <span class="original-price"><em>￥</em><span>{{course.price}}</span></span>
                   </div>
               </div>
-            <div class="price" v-else>
-              <div class="discount-price"><em>￥</em><span>{{ course.price.toFixed(2) }}</span></div>
-            </div>
+              <div class="price" v-else>
+                <div class="original-price"><em>￥</em><span>{{ course.price.toFixed(2) }}</span></div>
+              </div>
               <div class="item-4"><el-icon :size="26" class="close" @click="cart_delete(course.id)"><Close /></el-icon></div>
           </div>
           <div class="cart-body-bot fixed">

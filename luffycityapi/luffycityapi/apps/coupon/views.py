@@ -1,3 +1,4 @@
+from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.views import APIView
@@ -10,7 +11,7 @@ class CouponListAPIView(APIView):
 
     def get(self, request):
         coupon_data = get_coupon_list(request.user.id)
-        return Response(coupon_data)
+        return Response(coupon_data, status=status.HTTP_200_OK)
 
 
 class AvailableCouponListAPIView(APIView):
@@ -18,4 +19,4 @@ class AvailableCouponListAPIView(APIView):
 
     def get(self, request):
         available_coupons = get_available_coupons(request.user.id)
-        return Response(available_coupons)
+        return Response(available_coupons, status=status.HTTP_200_OK)
