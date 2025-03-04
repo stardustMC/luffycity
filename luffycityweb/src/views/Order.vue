@@ -27,8 +27,8 @@
               </div>
               <div class="item-3">
                   <div class="price">
-                      <p class="discount-price"><em>￥</em><span>{{course.discount.price}}</span></p>
-                      <p class="original-price"><em>￥</em><span>{{course.price}}</span></p>
+                      <p class="discount-price" v-if="course.discount.price >= 0"><em>￥</em><span>{{course.discount.price}}</span></p>
+                      <p :class="{'original-price': course.discount.price >= 0}"><em>￥</em><span>{{course.price}}</span></p>
                   </div>
               </div>
           </div>
@@ -45,7 +45,7 @@
           <transition name="el-zoom-in-top">
           <div class="coupon-del-box" v-if="order.use_coupon">
             <div class="coupon-switch-box">
-              <div class="switch-btn ticket" :class="{'checked': order.discount_type===0}" @click="order.discount_type=0">优惠券 (4)<em><i class="imv2-check"></i></em></div>
+              <div class="switch-btn ticket" :class="{'checked': order.discount_type===0}" @click="order.discount_type=0">优惠券 ({{order.avail_coupon_list.length}})<em><i class="imv2-check"></i></em></div>
               <div class="switch-btn code" :class="{'checked': order.discount_type===1}" @click="order.discount_type=1">积分<em><i class="imv2-check"></i></em></div>
             </div>
             <div class="coupon-content ticket" v-if="order.discount_type===0">
@@ -53,10 +53,9 @@
               <div class="coupons-box" v-else>
                <div class="content-box">
                 <ul class="nouse-box">
-                 <li class="l" v-for="coupon in order.avail_coupon_list"
-                     :key="coupon.id"
-                     @click="set_select(coupon.id)"
-                     :class="{'wait-use': Date.parse(coupon.start_time) > Date.now(), 'select': select_id === coupon.id}">
+                 <li class="l" v-for="(coupon, index) in order.avail_coupon_list"
+                     @click="order.select = index"
+                     :class="{'wait-use': Date.parse(coupon.start_time) > Date.now(), 'select': order.select === index}">
                   <div class="detail-box more-del-box">
                    <div class="price-box">
                     <p class="coupon-price l"> {{format_sale(coupon.sale)}} </p>
@@ -113,7 +112,7 @@
               <p class="r price-text">优惠券/积分抵扣：</p>
             </div>
             <div class="pay-price-box clearfix">
-              <p class="r rw price"><em>￥</em><span id="js-pay-price">{{cart.total_selected_discount_price}}</span></p>
+              <p class="r rw price"><em>￥</em><span id="js-pay-price">{{(cart.total_selected_discount_price - order.discount_price).toFixed(2)}}</span></p>
               <p class="r price-text">应付：</p>
             </div>
             <span class="r btn btn-red submit-btn" @click="create_order">提交订单</span>
@@ -143,11 +142,6 @@ import {ElMessage} from "element-plus";
 import router from "../router/index.js";
 
 let store = useStore();
-
-const select_id = ref(null);
-const set_select = (id)=>{
-  select_id.value = id;
-}
 
 const get_selected = () => {
   let token = localStorage.getItem("token") || sessionStorage.getItem("token");
@@ -188,10 +182,9 @@ get_avail_coupons();
 
 const format_sale = (sale)=>{
   if(sale[0] === '-'){
-    return "￥" + sale.slice(1);
+    return "￥" + Math.abs(parseFloat(sale)).toString();
   }else if(sale[0] === '*'){
-    let idx = sale.indexOf('.');
-    return sale.slice(idx + 1, idx + 3) + "折";
+    return (parseFloat(sale.replace("*", "")) * 100).toString() + "折";
   }
 }
 
@@ -223,6 +216,55 @@ watch(
       console.log(order.pay_type)
     }
 )
+
+watch(()=>order.select, ()=>{
+   if(order.select === -1){
+     return
+   }
+
+   let coupon = order.avail_coupon_list[order.select];
+   let max_discount = -1;
+   for(let course of cart.cart_selected_list){
+     // 活动优惠课程不可使用优惠券
+     if(course.discount.price !== undefined){
+       continue
+     }
+     // 通用优惠券
+     if(coupon.avail_courses === "__all__"){
+       if(max_discount === -1) max_discount = course;
+       else{
+         if(max_discount.price < course.price){
+           max_discount = course;
+         }
+       }
+     }else{
+       // 范围优惠券
+       if(coupon.avail_courses.indexOf(course.id) !== -1 && course.price >= coupon.condition){
+         if (max_discount === -1) max_discount = course;
+         else {
+           if (max_discount.price < course.price) {
+             max_discount = course;
+           }
+         }
+       }
+     }
+   }
+   // 有可以使用优惠券的课程
+   if(max_discount !== -1){
+     // 减免
+     if (coupon.discount === "1") {
+       order.discount_price = parseFloat(Math.abs(coupon.sale));
+     } else if (coupon.discount === "2") {
+       // 折扣
+       order.discount_price = parseFloat(Math.abs(max_discount.price * (1 - parseFloat(coupon.sale.replace("*", ""))))).toFixed(2);
+     }
+   }else{
+     order.select = -1;
+     order.discount_price = 0;
+     ElMessage.error("当前优惠券使用课程已参与其它活动哦")
+   }
+   console.log(order.discount_price);
+})
 
 // 底部订单总价信息固定浮动效果
 window.onscroll = ()=>{

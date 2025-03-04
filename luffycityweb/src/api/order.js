@@ -5,6 +5,7 @@ const order = reactive({
     total_price: 0,         // 勾选商品的总价格
     use_coupon: false,      // 用户是否使用优惠
     discount_type: 0,       // 0表示优惠券，1表示积分
+    discount_price: 0,
     avail_coupon_list: [],  // 用户可用优惠券列表
     coupon_list: [],        // 用户拥有的所有优惠券列表
     select: -1,             // 当前用户选中的优惠券下标，-1表示没有选择
