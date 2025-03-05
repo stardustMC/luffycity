@@ -156,12 +156,18 @@ get_selected();
 
 const create_order = () =>{
   let token = localStorage.getItem("token") || sessionStorage.getItem("token");
-  order.create_order(token).then(response=>{
+  // attach selected user coupon id
+  let user_coupon_id = -1;
+  if(order.select !== -1){
+    // 这个id就是最初存放在redis中的couponlog的主键id
+    user_coupon_id = order.avail_coupon_list[order.select].id;
+  }
+  order.create_order(user_coupon_id, token).then(response=>{
     if(response.status !== 201){
       // todo: handle order create failure
       ElMessage.error("Order create failed...Please try again.")
     }else{
-      ElMessage.success("Order accepted~");
+      ElMessage.success("Success! Now ready to start payment...");
       store.commit("cart_count", response.data.cart_count);
       router.push("/cart/");
     }

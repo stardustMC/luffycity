@@ -3,11 +3,14 @@ from django.db import transaction
 from datetime import datetime
 from rest_framework import serializers
 from django_redis import get_redis_connection
+
+from coupon.models import CouponLog
 from .models import Order, OrderDetail, Course
 
 
 class OrderModelSerializer(serializers.ModelSerializer):
     pay_link = serializers.CharField(read_only=True)
+    coupon_id = serializers.IntegerField(write_only=True, default=-1)
 
     class Meta:
         model = Order
@@ -21,6 +24,10 @@ class OrderModelSerializer(serializers.ModelSerializer):
         """创建订单"""
         redis = get_redis_connection("cart")
         user_id = self.context["request"].user.id  # 1
+
+        # 找到优惠券的记录
+        user_coupon_id = validated_data.get("id", -1)
+        user_coupon = CouponLog.objects.filter(pk=user_coupon_id, user_id=user_id).first()
 
         with transaction.atomic():
             t1 = transaction.savepoint()
@@ -47,35 +54,62 @@ class OrderModelSerializer(serializers.ModelSerializer):
                 total_price = 0 # 本次订单的总价格
                 real_price = 0  # 本次订单的实付总价
 
+                max_discount_course = None
                 for course in course_list:
-                    discount_price = float(course.discount.get("price", 0)) # 获取课程原价
+                    discount_price = course.discount.get("price", None) # 获取课程优惠折扣
+                    if discount_price is not None:
+                        discount_price = float(discount_price)
                     discount_name = course.discount.get("type", "")
                     detail_list.append(OrderDetail(
                         order=order,
                         course=course,
                         name=course.name,
                         price=course.price,
-                        real_price=discount_price,
+                        real_price=discount_price or course.price,
                         discount_name=discount_name,
                     ))
 
+                    # 找出能最大发挥优惠券力度的课程（也就是最贵的课程使用折扣优惠券）
+                    if user_coupon and discount_price is None:
+                        if max_discount_course is None or course.price > max_discount_course.price:
+                            max_discount_course = course
+
                     # 统计订单的总价和实付总价
                     total_price += float(course.price)
-                    real_price += discount_price if discount_price > 0 else float(course.price)
+                    real_price += discount_price or float(course.price)
+
+                coupon_discount_price = 0
+                if user_coupon:
+                    sale = float(user_coupon.coupon.sale[1:])
+                    # 减免
+                    if user_coupon.coupon.discount == 1:
+                        coupon_discount_price = sale
+                    # 折扣
+                    elif user_coupon.coupon.discount == 2:
+                        coupon_discount_price = float(max_discount_course.price) * (1 - sale)
 
                 # 一次性批量添加本次下单的商品记录
                 OrderDetail.objects.bulk_create(detail_list)
                 # 保存订单的总价格和实付价格
                 order.total_price = total_price
-                order.real_price = real_price
+                order.real_price = float(real_price - coupon_discount_price)
                 order.save()
 
-                cart_hash = {key: value for key, value in cart_hash.items() if value == b'0'}
+                cart = {key: value for key, value in cart_hash.items() if value == b'0'}
                 pipe = redis.pipeline()
                 pipe.multi()
                 pipe.delete(f"cart_{user_id}")
-                pipe.hset(f"cart_{user_id}", mapping=cart_hash)
+                if cart:
+                    pipe.hset(f"cart_{user_id}", mapping=cart)
                 pipe.execute()
+                # update couponlog status
+                user_coupon.order = order
+                user_coupon.use_time = datetime.now()
+                user_coupon.use_status = 1
+                user_coupon.save()
+                # sync coupon data in redis
+                coupon_redis = get_redis_connection("coupon")
+                coupon_redis.delete(f"{user_coupon.id}:{user_id}")
             except Exception as e:
                 logging.error("order create failed! %s" % e)
                 transaction.savepoint_rollback(t1)
