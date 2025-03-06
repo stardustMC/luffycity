@@ -23,6 +23,7 @@
                   <dl class="l has-package">
                     <dt>{{course.name}}</dt>
                     <p class="package-item" v-if="course.discount.price >= 0">减免价</p>
+                    <p class="package-item" v-if="course.credit > 0">抵扣积分{{course.credit}}</p>
                   </dl>
               </div>
               <div class="item-3">
@@ -77,15 +78,15 @@
                   <a class="convert-btn">兑换</a>
                 </div>
                 <div class="converted-box">
-                  <p>使用积分:<span class="code-num">200</span></p>
-                  <p class="course-title">课程:<span class="c_name">3天JavaScript入门</span>
-                    <span class="discount-cash">100积分抵扣:<em>10</em>元</span>
-                  </p>
-                  <p class="course-title">课程:<span class="c_name">3天JavaScript入门</span>
-                    <span class="discount-cash">100积分抵扣:<em>10</em>元</span>
-                  </p>
+                  <p>使用积分:<span class="code-num">{{order.own_credit}}</span></p>
+<!--                  <p class="course-title">课程:<span class="c_name">3天JavaScript入门</span>-->
+<!--                    <span class="discount-cash">100积分抵扣:<em>10</em>元</span>-->
+<!--                  </p>-->
+<!--                  <p class="course-title">课程:<span class="c_name">3天JavaScript入门</span>-->
+<!--                    <span class="discount-cash">100积分抵扣:<em>10</em>元</span>-->
+<!--                  </p>-->
                 </div>
-                <p class="error-msg">本次订单最多可以使用1000积分，您当前拥有200积分。(10积分=1元)</p>
+                <p class="error-msg">本次订单最多可以使用1000积分，您当前拥有{{order.own_credit}}积分。(10积分=1元)</p>
                 <p class="tip">说明：每笔订单只能使用一次积分，并只有在部分允许使用积分兑换的课程中才能使用。</p>
               </div>
           </div>
@@ -180,7 +181,9 @@ const get_avail_coupons = () =>{
     if(response.status !== 200){
       ElMessage.error("Coupon info get failure!")
     }else{
-      order.avail_coupon_list = response.data;
+      order.avail_coupon_list = response.data.available_coupons;
+      order.own_credit = response.data.has_credit;
+      order.credit_ratio = response.data.credit_ratio;
     }
   })
 }

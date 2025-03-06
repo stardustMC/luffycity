@@ -18,3 +18,6 @@ DEFAULT_HOT_WORD = "hot_words"
 HOT_WORD_LENGTH = 5
 # 设置热门搜索关键字的有效期时间[单位：天]
 HOT_WORD_EXPIRE = 7
+
+# 积分抵扣现金的比例 10:1
+CREDIT_TO_DISCOUNT_PRICE = 10

@@ -29,6 +29,7 @@ class CartAPIView(APIView):
                 "course_cover": course.course_cover.url,
                 "price": float(course.price),
                 "discount": course.discount,
+                "credit": course.credit,
                 "course_type": course.get_course_type_display(),
                 # 勾选状态：把课程ID转换成bytes类型，判断当前ID是否在购物车字典中作为key存在，如果存在，判断当前课程ID对应的值是否是字符串"1"，是则返回True
                 "selected": course.id in cart_dict and cart_dict[course.id]
@@ -112,6 +113,7 @@ class CartOrderAPIView(APIView):
                 "course_cover": course.course_cover.url,
                 "price": float(course.price),
                 "discount": course.discount,
+                "credit": course.credit,
                 "course_type": course.get_course_type_display(),
             })
         return Response({"errmsg": "courses in cart returned", "cart": data}, status=status.HTTP_200_OK)

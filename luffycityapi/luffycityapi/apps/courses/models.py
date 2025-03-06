@@ -73,6 +73,7 @@ class Course(BaseModel):
     direction = models.ForeignKey("CourseDirection", related_name="course_list", on_delete=models.DO_NOTHING, null=True, blank=True, db_constraint=False, verbose_name="学习方向")
     category = models.ForeignKey("CourseCategory", related_name="course_list", on_delete=models.DO_NOTHING, null=True, blank=True, db_constraint=False, verbose_name="课程分类")
     teacher = models.ForeignKey("Teacher", related_name="course_list", on_delete=models.DO_NOTHING, null=True, blank=True, db_constraint=False, verbose_name="授课老师")
+    credit = models.IntegerField(blank=True, null=True, default=0, verbose_name="积分")
 
     class Meta:
         db_table = "fg_course_info"

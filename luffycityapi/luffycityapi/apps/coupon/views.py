@@ -2,6 +2,8 @@ from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.views import APIView
+
+import constants
 from .services import get_coupon_list, get_available_coupons
 
 
@@ -19,4 +21,9 @@ class AvailableCouponListAPIView(APIView):
 
     def get(self, request):
         available_coupons = get_available_coupons(request.user.id)
-        return Response(available_coupons, status=status.HTTP_200_OK)
+        return Response({
+            "has_credit": request.user.credit,
+            "msg": "OK",
+            "available_coupons": available_coupons,
+            "CREDIT_RATIO": constants.CREDIT_TO_DISCOUNT_PRICE
+        }, status=status.HTTP_200_OK)

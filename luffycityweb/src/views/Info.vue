@@ -18,7 +18,7 @@
           <div class="wrap-right">
             <h3 class="course-name">{{courses.info.name}}</h3>
             <p class="data">{{courses.info.students}}人在学&nbsp;&nbsp;&nbsp;&nbsp;课程总时长：{{courses.info.lessons}}课时/180小时&nbsp;&nbsp;&nbsp;&nbsp;难度：{{courses.info.get_level_display}}</p>
-            <div class="sale-time">
+            <div class="sale-time" v-if="courses.info.discount.type">
               <p class="sale-type">{{courses.info.discount.type}}</p>
               <p class="expire">距离结束：仅剩{{expiring.days}}天 {{expiring.hours}}小时 {{ expiring.minutes }}分 <span class="second">{{ expiring.seconds }}</span> 秒</p>
             </div>
@@ -26,6 +26,10 @@
               <span>活动价</span>
               <span class="discount">¥{{courses.info.discount.price}}</span>
               <span class="original">¥{{courses.info.price}}</span>
+            </p>
+            <p class="course-price" v-if="courses.info.credit>0">
+              <span>抵扣积分</span>
+              <span class="discount">{{courses.info.credit}}</span>
             </p>
             <div class="buy">
               <div class="buy-btn">
@@ -134,7 +138,6 @@ if(courses.course_id > 0){
   // 根据课程ID到服务端获取课程详情数据
   courses.get_course().then(response=> {
     courses.info = response.data;
-    console.log(response.data);
     clearInterval(courses.timer);
     courses.timer = setInterval(() => {
       if (courses.info.discount.expire && courses.info.discount.expire > 0) {
@@ -154,7 +157,6 @@ if(courses.course_id > 0){
   // 获取课程章节信息
   courses.get_chapter_list().then(response=>{
     courses.chapter_list = response.data
-    console.log(response.data)
   })
 
 }else{
