@@ -22,8 +22,8 @@ class AvailableCouponListAPIView(APIView):
     def get(self, request):
         available_coupons = get_available_coupons(request.user.id)
         return Response({
-            "has_credit": request.user.credit,
+            "own_credit": request.user.credit,
             "msg": "OK",
             "available_coupons": available_coupons,
-            "CREDIT_RATIO": constants.CREDIT_TO_DISCOUNT_PRICE
+            "credit_ratio": constants.CREDIT_TO_DISCOUNT_PRICE
         }, status=status.HTTP_200_OK)

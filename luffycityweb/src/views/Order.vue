@@ -74,19 +74,17 @@
             </div>
             <div class="coupon-content code" v-else>
                 <div class="input-box">
-                  <el-input-number placeholder="10积分=1元" v-model="order.credit" :step="1" :min="0" :max="1000"></el-input-number>
-                  <a class="convert-btn">兑换</a>
+                  <el-input-number placeholder="10积分=1元" v-model="order.credit" :step="10" :min="0" :max="order.max_use_credit"></el-input-number>
+                  <a class="convert-btn" @click.prevent.stop="deduct_credit">兑换</a>
+                  <a class="convert-btn" @click.prevent.stop="max_deduct_credit">最大积分兑换</a>
                 </div>
                 <div class="converted-box">
-                  <p>使用积分:<span class="code-num">{{order.own_credit}}</span></p>
-<!--                  <p class="course-title">课程:<span class="c_name">3天JavaScript入门</span>-->
-<!--                    <span class="discount-cash">100积分抵扣:<em>10</em>元</span>-->
-<!--                  </p>-->
-<!--                  <p class="course-title">课程:<span class="c_name">3天JavaScript入门</span>-->
-<!--                    <span class="discount-cash">100积分抵扣:<em>10</em>元</span>-->
-<!--                  </p>-->
+<!--                  <p>使用积分:<span class="code-num">{{order.credit}}</span></p>-->
+                  <p class="course-title" v-for="course in order.avail_credit_list">课程:<span class="c_name">{{course.name}}</span>
+                    <span class="discount-cash">{{course.credit}}积分抵扣:<em>{{(course.credit/order.credit_ratio).toFixed(2)}}</em>元</span>
+                  </p>
                 </div>
-                <p class="error-msg">本次订单最多可以使用1000积分，您当前拥有{{order.own_credit}}积分。(10积分=1元)</p>
+                <p class="error-msg">本次订单最多可以使用{{order.max_use_credit}}积分，您当前拥有{{order.own_credit}}积分。({{order.credit_ratio}}积分=1元)</p>
                 <p class="tip">说明：每笔订单只能使用一次积分，并只有在部分允许使用积分兑换的课程中才能使用。</p>
               </div>
           </div>
@@ -149,8 +147,22 @@ const get_selected = () => {
   cart.get_cart_selected_list(token).then(response=>{
     if(response.status !== 200){
       // todo: copy with server error
+      return
     }
     cart.cart_selected_list = response.data.cart;
+
+    let max_use_credit = 0;
+    let use_credit_courses = [];
+    cart.cart_selected_list.forEach(course=>{
+      if(course.credit > 0){
+        max_use_credit += course.credit;
+        use_credit_courses.push(course);
+      }
+    })
+
+    if(max_use_credit > order.own_credit) max_use_credit = order.own_credit;
+    order.max_use_credit = max_use_credit;
+    order.avail_credit_list = use_credit_courses;
   })
 }
 get_selected();
@@ -182,7 +194,7 @@ const get_avail_coupons = () =>{
       ElMessage.error("Coupon info get failure!")
     }else{
       order.avail_coupon_list = response.data.available_coupons;
-      order.own_credit = response.data.has_credit;
+      order.own_credit = response.data.own_credit;
       order.credit_ratio = response.data.credit_ratio;
     }
   })
@@ -273,6 +285,21 @@ watch(()=>order.select, ()=>{
      ElMessage.error("当前优惠券使用课程已参与其它活动哦")
    }
    console.log(order.discount_price);
+})
+
+const deduct_credit = ()=>{
+  return (order.credit / order.credit_ratio).toFixed(2);
+}
+
+const max_deduct_credit = ()=>{
+  order.credit = order.max_use_credit;
+  return deduct_credit(order.max_use_credit);
+}
+
+watch(()=>order.discount_type, ()=>{
+  order.select = -1;
+  order.discount_price = 0;
+  order.credit = 0;
 })
 
 // 底部订单总价信息固定浮动效果

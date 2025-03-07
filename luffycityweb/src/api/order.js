@@ -11,9 +11,12 @@ const order = reactive({
     select: -1,             // 当前用户选中的优惠券下标，-1表示没有选择
     fixed: true,            // 底部订单总价是否固定浮动
     pay_type: 0,            // 支付方式
+
     credit: 0,              // 当前用户选择抵扣的积分，0表示没有使用积分
-    own_credit: 0,          // 用户拥有积分
     credit_ratio: 0,         // 积分换算比例
+    own_credit: 0,          // 用户拥有积分
+    max_use_credit: 0,         // 最多可用积分
+    avail_credit_list: [],     // 可用积分的课程
 
     create_order(user_coupon_id, token) {
         // 生成订单

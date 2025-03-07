@@ -5188,3 +5188,46 @@ INFO "GET /admin/users/user/ HTTP/1.1" 200 36817
 INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
 INFO "GET /cart/order/ HTTP/1.1" 200 1303
 INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
+INFO Watching for file changes with StatReloader
+INFO "OPTIONS /cart/order/ HTTP/1.1" 200 0
+INFO "OPTIONS /coupons/avail/ HTTP/1.1" 200 0
+INFO "GET /cart/order/ HTTP/1.1" 200 1303
+INFO "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /cart/ HTTP/1.1" 200 2127
+INFO "GET /cart/order/ HTTP/1.1" 200 1303
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
+INFO Watching for file changes with StatReloader
+INFO "OPTIONS /coupons/avail/ HTTP/1.1" 200 0
+INFO "OPTIONS /cart/order/ HTTP/1.1" 200 0
+INFO "GET /cart/order/ HTTP/1.1" 200 1302
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
+INFO "GET /cart/order/ HTTP/1.1" 200 1303
+INFO "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO "GET /cart/ HTTP/1.1" 200 2126
+INFO "GET /cart/ HTTP/1.1" 200 2127
+INFO "GET /cart/ HTTP/1.1" 200 2129
+INFO "PATCH /cart/ HTTP/1.1" 200 41
+INFO "PATCH /cart/ HTTP/1.1" 200 41
+INFO /home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/drf_haystack/__init__.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /cart/ HTTP/1.1" 200 2132
+INFO "PATCH /cart/ HTTP/1.1" 200 41
+INFO "PATCH /cart/ HTTP/1.1" 200 41
+INFO "GET /cart/order/ HTTP/1.1" 200 1250
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/coupon/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "OPTIONS /coupons/avail/ HTTP/1.1" 200 0
+INFO "OPTIONS /cart/order/ HTTP/1.1" 200 0
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1288
+INFO "GET /cart/order/ HTTP/1.1" 200 1250
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/coupon/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
+INFO "GET /cart/order/ HTTP/1.1" 200 1250
+INFO "GET /cart/order/ HTTP/1.1" 200 1251
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
