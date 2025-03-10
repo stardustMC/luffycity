@@ -5231,3 +5231,347 @@ INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
 INFO "GET /cart/order/ HTTP/1.1" 200 1250
 INFO "GET /cart/order/ HTTP/1.1" 200 1251
 INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
+INFO "GET /cart/order/ HTTP/1.1" 200 1249
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/serializers.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/serializers.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/serializers.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/serializers.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
+INFO "GET /cart/order/ HTTP/1.1" 200 1250
+WARNING Not Found: /favicon.ico
+INFO "GET /admin/ HTTP/1.1" 200 26258
+INFO "GET /uploads/logo.png HTTP/1.1" 200 362358
+INFO "GET /admin/users/user/ HTTP/1.1" 200 36667
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+INFO "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO "GET /admin/users/user/1/change/ HTTP/1.1" 200 27745
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+INFO "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+INFO "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+INFO "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+INFO "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO "POST /admin/users/user/1/change/ HTTP/1.1" 302 0
+INFO "GET /admin/users/user/ HTTP/1.1" 200 36817
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+INFO "GET /admin/users/credit/ HTTP/1.1" 200 28274
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+INFO "GET /cart/order/ HTTP/1.1" 200 1250
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
+INFO "GET /cart/order/ HTTP/1.1" 200 1250
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
+INFO "GET /cart/order/ HTTP/1.1" 200 1250
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
+INFO "GET /cart/order/ HTTP/1.1" 200 1250
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
+INFO "GET /cart/order/ HTTP/1.1" 200 1251
+INFO "GET /cart/order/ HTTP/1.1" 200 1250
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
+INFO "GET /cart/order/ HTTP/1.1" 200 1249
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
+INFO "GET /cart/order/ HTTP/1.1" 200 1251
+INFO "OPTIONS /orders/ HTTP/1.1" 200 0
+ERROR Internal Server Error: /orders/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/views.py", line 17, in create
+    super().create(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 223, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 442, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 495, in to_internal_value
+    for field in fields:
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 378, in _writable_fields
+    for field in self.fields.values():
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 372, in fields
+    for key, value in self.get_fields().items():
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 1079, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 1175, in get_field_names
+    assert field_name in fields, (
+AssertionError: The field 'coupon_id' was declared on serializer OrderModelSerializer, but has not been included in the 'fields' option.
+ERROR "POST /orders/ HTTP/1.1" 500 152189
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/serializers.py changed, reloading.
+INFO Watching for file changes with StatReloader
+ERROR Internal Server Error: /orders/
+Traceback (most recent call last):
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/serializers.py", line 118, in create
+    user.credit -= credit
+UnboundLocalError: local variable 'credit' referenced before assignment
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/views.py", line 17, in create
+    super().create(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/serializers.py", line 139, in create
+    raise serializers.ValidationError(detail="order create failed!")
+rest_framework.exceptions.ValidationError: [ErrorDetail(string='order create failed!', code='invalid')]
+ERROR "POST /orders/ HTTP/1.1" 500 136853
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/serializers.py changed, reloading.
+INFO Watching for file changes with StatReloader
+ERROR Internal Server Error: /orders/
+Traceback (most recent call last):
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/serializers.py", line 129, in create
+    user_coupon.order = order
+AttributeError: 'NoneType' object has no attribute 'order'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/views.py", line 17, in create
+    super().create(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/serializers.py", line 139, in create
+    raise serializers.ValidationError(detail="order create failed!")
+rest_framework.exceptions.ValidationError: [ErrorDetail(string='order create failed!', code='invalid')]
+ERROR "POST /orders/ HTTP/1.1" 500 138048
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/serializers.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/serializers.py changed, reloading.
+INFO Watching for file changes with StatReloader
+ERROR Internal Server Error: /orders/
+Traceback (most recent call last):
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/serializers.py", line 106, in create
+    user_coupon.order = order
+AttributeError: 'NoneType' object has no attribute 'order'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/views.py", line 17, in create
+    super().create(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/serializers.py", line 140, in create
+    raise serializers.ValidationError(detail="order create failed!")
+rest_framework.exceptions.ValidationError: [ErrorDetail(string='order create failed!', code='invalid')]
+ERROR "POST /orders/ HTTP/1.1" 500 134536
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/serializers.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "POST /orders/ HTTP/1.1" 201 16
+INFO "GET /cart/ HTTP/1.1" 200 863
+INFO "PATCH /cart/ HTTP/1.1" 200 41
+INFO "GET /cart/order/ HTTP/1.1" 200 278
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1803
+INFO "GET /cart/ HTTP/1.1" 200 863
+INFO "PATCH /cart/ HTTP/1.1" 200 41
+INFO "PATCH /cart/ HTTP/1.1" 200 41
+INFO "PATCH /cart/ HTTP/1.1" 200 41
+INFO "PATCH /cart/ HTTP/1.1" 200 41
+INFO "GET /cart/order/ HTTP/1.1" 200 314
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
+INFO "POST /orders/ HTTP/1.1" 201 16
+INFO "GET /cart/ HTTP/1.1" 200 581
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/serializers.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "PATCH /cart/ HTTP/1.1" 200 41
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
+INFO "GET /cart/order/ HTTP/1.1" 200 323
+INFO "GET /courses/category/0/ HTTP/1.1" 200 1464
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 2
+INFO "GET /courses/directions/ HTTP/1.1" 200 266
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1761
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "GET /cart/ HTTP/1.1" 200 1315
+INFO "PATCH /cart/ HTTP/1.1" 200 41
+INFO "PATCH /cart/ HTTP/1.1" 200 41
+INFO "PATCH /cart/ HTTP/1.1" 200 41
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
+INFO "GET /cart/order/ HTTP/1.1" 200 313
+ERROR Internal Server Error: /orders/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/views.py", line 17, in create
+    super().create(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 223, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 442, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 495, in to_internal_value
+    for field in fields:
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 378, in _writable_fields
+    for field in self.fields.values():
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 372, in fields
+    for key, value in self.get_fields().items():
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 1079, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/serializers.py", line 1175, in get_field_names
+    assert field_name in fields, (
+AssertionError: The field 'discount_type' was declared on serializer OrderModelSerializer, but has not been included in the 'fields' option.
+ERROR "POST /orders/ HTTP/1.1" 500 152443
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/serializers.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "POST /orders/ HTTP/1.1" 201 16
+INFO "GET /cart/ HTTP/1.1" 200 1035
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/serializers.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/ HTTP/1.1" 200 26652
+INFO "GET /uploads/logo.png HTTP/1.1" 200 362358
+INFO "GET /static/admin/simpleui-x/elementui/theme-chalk/fonts/element-icons.woff HTTP/1.1" 200 28200
+INFO "GET /static/admin/simpleui-x/fontawesome-free-6.2.0-web/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 25096
+INFO "GET /static/admin/simpleui-x/fontawesome-free-6.2.0-web/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 150472
+WARNING Not Found: /favicon.ico
+INFO "GET /admin/users/user/ HTTP/1.1" 200 36667
+INFO "GET /static/admin/simpleui-x/elementui/theme-chalk/index.css HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/fontawesome-free-6.2.0-web/css/all.min.css HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/js/vue.min.js?_=2025.01.13 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/elementui/index.js?_=2025.01.13 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/css/base.css?_=2.7 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/theme/simpleui.css HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/js/language.js?_=2.1.2 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/locale/en-us.js?_=2.1.2 HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/locale/zh-hans.js HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/js/cookie.js HTTP/1.1" 304 0
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8560
+INFO "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO "GET /static/admin/css/responsive.css?_=20180905 HTTP/1.1" 200 18559
+INFO "GET /static/admin/simpleui-x/automatic/dicts.js HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/automatic/segment.js HTTP/1.1" 304 0
+INFO "GET /static/admin/simpleui-x/js/axios.min.js HTTP/1.1" 304 0
+INFO "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 2
+INFO "GET /courses/category/0/ HTTP/1.1" 200 1464
+INFO "GET /courses/directions/ HTTP/1.1" 200 266
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1762
+INFO "GET /cart/ HTTP/1.1" 200 580
+INFO "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO "POST /users/login/ HTTP/1.1" 200 291
+INFO "PATCH /cart/ HTTP/1.1" 200 41
+INFO "OPTIONS /cart/order/ HTTP/1.1" 200 0
+INFO "OPTIONS /coupons/avail/ HTTP/1.1" 200 0
+INFO "GET /cart/order/ HTTP/1.1" 200 322
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
+INFO "OPTIONS /orders/ HTTP/1.1" 200 0
+INFO "POST /orders/ HTTP/1.1" 201 16

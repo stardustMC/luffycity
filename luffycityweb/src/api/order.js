@@ -21,8 +21,9 @@ const order = reactive({
     create_order(user_coupon_id, token) {
         // 生成订单
         return http.post("/orders/", {
-            user_coupon_id,
-            pay_type: this.pay_type
+            user_coupon_id: user_coupon_id,
+            pay_type: this.pay_type,
+            discount_type: this.discount_type
         }, {
             headers: {
                 Authorization: "jwt " + token,

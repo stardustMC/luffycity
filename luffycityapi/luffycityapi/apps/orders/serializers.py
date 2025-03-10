@@ -4,6 +4,7 @@ from datetime import datetime
 from rest_framework import serializers
 from django_redis import get_redis_connection
 
+import constants
 from coupon.models import CouponLog
 from .models import Order, OrderDetail, Course
 
@@ -11,10 +12,11 @@ from .models import Order, OrderDetail, Course
 class OrderModelSerializer(serializers.ModelSerializer):
     pay_link = serializers.CharField(read_only=True)
     coupon_id = serializers.IntegerField(write_only=True, default=-1)
+    discount_type = serializers.IntegerField(write_only=True, default=0)
 
     class Meta:
         model = Order
-        fields = ["pay_type", "id", "order_number", "pay_link"]
+        fields = ["pay_type", "id", "order_number", "pay_link", "coupon_id", "discount_type"]
         read_only_fields = ["id", "order_number"]
         extra_kwargs = {
             "pay_type": {"write_only": True},
@@ -23,7 +25,8 @@ class OrderModelSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         """创建订单"""
         redis = get_redis_connection("cart")
-        user_id = self.context["request"].user.id  # 1
+        user = self.context["request"].user
+        user_id = user.id  # 1
 
         # 找到优惠券的记录
         user_coupon_id = validated_data.get("id", -1)
@@ -55,7 +58,11 @@ class OrderModelSerializer(serializers.ModelSerializer):
                 real_price = 0  # 本次订单的实付总价
 
                 max_discount_course = None
+                max_deduct_credits = 0
                 for course in course_list:
+                    if course.credit > 0:
+                        max_deduct_credits += course.credit
+
                     discount_price = course.discount.get("price", None) # 获取课程优惠折扣
                     if discount_price is not None:
                         discount_price = float(discount_price)
@@ -78,8 +85,13 @@ class OrderModelSerializer(serializers.ModelSerializer):
                     total_price += float(course.price)
                     real_price += discount_price or float(course.price)
 
-                coupon_discount_price = 0
-                if user_coupon:
+                # 一次性批量添加本次下单的商品记录
+                OrderDetail.objects.bulk_create(detail_list)
+
+                discount_type = validated_data.get("discount_type", 0)
+                # 使用优惠券
+                if discount_type == 0 and user_coupon:
+                    coupon_discount_price = 0
                     sale = float(user_coupon.coupon.sale[1:])
                     # 减免
                     if user_coupon.coupon.discount == 1:
@@ -88,12 +100,33 @@ class OrderModelSerializer(serializers.ModelSerializer):
                     elif user_coupon.coupon.discount == 2:
                         coupon_discount_price = float(max_discount_course.price) * (1 - sale)
 
-                # 一次性批量添加本次下单的商品记录
-                OrderDetail.objects.bulk_create(detail_list)
-                # 保存订单的总价格和实付价格
-                order.total_price = total_price
-                order.real_price = float(real_price - coupon_discount_price)
-                order.save()
+                    order.real_price = float(real_price - coupon_discount_price)
+
+                    # update couponlog status
+                    user_coupon.order = order
+                    user_coupon.use_time = datetime.now()
+                    user_coupon.use_status = 1
+                    user_coupon.save()
+                    # sync coupon data in redis
+                    coupon_redis = get_redis_connection("coupon")
+                    coupon_redis.delete(f"{user_coupon.id}:{user_id}")
+                # 使用积分
+                elif discount_type == 1:
+                    credit = validated_data.get("credit", 0)
+                    # 用户积分不足
+                    if credit > user.credit:
+                        raise serializers.ValidationError("Oops! You don't have enough credits...")
+                    # 超过了课程规定可用积分
+                    if credit > max_deduct_credits:
+                        raise serializers.ValidationError("Oops! credit limit exceeded %d ..." % max_deduct_credits)
+                    # 超过了订单实付金额（例如免费课程）
+                    if credit > real_price * constants.CREDIT_TO_DISCOUNT_PRICE:
+                        raise serializers.ValidationError(f"Oops! You can only use {real_price * constants.CREDIT_TO_DISCOUNT_PRICE} credits at most!")
+
+                    order.real_price = float(real_price - float(credit / constants.CREDIT_TO_DISCOUNT_PRICE))
+                    # 用户扣除积分
+                    user.credit -= credit
+                    user.save()
 
                 cart = {key: value for key, value in cart_hash.items() if value == b'0'}
                 pipe = redis.pipeline()
@@ -102,14 +135,9 @@ class OrderModelSerializer(serializers.ModelSerializer):
                 if cart:
                     pipe.hset(f"cart_{user_id}", mapping=cart)
                 pipe.execute()
-                # update couponlog status
-                user_coupon.order = order
-                user_coupon.use_time = datetime.now()
-                user_coupon.use_status = 1
-                user_coupon.save()
-                # sync coupon data in redis
-                coupon_redis = get_redis_connection("coupon")
-                coupon_redis.delete(f"{user_coupon.id}:{user_id}")
+                # 保存订单的总价格
+                order.total_price = total_price
+                order.save()
             except Exception as e:
                 logging.error("order create failed! %s" % e)
                 transaction.savepoint_rollback(t1)

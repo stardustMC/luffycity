@@ -159,8 +159,11 @@ const get_selected = () => {
         use_credit_courses.push(course);
       }
     })
-
+    // 如果最大可用积分超过了用户拥有的积分，则只能用自己有的积分
     if(max_use_credit > order.own_credit) max_use_credit = order.own_credit;
+    // 如果订单费用所能抵扣的积分小于拥有的积分（例如免费的课程），则设置为 费用*积分转化率
+    let total_credit = order.credit_ratio * cart.total_selected_discount_price;
+    if(max_use_credit > total_credit) max_use_credit = total_credit;
     order.max_use_credit = max_use_credit;
     order.avail_credit_list = use_credit_courses;
   })
@@ -288,12 +291,12 @@ watch(()=>order.select, ()=>{
 })
 
 const deduct_credit = ()=>{
-  return (order.credit / order.credit_ratio).toFixed(2);
+  order.discount_price = parseFloat((order.credit / order.credit_ratio).toFixed(2));
 }
 
 const max_deduct_credit = ()=>{
   order.credit = order.max_use_credit;
-  return deduct_credit(order.max_use_credit);
+  deduct_credit(order.max_use_credit);
 }
 
 watch(()=>order.discount_type, ()=>{
