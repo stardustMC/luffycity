@@ -18,6 +18,11 @@ const order = reactive({
     max_use_credit: 0,         // 最多可用积分
     avail_credit_list: [],     // 可用积分的课程
 
+    course_list: [],        // 购买的课程列表
+    show_success: false,    // 是否展示支付成功页面
+    real_price:  0,         // 实付金额
+    deal_time: undefined,   // 交易时间
+
     create_order(user_coupon_id, token) {
         // 生成订单
         return http.post("/orders/", {
@@ -46,6 +51,9 @@ const order = reactive({
     },
     alipay_page_pay(order_number){
         return http.get(`payment/alipay/${order_number}`);
+    },
+    alipay_post_display(query_string){
+        return http.get(`payment/alipay/result/${query_string}`);
     }
 })
 

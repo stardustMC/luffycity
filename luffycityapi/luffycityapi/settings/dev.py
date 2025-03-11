@@ -358,7 +358,7 @@ ALIPAY = {
     'timeout': 15,  # 请求超时时间，单位：秒
     "app_private_key_path": BASE_DIR / "apps/payment/keys/app_private_key.pem",  # 应用私钥路径
     "alipay_public_key_path": BASE_DIR / "apps/payment/keys/alipay_public_key.pem",  # 支付宝公钥路径
-    "return_url": "http://www.luffycity.cn:3000/alipay",  # 同步回调结果通知地址
+    "return_url": "http://www.luffycity.cn:3000/feedback",  # 同步回调结果通知地址
     "notify_url": "http://api.luffycity.cn:8000/payments/alipay/notify",  # 异步回调结果通知地址
 }
 

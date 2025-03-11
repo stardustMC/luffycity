@@ -5844,3 +5844,149 @@ INFO "GET /payment/alipay/202503110000000100000028 HTTP/1.1" 301 0
 INFO "GET /payment/alipay/202503110000000100000028/ HTTP/1.1" 200 967
 INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/payment/views.py changed, reloading.
 INFO Watching for file changes with StatReloader
+INFO "GET /cart/order/ HTTP/1.1" 204 47
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/payment/urls.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/payment/urls.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/payment/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/payment/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/utils/alipaysdk.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/payment/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/payment/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/payment/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/payment/urls.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/settings/dev.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /courses/directions/ HTTP/1.1" 200 266
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 2
+INFO "GET /courses/category/0/ HTTP/1.1" 200 1464
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1761
+INFO "GET /courses/category/5/ HTTP/1.1" 200 147
+INFO "GET /courses/5/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1684
+INFO "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "GET /cart/ HTTP/1.1" 200 1177
+INFO "PUT /cart/ HTTP/1.1" 200 45
+INFO "PUT /cart/ HTTP/1.1" 200 45
+INFO "PATCH /cart/ HTTP/1.1" 200 41
+INFO "GET /cart/order/ HTTP/1.1" 200 250
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
+INFO "POST /orders/ HTTP/1.1" 201 58
+INFO "GET /payment/alipay/202503110000000100000029 HTTP/1.1" 301 0
+ERROR Internal Server Error: /payment/alipay/202503110000000100000029/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/payment/views.py", line 21, in link
+    ali = AliPaySDK()
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/utils/alipaysdk.py", line 9, in __init__
+    self.config = config or settings.ALIPAY_CONFIG
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'ALIPAY_CONFIG'
+ERROR "GET /payment/alipay/202503110000000100000029/ HTTP/1.1" 500 109836
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/utils/alipaysdk.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 2
+INFO "GET /courses/directions/ HTTP/1.1" 200 266
+INFO "GET /courses/category/5/ HTTP/1.1" 200 147
+INFO "GET /courses/5/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1684
+INFO "GET /cart/ HTTP/1.1" 200 960
+INFO "PATCH /cart/ HTTP/1.1" 200 41
+INFO "GET /cart/order/ HTTP/1.1" 200 262
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
+INFO "POST /orders/ HTTP/1.1" 201 58
+INFO "GET /payment/alipay/202503110000000100000030 HTTP/1.1" 301 0
+INFO "GET /payment/alipay/202503110000000100000030/ HTTP/1.1" 200 961
+WARNING Not Found: /payment/alipay/
+WARNING "GET /payment/alipay/?charset=utf-8&out_trade_no=202503110000000100000030&method=alipay.trade.page.pay.return&total_amount=9559.00&sign=CEgUZwcljT4a6Tjw%2BPWPC6W%2Ff%2Bu4kMacFw10JqhXzBuTY0o0DkeLneQOIDzWlOKR1g85D5KyweNXu%2FjS1jXMrF8YXAqlBWbFowOJEFF9Kg2hx7PpfJYrUnoJFRBbTzanV79XdiY89KAQgN8PifL45TANN6b7gYs7Zmvf%2FJz038j67pi2O1ZrxiszOlQqkMZRxJEivCYnNVFDjjtpgQ4yaWSLdG3lo6kRCYcl9ECISIxLrF6LgHIMCdqEtnGMbyj0%2BFqOsQZ4wWCxFYdbBwsxMcI6nxHxu8oPkxE7%2BLUR6NpmffdnQTPHgqAHMiWOprFPI44wtbMKhqXytHjTQct3%2FA%3D%3D&trade_no=2025031122001421740505706687&auth_app_id=9021000146604706&version=1.0&app_id=9021000146604706&sign_type=RSA2&seller_id=2088721061121737&timestamp=2025-03-11+17%3A53%3A33 HTTP/1.1" 404 4075
+WARNING Not Found: /payment/alipay/
+WARNING "GET /payment/alipay/?charset=utf-8&out_trade_no=202503110000000100000030&method=alipay.trade.page.pay.return&total_amount=9559.00&sign=CEgUZwcljT4a6Tjw%2BPWPC6W%2Ff%2Bu4kMacFw10JqhXzBuTY0o0DkeLneQOIDzWlOKR1g85D5KyweNXu%2FjS1jXMrF8YXAqlBWbFowOJEFF9Kg2hx7PpfJYrUnoJFRBbTzanV79XdiY89KAQgN8PifL45TANN6b7gYs7Zmvf%2FJz038j67pi2O1ZrxiszOlQqkMZRxJEivCYnNVFDjjtpgQ4yaWSLdG3lo6kRCYcl9ECISIxLrF6LgHIMCdqEtnGMbyj0%2BFqOsQZ4wWCxFYdbBwsxMcI6nxHxu8oPkxE7%2BLUR6NpmffdnQTPHgqAHMiWOprFPI44wtbMKhqXytHjTQct3%2FA%3D%3D&trade_no=2025031122001421740505706687&auth_app_id=9021000146604706&version=1.0&app_id=9021000146604706&sign_type=RSA2&seller_id=2088721061121737&timestamp=2025-03-11+17%3A53%3A33 HTTP/1.1" 404 4075
+ERROR Internal Server Error: /payment/alipay/result/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: pay_feedback() missing 1 required positional argument: 'order_number'
+ERROR "GET /payment/alipay/result/?charset=utf-8&out_trade_no=202503110000000100000030&method=alipay.trade.page.pay.return&total_amount=9559.00&sign=CEgUZwcljT4a6Tjw%2BPWPC6W%2Ff%2Bu4kMacFw10JqhXzBuTY0o0DkeLneQOIDzWlOKR1g85D5KyweNXu%2FjS1jXMrF8YXAqlBWbFowOJEFF9Kg2hx7PpfJYrUnoJFRBbTzanV79XdiY89KAQgN8PifL45TANN6b7gYs7Zmvf%2FJz038j67pi2O1ZrxiszOlQqkMZRxJEivCYnNVFDjjtpgQ4yaWSLdG3lo6kRCYcl9ECISIxLrF6LgHIMCdqEtnGMbyj0%2BFqOsQZ4wWCxFYdbBwsxMcI6nxHxu8oPkxE7%2BLUR6NpmffdnQTPHgqAHMiWOprFPI44wtbMKhqXytHjTQct3%2FA%3D%3D&trade_no=2025031122001421740505706687&auth_app_id=9021000146604706&version=1.0&app_id=9021000146604706&sign_type=RSA2&seller_id=2088721061121737&timestamp=2025-03-11+17%3A53%3A33 HTTP/1.1" 500 106448
+INFO "GET /cart/ HTTP/1.1" 200 731
+INFO "PATCH /cart/ HTTP/1.1" 200 41
+INFO "GET /cart/order/ HTTP/1.1" 200 258
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
+INFO "POST /orders/ HTTP/1.1" 201 58
+INFO "GET /payment/alipay/202503110000000100000031 HTTP/1.1" 301 0
+INFO "GET /payment/alipay/202503110000000100000031/ HTTP/1.1" 200 957
+ERROR Internal Server Error: /payment/alipay/result/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: pay_feedback() missing 1 required positional argument: 'order_number'
+ERROR "GET /payment/alipay/result/?charset=utf-8&out_trade_no=202503110000000100000031&method=alipay.trade.page.pay.return&total_amount=5481.00&sign=JHiyVW0p5tARWd1WCgdYstkorhln5e6mYMpzu3nPt7s7ToP798NUU74qR%2Bi5KvSxcQeHvqq08kk7cvfyGHu43SuQ%2FOBI0AjzMGshbNl1KMAU6ch38eCASRJ%2B2MKqHGeWCDHQNztWLNCAZd0VQ6ijdNOBtPP63PmNWnlE9hI14AGJS5j94J6R89IWYXb7HkZUpSMP7YEcclBWcj9MAtDZyBYwW0qnUjFA6DDjCdG%2FBvUuSxL6rT9GT%2Bvdx0WhAMmIe8wc3Iey4lgHNRa2MTcQ0wxi1qrv6JYaqHJbhxiPeYVBtzthqbRBHLD%2BzA6gROIa1Sq2G7Ke5tHriKteBLfkLw%3D%3D&trade_no=2025031122001421740505702699&auth_app_id=9021000146604706&version=1.0&app_id=9021000146604706&sign_type=RSA2&seller_id=2088721061121737&timestamp=2025-03-11+17%3A58%3A24 HTTP/1.1" 500 106404
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/payment/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /cart/ HTTP/1.1" 200 506
+INFO "PATCH /cart/ HTTP/1.1" 200 41
+INFO "GET /cart/order/ HTTP/1.1" 200 255
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
+INFO "POST /orders/ HTTP/1.1" 201 58
+INFO "GET /payment/alipay/202503110000000100000032 HTTP/1.1" 301 0
+INFO "GET /payment/alipay/202503110000000100000032/ HTTP/1.1" 200 955
+INFO "GET /payment/alipay/result/?charset=utf-8&out_trade_no=202503110000000100000032&method=alipay.trade.page.pay.return&total_amount=3472.00&sign=qAFF2n%2FgAFaQGLjxPQt9OjRC2ypSv4xPQ6HYsxgqQfVf63gYt67nrp2u18zDvvSxb4G8Nb9wXbojnPJt02cx7pUgWVLgscUWn%2BdgB4VaN05v0imobDSl0rLEqbunOuB2%2F45J%2BP1%2BTdMX%2BGYIfyjct0E9lTQnq2cFoGP0n4NQnan8nQYGNuLgu95AHgcGKN0wEsF4ahJ0CAVuF4bmYWf5VmoGhLhI9CYbKynT1l8hNUeXkV%2FjUEvly4OQVr1jjPmhfqTb8VDIpY9D2btz1SoIHvrVKZ56UT1ZN0WPHHq6unMlGQpefPw69XU9ry%2FPrPsa3fKKhD24CRehBheftNG9AA%3D%3D&trade_no=2025031122001421740505701699&auth_app_id=9021000146604706&version=1.0&app_id=9021000146604706&sign_type=RSA2&seller_id=2088721061121737&timestamp=2025-03-11+18%3A00%3A22 HTTP/1.1" 200 379
+INFO "GET /payment/alipay/result/?charset=utf-8&out_trade_no=202503110000000100000032&method=alipay.trade.page.pay.return&total_amount=3472.00&sign=qAFF2n%2FgAFaQGLjxPQt9OjRC2ypSv4xPQ6HYsxgqQfVf63gYt67nrp2u18zDvvSxb4G8Nb9wXbojnPJt02cx7pUgWVLgscUWn%2BdgB4VaN05v0imobDSl0rLEqbunOuB2%2F45J%2BP1%2BTdMX%2BGYIfyjct0E9lTQnq2cFoGP0n4NQnan8nQYGNuLgu95AHgcGKN0wEsF4ahJ0CAVuF4bmYWf5VmoGhLhI9CYbKynT1l8hNUeXkV%2FjUEvly4OQVr1jjPmhfqTb8VDIpY9D2btz1SoIHvrVKZ56UT1ZN0WPHHq6unMlGQpefPw69XU9ry%2FPrPsa3fKKhD24CRehBheftNG9AA%3D%3D&trade_no=2025031122001421740505701699&auth_app_id=9021000146604706&version=1.0&app_id=9021000146604706&sign_type=RSA2&seller_id=2088721061121737&timestamp=2025-03-11+18%3A00%3A22 HTTP/1.1" 200 379
+INFO "GET /payment/alipay/result/?charset=utf-8&out_trade_no=202503110000000100000032&method=alipay.trade.page.pay.return&total_amount=3472.00&sign=qAFF2n%2FgAFaQGLjxPQt9OjRC2ypSv4xPQ6HYsxgqQfVf63gYt67nrp2u18zDvvSxb4G8Nb9wXbojnPJt02cx7pUgWVLgscUWn%2BdgB4VaN05v0imobDSl0rLEqbunOuB2%2F45J%2BP1%2BTdMX%2BGYIfyjct0E9lTQnq2cFoGP0n4NQnan8nQYGNuLgu95AHgcGKN0wEsF4ahJ0CAVuF4bmYWf5VmoGhLhI9CYbKynT1l8hNUeXkV%2FjUEvly4OQVr1jjPmhfqTb8VDIpY9D2btz1SoIHvrVKZ56UT1ZN0WPHHq6unMlGQpefPw69XU9ry%2FPrPsa3fKKhD24CRehBheftNG9AA%3D%3D&trade_no=2025031122001421740505701699&auth_app_id=9021000146604706&version=1.0&app_id=9021000146604706&sign_type=RSA2&seller_id=2088721061121737&timestamp=2025-03-11+18%3A00%3A22 HTTP/1.1" 200 379
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/payment/views.py changed, reloading.
+INFO Watching for file changes with StatReloader

@@ -65,6 +65,14 @@ const routes = [
         name: "Order",
         component: ()=>import("../views/Order.vue"),
     },
+    {
+        meta: {
+            title: "luffy2.0-订单详情"
+        },
+        path: "/feedback",
+        name: "Feedback",
+        component: ()=>import("../views/AlipaySuccess.vue"),
+    }
 ]
 
 const router = createRouter({
