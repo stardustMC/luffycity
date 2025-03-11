@@ -1,6 +1,7 @@
 import axios from 'axios'
 
 const http = axios.create({
+    timeout: 5000,
     baseURL: "http://api.luffycity.cn:8000",
     withCredentials: false
 })

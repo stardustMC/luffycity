@@ -1,10 +1,19 @@
 from datetime import datetime
+
+from django.db import transaction
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
+
+from coupon.models import CouponLog
 from courses.serializers import CourseInfoModelSerializer
 from orders.models import Order
 from alipaysdk import AliPaySDK
 from rest_framework import status
+import logging
+
+from users.models import Credit, UserCourse
+
+logger = logging.getLogger("django")
 
 # Create your views here.
 class AliPayViewSet(ViewSet):
@@ -48,16 +57,32 @@ class AliPayViewSet(ViewSet):
 
         if order.order_status == 0:
             result = alipay.query(order_number)
+            save_id = transaction.savepoint()
+            try:
+                now_time = datetime.now()
+                if result.get("trade_status", None) in ["TRADE_FINISHED", "TRADE_SUCCESS"]:
+                    """支付成功"""
+                    # 订单由未支付变为支付
+                    order.pay_time = now_time
+                    order.order_status = 1
+                    order.save()
+                    # 同步使用的优惠券和积分，如果有的话
+                    if order.credit > 0:
+                        Credit.objects.create(operation=1, number=order.credit, user=order.user)
 
-            if result.get("trade_status", None) in ["TRADE_FINISHED", "TRADE_SUCCESS"]:
-                """支付成功"""
-                # todo 1. 修改订单状态
-                order.pay_time = datetime.now()
-                order.order_status = 1
-                order.save()
-                # todo 2. 记录扣除个人积分的流水信息，补充个人的优惠券使用记录
-                # todo 3. 用户和课程的关系绑定
-                # todo 4. 取消订单超时
+                    user_coupon = CouponLog.objects.filter(order=order).first()
+                    if user_coupon:
+                        user_coupon.use_status = 1
+                        user_coupon.user_time = now_time
+                        user_coupon.save()
+                    # 增添用户购买课程的记录
+                    course_list = [UserCourse(course=course, user=order.user) for course in course_list]
+                    UserCourse.objects.bulk_create(course_list)
+                    # todo 4. 取消订单超时
+            except Exception as e:
+                logger.error(f"订单数据同步过程出错： {e}")
+                transaction.rollback(save_id)
+                return Response({"errmsg": "意料之外的错误发生了！请联系客服处理"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
         # 返回客户端结果
         serializer = CourseInfoModelSerializer(course_list, many=True)

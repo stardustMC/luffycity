@@ -5990,3 +5990,52 @@ INFO "GET /payment/alipay/result/?charset=utf-8&out_trade_no=2025031100000001000
 INFO "GET /payment/alipay/result/?charset=utf-8&out_trade_no=202503110000000100000032&method=alipay.trade.page.pay.return&total_amount=3472.00&sign=qAFF2n%2FgAFaQGLjxPQt9OjRC2ypSv4xPQ6HYsxgqQfVf63gYt67nrp2u18zDvvSxb4G8Nb9wXbojnPJt02cx7pUgWVLgscUWn%2BdgB4VaN05v0imobDSl0rLEqbunOuB2%2F45J%2BP1%2BTdMX%2BGYIfyjct0E9lTQnq2cFoGP0n4NQnan8nQYGNuLgu95AHgcGKN0wEsF4ahJ0CAVuF4bmYWf5VmoGhLhI9CYbKynT1l8hNUeXkV%2FjUEvly4OQVr1jjPmhfqTb8VDIpY9D2btz1SoIHvrVKZ56UT1ZN0WPHHq6unMlGQpefPw69XU9ry%2FPrPsa3fKKhD24CRehBheftNG9AA%3D%3D&trade_no=2025031122001421740505701699&auth_app_id=9021000146604706&version=1.0&app_id=9021000146604706&sign_type=RSA2&seller_id=2088721061121737&timestamp=2025-03-11+18%3A00%3A22 HTTP/1.1" 200 379
 INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/payment/views.py changed, reloading.
 INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/users/models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/users/models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/users/models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/users/models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/users/models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/users/models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /cart/ HTTP/1.1" 200 284
+INFO "PATCH /cart/ HTTP/1.1" 200 41
+INFO "OPTIONS /cart/order/ HTTP/1.1" 200 0
+INFO "OPTIONS /coupons/avail/ HTTP/1.1" 200 0
+INFO "GET /cart/order/ HTTP/1.1" 200 271
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
+INFO "POST /orders/ HTTP/1.1" 201 58
+INFO "GET /payment/alipay/202503110000000100000033 HTTP/1.1" 301 0
+INFO "GET /payment/alipay/202503110000000100000033/ HTTP/1.1" 200 957
+INFO "GET /payment/alipay/result/?charset=utf-8&out_trade_no=202503110000000100000033&method=alipay.trade.page.pay.return&total_amount=5992.00&sign=TlJUP1xtmSfRrY11rj7fkEbU4rvgKTTfN1DnZ5Cy3iqPfhOw9%2Fw4gS5Xn6m2l7aiFWCvGpHQmkWF1TY9E3OXTDo0m7PQDjebZQETrUpZb9dcubQ4K5Y%2BuS83al9Oqn5ONxVN7TAig1hUmGI%2BUHpvDJ4u%2F%2Boy%2FSZGRKYFa6jhM1BFqe7mLJwJlBOS2NV%2BRCQwsH0vJqvBUU0Cp500CtdMWCDhut0kkNb2THVFVVRWD62oZwVAvqVzAJLm3Bb1yZqHFiQFNI2k0rx3G0wfc8Xqohqps4P0xLfnfIhw5agfv4DC8Iv1H6mtapFFx3DSjrEhrje8aHELJ947CWPlfx510Q%3D%3D&trade_no=2025031122001421740505702700&auth_app_id=9021000146604706&version=1.0&app_id=9021000146604706&sign_type=RSA2&seller_id=2088721061121737&timestamp=2025-03-11+20%3A32%3A35 HTTP/1.1" 200 116
+INFO "GET /payment/alipay/result/?charset=utf-8&out_trade_no=202503110000000100000033&method=alipay.trade.page.pay.return&total_amount=5992.00&sign=TlJUP1xtmSfRrY11rj7fkEbU4rvgKTTfN1DnZ5Cy3iqPfhOw9%2Fw4gS5Xn6m2l7aiFWCvGpHQmkWF1TY9E3OXTDo0m7PQDjebZQETrUpZb9dcubQ4K5Y%2BuS83al9Oqn5ONxVN7TAig1hUmGI%2BUHpvDJ4u%2F%2Boy%2FSZGRKYFa6jhM1BFqe7mLJwJlBOS2NV%2BRCQwsH0vJqvBUU0Cp500CtdMWCDhut0kkNb2THVFVVRWD62oZwVAvqVzAJLm3Bb1yZqHFiQFNI2k0rx3G0wfc8Xqohqps4P0xLfnfIhw5agfv4DC8Iv1H6mtapFFx3DSjrEhrje8aHELJ947CWPlfx510Q%3D%3D&trade_no=2025031122001421740505702700&auth_app_id=9021000146604706&version=1.0&app_id=9021000146604706&sign_type=RSA2&seller_id=2088721061121737&timestamp=2025-03-11+20%3A32%3A35 HTTP/1.1" 200 399
+INFO "GET /payment/alipay/result/?charset=utf-8&out_trade_no=202503110000000100000033&method=alipay.trade.page.pay.return&total_amount=5992.00&sign=TlJUP1xtmSfRrY11rj7fkEbU4rvgKTTfN1DnZ5Cy3iqPfhOw9%2Fw4gS5Xn6m2l7aiFWCvGpHQmkWF1TY9E3OXTDo0m7PQDjebZQETrUpZb9dcubQ4K5Y%2BuS83al9Oqn5ONxVN7TAig1hUmGI%2BUHpvDJ4u%2F%2Boy%2FSZGRKYFa6jhM1BFqe7mLJwJlBOS2NV%2BRCQwsH0vJqvBUU0Cp500CtdMWCDhut0kkNb2THVFVVRWD62oZwVAvqVzAJLm3Bb1yZqHFiQFNI2k0rx3G0wfc8Xqohqps4P0xLfnfIhw5agfv4DC8Iv1H6mtapFFx3DSjrEhrje8aHELJ947CWPlfx510Q%3D%3D&trade_no=2025031122001421740505702700&auth_app_id=9021000146604706&version=1.0&app_id=9021000146604706&sign_type=RSA2&seller_id=2088721061121737&timestamp=2025-03-11+20%3A32%3A35 HTTP/1.1" 200 399
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 2
+INFO "GET /courses/directions/ HTTP/1.1" 200 266
+INFO "GET /courses/category/0/ HTTP/1.1" 200 1464
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1762
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "GET /cart/ HTTP/1.1" 200 1243
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1803
+INFO "GET /cart/order/ HTTP/1.1" 200 1178
+INFO "POST /orders/ HTTP/1.1" 201 58
+INFO "GET /payment/alipay/202503110000000100000034 HTTP/1.1" 301 0
+INFO "GET /payment/alipay/202503110000000100000034/ HTTP/1.1" 200 958
+INFO "GET /payment/alipay/result/?charset=utf-8&out_trade_no=202503110000000100000034&method=alipay.trade.page.pay.return&total_amount=28281.00&sign=MJJjE8Zt81z7TrGL751pA4B4EpuVc4AAVZtMDXoRBxfufEbWI46P6x%2F5YwdIVhwmgoP69CBx0%2FOLSLVWcdiyO4WKLkf0VFI9BT7bvYXzTgwMMO3yrwKmFwcrA7roUnCEmg5IL2cEDlc8U0tlHAAC7We5XiQh3o4GgXksW0TUgF0bSxIqnudigTsO8l%2FQa1T9K3IEZiBazmZCCAQ%2FdLE3%2B95lzbpHJVurh%2FXKkGwsnRtHS8y27iRCmyHsc8qh%2FNbDgQ%2F4Oy6IlbPt4LUWReeppfsjVUjcF3MC4MqOVX%2FDv7al8w8dauHLIzLdQWCRuzM%2B%2FNtbaicQxUxgxhT7RB1kRQ%3D%3D&trade_no=2025031122001421740505700161&auth_app_id=9021000146604706&version=1.0&app_id=9021000146604706&sign_type=RSA2&seller_id=2088721061121737&timestamp=2025-03-11+20%3A35%3A17 HTTP/1.1" 200 301
+INFO "GET /payment/alipay/result/?charset=utf-8&out_trade_no=202503110000000100000034&method=alipay.trade.page.pay.return&total_amount=28281.00&sign=MJJjE8Zt81z7TrGL751pA4B4EpuVc4AAVZtMDXoRBxfufEbWI46P6x%2F5YwdIVhwmgoP69CBx0%2FOLSLVWcdiyO4WKLkf0VFI9BT7bvYXzTgwMMO3yrwKmFwcrA7roUnCEmg5IL2cEDlc8U0tlHAAC7We5XiQh3o4GgXksW0TUgF0bSxIqnudigTsO8l%2FQa1T9K3IEZiBazmZCCAQ%2FdLE3%2B95lzbpHJVurh%2FXKkGwsnRtHS8y27iRCmyHsc8qh%2FNbDgQ%2F4Oy6IlbPt4LUWReeppfsjVUjcF3MC4MqOVX%2FDv7al8w8dauHLIzLdQWCRuzM%2B%2FNtbaicQxUxgxhT7RB1kRQ%3D%3D&trade_no=2025031122001421740505700161&auth_app_id=9021000146604706&version=1.0&app_id=9021000146604706&sign_type=RSA2&seller_id=2088721061121737&timestamp=2025-03-11+20%3A35%3A17 HTTP/1.1" 200 1713
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/cart/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/cart/views.py changed, reloading.
+INFO Watching for file changes with StatReloader

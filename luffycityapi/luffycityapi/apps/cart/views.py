@@ -4,6 +4,8 @@ from rest_framework.response import Response
 from rest_framework import status
 from django_redis import get_redis_connection
 from courses.models import Course
+from users.models import UserCourse
+
 
 # Create your views here.
 class CartAPIView(APIView):
@@ -45,6 +47,13 @@ class CartAPIView(APIView):
             Course.objects.get(pk=course_id)
         except Course.DoesNotExist:
             return Response({"errmsg": "course not found"}, status=status.HTTP_404_NOT_FOUND)
+
+        # prevent user from duplicate course deal
+        try:
+            UserCourse.objects.get(user_id=user_id, course_id=course_id)
+            return Response({"errmsg": "course already available"}, status=status.HTTP_400_BAD_REQUEST)
+        except UserCourse.DoesNotExist:
+            pass
 
         redis = get_redis_connection('cart')
         redis.hset('cart_%s' % user_id, course_id, selected)

@@ -12,14 +12,14 @@
         <div class="order-info">
             <p class="info1"><b>付款时间：</b><span>{{order.deal_time}}</span></p>
             <p class="info2"><b>付款金额：</b><span >{{order.real_price}}</span></p>
-            <p class="info3"><b>课程信息：</b><span v-for="course in order.course_list"><span>{{course.name}}</span></span></p>
+            <p class="info3" v-for="course in order.course_list"><b>课程信息：</b><span><span>{{course.name}}</span></span></p>
         </div>
         <div class="wechat-code">
           <img src="../assets/wechat.jpg" alt="" class="er">
           <p><i class="el-icon-warning"></i>重要！微信扫码关注获得学习通知&amp;课程更新提醒！否则将严重影响学习进度和课程体验！</p>
         </div>
         <div class="study">
-          <span>立即学习</span>
+          <router-link to="/user/study/"><span>立即学习</span></router-link>
         </div>
     </div>
     <Footer/>
