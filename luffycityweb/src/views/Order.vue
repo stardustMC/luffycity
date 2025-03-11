@@ -163,6 +163,7 @@ const get_selected = () => {
     if(max_use_credit > order.own_credit) max_use_credit = order.own_credit;
     // 如果订单费用所能抵扣的积分小于拥有的积分（例如免费的课程），则设置为 费用*积分转化率
     let total_credit = order.credit_ratio * cart.total_selected_discount_price;
+    console.log(cart.total_selected_discount_price)
     if(max_use_credit > total_credit) max_use_credit = total_credit;
     order.max_use_credit = max_use_credit;
     order.avail_credit_list = use_credit_courses;
@@ -185,7 +186,11 @@ const create_order = () =>{
     }else{
       ElMessage.success("Success! Now ready to start payment...");
       store.commit("cart_count", response.data.cart_count);
-      router.push("/cart/");
+      console.log(response.data.order_number);
+      // 提交订单后，根据返回的订单号，跳转到支付页面
+      order.alipay_page_pay(response.data.order_number).then(response=>{
+        window.open(response.data.link,"_blank");
+      })
     }
   })
 }
@@ -288,6 +293,10 @@ watch(()=>order.select, ()=>{
      ElMessage.error("当前优惠券使用课程已参与其它活动哦")
    }
    console.log(order.discount_price);
+})
+
+watch(()=>order.credit, ()=>{
+  deduct_credit();
 })
 
 const deduct_credit = ()=>{

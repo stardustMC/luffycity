@@ -43,6 +43,9 @@ const order = reactive({
                 Authorization: "jwt " + token,
             }
         })
+    },
+    alipay_page_pay(order_number){
+        return http.get(`payment/alipay/${order_number}`);
     }
 })
 

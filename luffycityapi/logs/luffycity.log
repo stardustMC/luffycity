@@ -5575,3 +5575,272 @@ INFO "GET /cart/order/ HTTP/1.1" 200 322
 INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
 INFO "OPTIONS /orders/ HTTP/1.1" 200 0
 INFO "POST /orders/ HTTP/1.1" 201 16
+INFO Watching for file changes with StatReloader
+INFO "GET /payment/alipay/202503100000000100000009 HTTP/1.1" 301 0
+INFO "GET /payment/alipay/202503100000000100000009/ HTTP/1.1" 200 955
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/payment/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /payment/alipay/202503100000000100000009 HTTP/1.1" 301 0
+INFO "GET /payment/alipay/202503100000000100000009/ HTTP/1.1" 200 955
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/payment/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/settings/dev.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/settings/dev.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /coupons/avail/ HTTP/1.1" 200 8465
+INFO "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+WARNING Not Found: /favicon.ico
+INFO "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /cart/ HTTP/1.1" 200 291
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 2
+INFO "GET /courses/directions/ HTTP/1.1" 200 266
+INFO "GET /courses/category/0/ HTTP/1.1" 200 1464
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1762
+INFO "GET /courses/category/5/ HTTP/1.1" 200 147
+INFO "GET /courses/5/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1684
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "GET /cart/ HTTP/1.1" 200 1190
+INFO "PUT /cart/ HTTP/1.1" 200 45
+INFO "PUT /cart/ HTTP/1.1" 200 45
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 2
+INFO "GET /courses/category/5/ HTTP/1.1" 200 147
+INFO "GET /courses/directions/ HTTP/1.1" 200 266
+INFO "GET /courses/5/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1684
+INFO "GET /courses/category/4/ HTTP/1.1" 200 149
+INFO "GET /courses/4/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1802
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "GET /cart/ HTTP/1.1" 200 1471
+INFO "OPTIONS /cart/order/ HTTP/1.1" 200 0
+INFO "OPTIONS /coupons/avail/ HTTP/1.1" 200 0
+INFO "GET /cart/order/ HTTP/1.1" 200 312
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1803
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1803
+INFO "GET /cart/order/ HTTP/1.1" 200 314
+INFO "GET /cart/ HTTP/1.1" 200 1470
+INFO "GET /cart/order/ HTTP/1.1" 200 313
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1803
+INFO "GET /cart/order/ HTTP/1.1" 200 314
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1803
+INFO "OPTIONS /orders/ HTTP/1.1" 200 0
+ERROR Internal Server Error: /orders/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/views.py", line 23, in create
+    return Response({"cart_count": cart_count, "order_number": order.order_number}, status=status.HTTP_201_CREATED)
+AttributeError: 'Response' object has no attribute 'order_number'
+ERROR "POST /orders/ HTTP/1.1" 500 105058
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+ERROR Internal Server Error: /orders/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/views.py", line 23, in create
+    return Response({"cart_count": cart_count, "order_number": res.data.order_number}, status=status.HTTP_201_CREATED)
+AttributeError: 'ReturnDict' object has no attribute 'order_number'
+ERROR "POST /orders/ HTTP/1.1" 500 105072
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "POST /orders/ HTTP/1.1" 201 58
+INFO "GET /payment/alipay/202503110000000100000012 HTTP/1.1" 301 0
+INFO "GET /payment/alipay/202503110000000100000012/ HTTP/1.1" 200 946
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /courses/category/4/ HTTP/1.1" 200 149
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 2
+INFO "GET /courses/directions/ HTTP/1.1" 200 266
+INFO "GET /courses/4/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1804
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "GET /cart/ HTTP/1.1" 200 1415
+INFO "GET /cart/order/ HTTP/1.1" 200 258
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1803
+INFO "POST /orders/ HTTP/1.1" 201 58
+INFO "GET /payment/alipay/202503110000000100000013 HTTP/1.1" 301 0
+INFO "GET /payment/alipay/202503110000000100000013/ HTTP/1.1" 200 960
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 2
+INFO "GET /courses/directions/ HTTP/1.1" 200 266
+INFO "GET /courses/category/4/ HTTP/1.1" 200 149
+INFO "GET /courses/4/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1801
+INFO "GET /courses/category/5/ HTTP/1.1" 200 147
+INFO "GET /courses/5/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1684
+INFO "GET /courses/category/1/ HTTP/1.1" 200 225
+INFO "GET /courses/1/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1880
+INFO "GET /courses/category/0/ HTTP/1.1" 200 1464
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1761
+INFO "GET /courses/0/0/?page=2&size=5&ordering=-id HTTP/1.1" 200 1866
+INFO "GET /courses/0/0/?page=100&size=5&ordering=-id HTTP/1.1" 200 1754
+INFO "GET /courses/0/0/?page=99&size=5&ordering=-id HTTP/1.1" 200 1874
+INFO "GET /courses/0/0/?page=98&size=5&ordering=-id HTTP/1.1" 200 1902
+INFO "GET /courses/0/0/?page=97&size=5&ordering=-id HTTP/1.1" 200 1827
+INFO "GET /courses/0/0/?page=96&size=5&ordering=-id HTTP/1.1" 200 1869
+INFO "GET /courses/0/0/?page=95&size=5&ordering=-id HTTP/1.1" 200 1924
+INFO "GET /courses/0/0/?page=94&size=5&ordering=-id HTTP/1.1" 200 1807
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/payment/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /cart/ HTTP/1.1" 200 1190
+INFO "PATCH /cart/ HTTP/1.1" 200 41
+INFO "GET /cart/order/ HTTP/1.1" 200 271
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
+INFO "POST /orders/ HTTP/1.1" 201 58
+INFO "GET /payment/alipay/202503110000000100000014 HTTP/1.1" 301 0
+INFO "GET /payment/alipay/202503110000000100000014/ HTTP/1.1" 200 952
+INFO "POST /orders/ HTTP/1.1" 201 58
+INFO "GET /payment/alipay/202503110000000100000015 HTTP/1.1" 301 0
+INFO "GET /payment/alipay/202503110000000100000015/ HTTP/1.1" 200 960
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/payment/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /cart/order/ HTTP/1.1" 204 47
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
+INFO "GET /cart/ HTTP/1.1" 200 952
+INFO "PATCH /cart/ HTTP/1.1" 200 41
+INFO "GET /cart/order/ HTTP/1.1" 200 250
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
+INFO "POST /orders/ HTTP/1.1" 201 58
+INFO "GET /payment/alipay/202503110000000100000016 HTTP/1.1" 301 0
+INFO "GET /payment/alipay/202503110000000100000016/ HTTP/1.1" 200 961
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/payment/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /cart/ HTTP/1.1" 200 735
+INFO "PATCH /cart/ HTTP/1.1" 200 41
+INFO "GET /cart/order/ HTTP/1.1" 200 252
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
+INFO "POST /orders/ HTTP/1.1" 201 58
+INFO "GET /payment/alipay/202503110000000100000017 HTTP/1.1" 301 0
+INFO "GET /payment/alipay/202503110000000100000017/ HTTP/1.1" 200 950
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/payment/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/payment/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/payment/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "POST /orders/ HTTP/1.1" 201 58
+INFO "GET /payment/alipay/202503110000000100000018 HTTP/1.1" 301 0
+INFO "GET /payment/alipay/202503110000000100000018/ HTTP/1.1" 200 964
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/payment/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "POST /orders/ HTTP/1.1" 201 58
+INFO "GET /payment/alipay/202503110000000100000019 HTTP/1.1" 301 0
+INFO "GET /payment/alipay/202503110000000100000019/ HTTP/1.1" 200 964
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/payment/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "POST /orders/ HTTP/1.1" 201 58
+INFO "GET /payment/alipay/202503110000000100000020 HTTP/1.1" 301 0
+INFO "GET /payment/alipay/202503110000000100000020/ HTTP/1.1" 200 954
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/payment/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "POST /orders/ HTTP/1.1" 201 58
+INFO "GET /payment/alipay/202503110000000100000021 HTTP/1.1" 301 0
+INFO "GET /payment/alipay/202503110000000100000021/ HTTP/1.1" 200 966
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/payment/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "POST /orders/ HTTP/1.1" 201 58
+INFO "GET /payment/alipay/202503110000000100000022 HTTP/1.1" 301 0
+INFO "GET /payment/alipay/202503110000000100000022/ HTTP/1.1" 200 962
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/payment/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "POST /orders/ HTTP/1.1" 201 58
+INFO "GET /payment/alipay/202503110000000100000023 HTTP/1.1" 301 0
+INFO "GET /payment/alipay/202503110000000100000023/ HTTP/1.1" 200 953
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/payment/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "POST /orders/ HTTP/1.1" 201 58
+INFO "GET /payment/alipay/202503110000000100000024 HTTP/1.1" 301 0
+INFO "GET /payment/alipay/202503110000000100000024/ HTTP/1.1" 200 952
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/payment/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "POST /orders/ HTTP/1.1" 201 58
+INFO "GET /payment/alipay/202503110000000100000025 HTTP/1.1" 301 0
+INFO "GET /payment/alipay/202503110000000100000025/ HTTP/1.1" 200 957
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/payment/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "POST /orders/ HTTP/1.1" 201 58
+INFO "GET /payment/alipay/202503110000000100000026 HTTP/1.1" 301 0
+INFO "GET /payment/alipay/202503110000000100000026/ HTTP/1.1" 200 969
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 2
+INFO "GET /courses/category/0/ HTTP/1.1" 200 1464
+INFO "GET /courses/directions/ HTTP/1.1" 200 266
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1762
+INFO "GET /cart/ HTTP/1.1" 200 516
+INFO "PATCH /cart/ HTTP/1.1" 200 41
+INFO "GET /cart/order/ HTTP/1.1" 200 258
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
+INFO "POST /orders/ HTTP/1.1" 201 58
+INFO "GET /payment/alipay/202503110000000100000027 HTTP/1.1" 301 0
+INFO "GET /payment/alipay/202503110000000100000027/ HTTP/1.1" 200 967
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 2
+INFO "GET /courses/directions/ HTTP/1.1" 200 266
+INFO "GET /courses/category/0/ HTTP/1.1" 200 1464
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1761
+INFO "GET /courses/0/8/?page=1&size=5&ordering=-id HTTP/1.1" 200 1698
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/serializers.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/serializers.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/payment/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /cart/ HTTP/1.1" 200 980
+INFO "PUT /cart/ HTTP/1.1" 200 45
+INFO "PUT /cart/ HTTP/1.1" 200 45
+INFO "PATCH /cart/ HTTP/1.1" 200 41
+INFO "GET /cart/order/ HTTP/1.1" 200 278
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1803
+INFO "POST /orders/ HTTP/1.1" 201 58
+INFO "GET /payment/alipay/202503110000000100000028 HTTP/1.1" 301 0
+INFO "GET /payment/alipay/202503110000000100000028/ HTTP/1.1" 200 967
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/payment/views.py changed, reloading.
+INFO Watching for file changes with StatReloader

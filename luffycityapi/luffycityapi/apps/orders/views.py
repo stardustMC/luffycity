@@ -14,10 +14,10 @@ class OrderCreateAPIView(CreateAPIView):
     serializer_class = OrderModelSerializer
 
     def create(self, request, *args, **kwargs):
-        super().create(request, *args, **kwargs)
+        res = super().create(request, *args, **kwargs)
 
         from django_redis import get_redis_connection
         redis = get_redis_connection("cart")
         user_id = request.user.id
         cart_count = redis.hlen(f"cart_{user_id}")
-        return Response({"cart_count": cart_count}, status=status.HTTP_201_CREATED)
+        return Response({"cart_count": cart_count, "order_number": res.data["order_number"]}, status=status.HTTP_201_CREATED)

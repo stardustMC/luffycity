@@ -10,13 +10,14 @@ from .models import Order, OrderDetail, Course
 
 
 class OrderModelSerializer(serializers.ModelSerializer):
-    pay_link = serializers.CharField(read_only=True)
+    # pay_link = serializers.CharField(read_only=True)
     coupon_id = serializers.IntegerField(write_only=True, default=-1)
     discount_type = serializers.IntegerField(write_only=True, default=0)
 
     class Meta:
         model = Order
-        fields = ["pay_type", "id", "order_number", "pay_link", "coupon_id", "discount_type"]
+        # fields = ["pay_type", "id", "order_number", "pay_link", "coupon_id", "discount_type"]
+        fields = ["pay_type", "id", "order_number", "coupon_id", "discount_type"]
         read_only_fields = ["id", "order_number"]
         extra_kwargs = {
             "pay_type": {"write_only": True},
@@ -127,6 +128,8 @@ class OrderModelSerializer(serializers.ModelSerializer):
                     # 用户扣除积分
                     user.credit -= credit
                     user.save()
+                else:
+                    order.real_price = real_price
 
                 cart = {key: value for key, value in cart_hash.items() if value == b'0'}
                 pipe = redis.pipeline()
@@ -142,7 +145,4 @@ class OrderModelSerializer(serializers.ModelSerializer):
                 logging.error("order create failed! %s" % e)
                 transaction.savepoint_rollback(t1)
                 raise serializers.ValidationError(detail="order create failed!")
-
-        # todo 支付链接地址[后面实现支付功能的时候，再做]
-        order.pay_link = ""
         return order

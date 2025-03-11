@@ -8,6 +8,7 @@ const user = reactive({
     remember: false,
     code: "",
     mobile: "",
+    alipay_account:  "darbfc7920@sandbox.com",
     login(){
         return http.post("/users/login/", {
             username: this.username,
