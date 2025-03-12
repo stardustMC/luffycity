@@ -73,7 +73,7 @@ class OrderModelSerializer(serializers.ModelSerializer):
                         course=course,
                         name=course.name,
                         price=course.price,
-                        real_price=discount_price or course.price,
+                        real_price=discount_price if discount_price is not None else course.price,
                         discount_name=discount_name,
                     ))
 
@@ -84,12 +84,12 @@ class OrderModelSerializer(serializers.ModelSerializer):
 
                     # 统计订单的总价和实付总价
                     total_price += float(course.price)
-                    real_price += discount_price or float(course.price)
+                    real_price += discount_price if discount_price is not None else float(course.price)
 
                 # 一次性批量添加本次下单的商品记录
                 OrderDetail.objects.bulk_create(detail_list)
 
-                discount_type = validated_data.get("discount_type", 0)
+                discount_type = validated_data.get("discount_type", -1)
                 # 使用优惠券
                 if discount_type == 0 and user_coupon:
                     coupon_discount_price = 0
@@ -130,6 +130,8 @@ class OrderModelSerializer(serializers.ModelSerializer):
                     user.save()
                 else:
                     order.real_price = real_price
+                # 课程可以免费赠送的，但支付宝要求交易金额 至少是0.01
+                order.real_price = order.real_price or 0.01
 
                 cart = {key: value for key, value in cart_hash.items() if value == b'0'}
                 pipe = redis.pipeline()

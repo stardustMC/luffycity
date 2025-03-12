@@ -4,13 +4,14 @@ import {reactive} from "vue";
 const order = reactive({
     total_price: 0,         // 勾选商品的总价格
     use_coupon: false,      // 用户是否使用优惠
-    discount_type: 0,       // 0表示优惠券，1表示积分
+    discount_type: -1,       // 0表示优惠券，1表示积分
     discount_price: 0,
     avail_coupon_list: [],  // 用户可用优惠券列表
     coupon_list: [],        // 用户拥有的所有优惠券列表
     select: -1,             // 当前用户选中的优惠券下标，-1表示没有选择
     fixed: true,            // 底部订单总价是否固定浮动
     pay_type: 0,            // 支付方式
+    order_number: "",           // 订单号
 
     credit: 0,              // 当前用户选择抵扣的积分，0表示没有使用积分
     credit_ratio: 0,         // 积分换算比例
@@ -22,6 +23,10 @@ const order = reactive({
     show_success: false,    // 是否展示支付成功页面
     real_price:  0,         // 实付金额
     deal_time: undefined,   // 交易时间
+
+    loading: false,         // 是否展示倒计时
+    timeout: 0,             // 订单支付剩余时间
+    timer: undefined,       // 支付倒计时
 
     create_order(user_coupon_id, token) {
         // 生成订单
@@ -49,12 +54,20 @@ const order = reactive({
             }
         })
     },
-    alipay_page_pay(order_number){
-        return http.get(`payment/alipay/${order_number}`);
+    alipay_page_pay(){
+        return http.get(`payment/alipay/${this.order_number}`);
     },
     alipay_post_display(query_string){
         return http.get(`payment/alipay/result/${query_string}`);
-    }
+    },
+    query_order(token){
+    // 查询订单支付结果
+    return http.get(`/payment/alipay/query/${this.order_number}`,{
+      headers:{
+        Authorization: "jwt " + token,
+      }
+    })
+  }
 })
 
 export default order;

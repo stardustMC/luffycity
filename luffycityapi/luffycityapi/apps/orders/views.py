@@ -1,6 +1,6 @@
 from rest_framework import status
 from rest_framework.response import Response
-
+import constants
 from .models import Order
 from .serializers import OrderModelSerializer
 from rest_framework.generics import CreateAPIView
@@ -20,4 +20,8 @@ class OrderCreateAPIView(CreateAPIView):
         redis = get_redis_connection("cart")
         user_id = request.user.id
         cart_count = redis.hlen(f"cart_{user_id}")
-        return Response({"cart_count": cart_count, "order_number": res.data["order_number"]}, status=status.HTTP_201_CREATED)
+        return Response({
+            "cart_count": cart_count,
+            "order_number": res.data["order_number"],
+            "timeout":     constants.ORDER_EXPIRE_TIME
+        }, status=status.HTTP_201_CREATED)

@@ -126,6 +126,13 @@
 	      </div>
       </div>
     </div>
+    <div class="loadding" v-if="order.loading" @click="check_order">
+      <div class="box">
+          <p class="time">{{format0(parseInt(order.timeout/60))}}:{{ format0(order.timeout%60)}}</p>
+          <i class="el-icon-loading"></i><br>
+          <p>支付完成！点击关闭当前页面</p>
+      </div>
+    </div>
     <Footer/>
   </div>
 </template>
@@ -139,6 +146,7 @@ import cart from "../api/cart.js"
 import order from "../api/order.js"
 import {ElMessage} from "element-plus";
 import router from "../router/index.js";
+import {format0} from "../utils/helper.js"
 
 let store = useStore();
 
@@ -163,7 +171,7 @@ const get_selected = () => {
     if(max_use_credit > order.own_credit) max_use_credit = order.own_credit;
     // 如果订单费用所能抵扣的积分小于拥有的积分（例如免费的课程），则设置为 费用*积分转化率
     let total_credit = order.credit_ratio * cart.total_selected_discount_price;
-    console.log(cart.total_selected_discount_price)
+    console.log(max_use_credit)
     if(max_use_credit > total_credit) max_use_credit = total_credit;
     order.max_use_credit = max_use_credit;
     order.avail_credit_list = use_credit_courses;
@@ -184,11 +192,27 @@ const create_order = () =>{
       // todo: handle order create failure
       ElMessage.error("Order create failed...Please try again.")
     }else{
+      order.loading = true;
+      console.log(response.data);
+      order.timeout = response.data.timeout;
+      order.order_number = response.data.order_number;
+
+      clearInterval(order.timer);
+      order.timer = setInterval(()=>{
+        if(order.timeout > 1)  order.timeout -= 1;
+        else{
+          ElMessage.error("订单已经超时，若已经支付，在订单详情页面查询");
+          clearInterval(order.timer);
+          setTimeout(()=>{
+            router.push("/user/order/");
+          }, 1500)
+        }
+      }, 3000)
+
       ElMessage.success("Success! Now ready to start payment...");
       store.commit("cart_count", response.data.cart_count);
-      console.log(response.data.order_number);
       // 提交订单后，根据返回的订单号，跳转到支付页面
-      order.alipay_page_pay(response.data.order_number).then(response=>{
+      order.alipay_page_pay().then(response=>{
         window.open(response.data.link,"_blank");
       })
     }
@@ -236,6 +260,18 @@ const format_coupon_avail = (coupon)=>{
     })
   }
   return avail.join("/");
+}
+
+// 查询订单状态
+const check_order = ()=>{
+  let token = sessionStorage.token || localStorage.token;
+  order.query_order(token).then(response=>{
+    order.loading = false;
+    router.push("/user/order");
+  }).catch(error=>{
+    console.log(error);
+    ElMessage.error(error.response.data.errmsg);
+  })
 }
 
 // 监听用户选择的支付方式
@@ -324,6 +360,36 @@ window.onscroll = ()=>{
 </script>
 
 <style scoped>
+.loadding{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  background-color: rgba(0,0,0,.7);
+}
+.box{
+  width: 300px;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 50px;
+  color: #fff;
+}
+.box .time{
+  font-size: 22px;
+}
+
 .cart-header {
 	height: 160px;
 	background-color: #e3e6e9;
