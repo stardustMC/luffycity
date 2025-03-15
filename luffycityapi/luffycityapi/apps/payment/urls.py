@@ -5,4 +5,5 @@ urlpatterns = [
     re_path(r'^alipay/(?P<order_number>[0-9]+)/$', views.AliPayViewSet.as_view({'get': 'link'})),
     path('alipay/result/', views.AliPayViewSet.as_view({'get': 'pay_feedback'})),
     re_path('alipay/query/(?P<order_number>[0-9]+)/$', views.AliPayViewSet.as_view({'get': 'query'})),
+    path("alipay/notify", views.AliPayViewSet.as_view({"post": "notify_result"})),
 ]

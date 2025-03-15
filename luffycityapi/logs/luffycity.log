@@ -7066,3 +7066,7 @@ INFO "GET /payment/alipay/202503120000000100000053 HTTP/1.1" 301 0
 INFO "GET /payment/alipay/202503120000000100000053/ HTTP/1.1" 200 961
 INFO "GET /cart/order/ HTTP/1.1" 204 47
 INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 19
+INFO "GET /courses/directions/ HTTP/1.1" 200 266
+INFO "GET /courses/category/0/ HTTP/1.1" 200 1464
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1762
