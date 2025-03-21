@@ -70,4 +70,33 @@ const order = reactive({
   }
 })
 
-export default order;
+const orders = reactive({
+    page: 1,
+    size: 3,
+    count: 0,
+    ordering: "-id",
+    status: -1, // 0未支付, 1已支付, 2已取消, 3超时取消，-1全选
+    order_list: [],
+    order_status_choices: [],
+    get_order_list(token){
+        let params = {
+            page: this.page,
+            size: this.size,
+            status: this.status,
+        };
+        if(this.ordering){
+            params.ordering = this.ordering;
+        }
+        return http.get("/orders/list/", {
+            headers: {
+                Authorization: "jwt " + token,
+            },
+            params,
+        })
+    },
+    get_order_status_choices(){
+        return http.get("/orders/status/");
+    }
+})
+
+export {order, orders};

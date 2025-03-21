@@ -193,7 +193,6 @@ const create_order = () =>{
       ElMessage.error("Order create failed...Please try again.")
     }else{
       order.loading = true;
-      console.log(response.data);
       order.timeout = response.data.timeout;
       order.order_number = response.data.order_number;
 

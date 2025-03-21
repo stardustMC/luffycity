@@ -1,6 +1,6 @@
 import logging
-from django.db import transaction
 from datetime import datetime
+from django.db import transaction
 from rest_framework import serializers
 from django_redis import get_redis_connection
 
@@ -8,6 +8,23 @@ import constants
 from coupon.models import CouponLog
 from .models import Order, OrderDetail, Course
 
+class OrderDetailModelSerializer(serializers.ModelSerializer):
+    course_id = serializers.IntegerField(source='course.id')
+    course_name = serializers.CharField(source='course.name')
+    course_cover = serializers.ImageField(source='course.course_cover')
+
+    class Meta:
+        model = OrderDetail
+        fields = ["id", "price", "real_price", "discount_name", "course_id", "course_name", "course_cover"]
+
+class OrderListModelSerializer(serializers.ModelSerializer):
+    """订单列表序列化器"""
+    order_courses = OrderDetailModelSerializer(many=True)
+
+    class Meta:
+        model = Order
+        fields = ["id", "order_number", "total_price", "real_price", "pay_time", "created_time", "credit", "coupon",
+                  "pay_type", "order_status", "order_courses"]
 
 class OrderModelSerializer(serializers.ModelSerializer):
     # pay_link = serializers.CharField(read_only=True)
