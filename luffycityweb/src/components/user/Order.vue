@@ -21,7 +21,7 @@
             <li :data-flag="order.order_number" v-for="order in orders.order_list">
               <p class="myOrder-number">
                 <i class="imv2-receipt"></i>订单编号：{{order.order_number}}
-                <span class="date">{{order.created_time}}</span>
+                <span class="date">{{order.created_time.toString().replace("T", " ").split(".")[0]}}</span>
                 <i class="imv2-delete js-order-del" title="删除订单"></i>
                 <router-link to="/user/help" target="_blank" class="myfeedback r">售后帮助</router-link>
               </p>
@@ -58,24 +58,20 @@
                     </div>
                   </div>
                 </div>
-                <div class="course-action l" v-if="orders.status === 0">
+                <div class="course-action l" v-if="order.order_status === 0">
                   <a class="pay-now" href="" @click.prevent="pay_now(order)">立即支付</a>
                   <a class="order-cancel" href="" @click.prevent="pay_cancel(order)">取消订单</a>
                 </div>
-                <div class="course-action l" v-else-if="orders.status === 1">
+                <div class="course-action l" v-else-if="order.order_status === 1">
                   <a class="pay-now" href="" @click.prevent="evaluate_now(order)">立即评价</a>
                   <a class="order-cancel" href="" @click.prevent="order_refund(order)">申请退款</a>
                 </div>
-                <div class="course-action l" v-else-if="orders.status === 2">
+                <div class="course-action l" v-else-if="order.order_status === 2">
                   <a class="pay-now" href="" @click.prevent="delete_order(order)">删除订单</a>
                 </div>
-                <div class="course-action l" v-else-if="orders.status === 3">
+                <div class="course-action l" v-else-if="order.order_status === 3">
                   <a class="pay-now" href="" @click.prevent="recovery_now(order)">订单恢复</a>
                   <a class="pay-now" href="" @click.prevent="delete_order(order)">删除订单</a>
-                </div>
-                <div class="course-action l">
-                  <a class="pay-now" href="/pay/cashier?trade_number=2108100232047715">立即支付</a>
-                  <a class="order-cancel" href="javascript:void(0);">取消订单</a>
                 </div>
               </div>
             </li>
@@ -95,17 +91,10 @@
       </div>
 </template>
 
-<script>
+<script setup>
 import {orders} from "../../api/order.js";
-import {defineComponent, reactive, watch} from "vue";
-
-export default defineComponent({
-  computed: {
-    orders() {
-      return orders
-    }
-  }
-})
+import {ElMessage} from "element-plus";
+import {watch} from "vue";
 
 const get_order_status_choices = () =>{
   orders.get_order_status_choices().then(response=>{
@@ -119,47 +108,58 @@ const get_order_list = () =>{
   orders.get_order_list(token).then(response=>{
     orders.order_list = response.data.results;
     orders.count = response.data.count;
-    console.log(response.data.results);
   })
 }
 get_order_list();
 
-watch(()=>orders.status, ()=>{
-  get_order_list();
-})
-
-let pay_now = (order_info)=>{
+const pay_now = (order_info)=>{
   // 订单继续支付
 }
-let pay_cancel = (order_info)=>{
+
+const pay_cancel = (order_info)=>{
   // 取消订单
+  let token = localStorage.getItem("token") || sessionStorage.getItem("token");
+  orders.pay_cancel(token, order_info.id).then(response=>{
+    if(response.status !== 200){
+      ElMessage.error(response.data.errmsg);
+    }else{
+      let index = orders.order_list.findIndex(item => item===order_info);
+      orders.order_list.splice(index, 1);
+      ElMessage.success(response.data.errmsg);
+    }
+  })
 }
 
-let evaluate_now = (order_info)=>{
+
+const evaluate_now = (order_info)=>{
   // 订单评价
 }
 
-let order_refund = (order_info)=>{
+const order_refund = (order_info)=>{
   // 申请退款
 }
 
-let delete_order = (order_info)=>{
+const delete_order = (order_info)=>{
   // 删除订单
 }
 
-let recovery_now = (order)=>{
+const recovery_now = (order)=>{
   // 恢复订单
 }
 
 // 切换页码
-let current_page = (page)=>{
+const current_page = (page)=>{
   orders.page = page;
 }
 
 // 切换分页数据量
-let current_size = (size)=>{
+const current_size = (size)=>{
   orders.size = size;
 }
+
+watch(()=>orders.status, ()=>{
+  get_order_list();
+})
 
 // 监听页码
 watch(

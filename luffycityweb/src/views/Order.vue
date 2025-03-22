@@ -143,7 +143,7 @@ import Header from "../components/Header.vue"
 import Footer from "../components/Footer.vue"
 import {useStore} from "vuex";
 import cart from "../api/cart.js"
-import order from "../api/order.js"
+import {order} from "../api/order.js"
 import {ElMessage} from "element-plus";
 import router from "../router/index.js";
 import {format0} from "../utils/helper.js"

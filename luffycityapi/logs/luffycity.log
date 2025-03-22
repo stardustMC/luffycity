@@ -7598,3 +7598,239 @@ INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/vie
 INFO Watching for file changes with StatReloader
 INFO "GET /orders/list/?page=1&size=3&status=1&ordering=-id HTTP/1.1" 200 52
 INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/coupon/admin.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /courses/directions/ HTTP/1.1" 200 266
+INFO "GET /courses/category/0/ HTTP/1.1" 200 1464
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 2
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1762
+INFO "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO "POST /users/login/ HTTP/1.1" 200 291
+INFO "OPTIONS /orders/list/?page=1&size=3&status=0&ordering=-id HTTP/1.1" 200 0
+INFO "GET /orders/list/?page=1&size=3&status=0&ordering=-id HTTP/1.1" 200 1143
+INFO "OPTIONS /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 0
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+INFO "OPTIONS /orders/202503040000000100000001/ HTTP/1.1" 200 0
+ERROR Internal Server Error: /orders/202503040000000100000001/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 174, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: 身份认证信息未提供。
+ERROR "PUT /orders/202503040000000100000001/ HTTP/1.1" 500 109877
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+WARNING Bad Request: /orders/202503040000000100000001/
+WARNING "PUT /orders/202503040000000100000001/ HTTP/1.1" 400 31
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "OPTIONS /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 0
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+INFO "OPTIONS /orders/1/ HTTP/1.1" 200 0
+ERROR Internal Server Error: /orders/1/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/views.py", line 62, in pay_cancel
+    order = Order.objects.get()
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/db/models/query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+orders.models.Order.MultipleObjectsReturned: get() returned more than one Order -- it returned 2!
+ERROR "PUT /orders/1/ HTTP/1.1" 500 110071
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+ERROR Internal Server Error: /orders/1/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/views.py", line 62, in pay_cancel
+    order = Order.objects.get()
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/db/models/query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+orders.models.Order.MultipleObjectsReturned: get() returned more than one Order -- it returned 2!
+ERROR "PUT /orders/1/ HTTP/1.1" 500 110117
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+ERROR Internal Server Error: /orders/1/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/views.py", line 60, in pay_cancel
+    order = get_object_or_404(Order)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/db/models/query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+orders.models.Order.MultipleObjectsReturned: get() returned more than one Order -- it returned 2!
+ERROR "PUT /orders/1/ HTTP/1.1" 500 110084
+INFO Watching for file changes with StatReloader
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+ERROR Internal Server Error: /orders/1/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/views.py", line 60, in pay_cancel
+    order = get_object_or_404(Order)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/db/models/query.py", line 640, in get
+    raise self.model.MultipleObjectsReturned(
+orders.models.Order.MultipleObjectsReturned: get() returned more than one Order -- it returned 2!
+ERROR "PUT /orders/1/ HTTP/1.1" 500 110084
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "PUT /orders/1/ HTTP/1.1" 200 34
+INFO "OPTIONS /orders/list/?page=1&size=3&status=2&ordering=-id HTTP/1.1" 200 0
+INFO "GET /orders/list/?page=1&size=3&status=2&ordering=-id HTTP/1.1" 200 597
+INFO "GET /orders/list/?page=1&size=3&status=0&ordering=-id HTTP/1.1" 200 597
+INFO "GET /orders/list/?page=1&size=3&status=2&ordering=-id HTTP/1.1" 200 597
+INFO "GET /orders/list/?page=1&size=3&status=0&ordering=-id HTTP/1.1" 200 597
+INFO "GET /orders/list/?page=1&size=3&status=2&ordering=-id HTTP/1.1" 200 597
+INFO "GET /orders/list/?page=1&size=3&status=0&ordering=-id HTTP/1.1" 200 597
+INFO "GET /orders/list/?page=1&size=3&status=2&ordering=-id HTTP/1.1" 200 597
+INFO "GET /orders/list/?page=1&size=3&status=0&ordering=-id HTTP/1.1" 200 597
+INFO "OPTIONS /orders/list/?page=1&size=3&status=1&ordering=-id HTTP/1.1" 200 0
+INFO "GET /orders/list/?page=1&size=3&status=1&ordering=-id HTTP/1.1" 200 52
+INFO "GET /orders/list/?page=1&size=3&status=0&ordering=-id HTTP/1.1" 200 597
+INFO "GET /orders/list/?page=1&size=3&status=1&ordering=-id HTTP/1.1" 200 52
+INFO "GET /orders/list/?page=1&size=3&status=0&ordering=-id HTTP/1.1" 200 597
+INFO "GET /orders/list/?page=1&size=3&status=1&ordering=-id HTTP/1.1" 200 52
+INFO "GET /orders/list/?page=1&size=3&status=2&ordering=-id HTTP/1.1" 200 597
+INFO "GET /orders/list/?page=1&size=3&status=0&ordering=-id HTTP/1.1" 200 597
+INFO "GET /orders/list/?page=1&size=3&status=2&ordering=-id HTTP/1.1" 200 597
+INFO "GET /orders/list/?page=1&size=3&status=0&ordering=-id HTTP/1.1" 200 597
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=0&ordering=-id HTTP/1.1" 200 597
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=0&ordering=-id HTTP/1.1" 200 597
+INFO "GET /orders/list/?page=1&size=3&status=1&ordering=-id HTTP/1.1" 200 52
+INFO "GET /orders/list/?page=1&size=3&status=2&ordering=-id HTTP/1.1" 200 597
+INFO "GET /orders/list/?page=1&size=3&status=0&ordering=-id HTTP/1.1" 200 597
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143

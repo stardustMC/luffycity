@@ -1,5 +1,5 @@
 import http from "../utils/http";
-import {reactive} from "vue";
+import {reactive, ref} from "vue";
 
 const order = reactive({
     total_price: 0,         // 勾选商品的总价格
@@ -73,7 +73,7 @@ const order = reactive({
 const orders = reactive({
     page: 1,
     size: 3,
-    count: 0,
+    count: ref(this.order_list.length),
     ordering: "-id",
     status: -1, // 0未支付, 1已支付, 2已取消, 3超时取消，-1全选
     order_list: [],
@@ -96,7 +96,15 @@ const orders = reactive({
     },
     get_order_status_choices(){
         return http.get("/orders/status/");
+    },
+    pay_cancel(token, id){
+        return http.put(`/orders/${id}/`, {}, {
+            headers: {
+                Authorization: "jwt " + token,
+            }
+        });
     }
 })
 
 export {order, orders};
+// export default orders;
