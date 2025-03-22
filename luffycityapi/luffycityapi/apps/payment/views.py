@@ -94,7 +94,6 @@ class AliPayViewSet(ViewSet):
     def query(self, request, order_number):
         """主动查询订单支付的支付结果"""
         try:
-            print(order_number)
             order = Order.objects.get(order_number=order_number)
             if order.order_status > 1:
                 return Response({"errmsg": "订单超时或已取消！"}, status=status.HTTP_400_BAD_REQUEST)
@@ -112,7 +111,6 @@ class AliPayViewSet(ViewSet):
             # 请求支付宝，查询订单的支付结果
             alipay = AliPaySDK()
             result = alipay.query(order_number)
-            print(f"result-{result}")
             if result.get("trade_status", None) in ["TRADE_FINISHED", "TRADE_SUCCESS"]:
                 """支付成功"""
                 with transaction.atomic():
@@ -151,7 +149,6 @@ class AliPayViewSet(ViewSet):
                 """当前订单未支付"""
                 return Response({"errmsg": "当前订单未支付！"}, status=status.HTTP_400_BAD_REQUEST)
 
-        print("order finished")
         return Response({"errmsg": "当前订单已支付！"})
 
     def notify_result(self, request):

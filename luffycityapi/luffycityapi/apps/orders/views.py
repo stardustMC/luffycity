@@ -1,18 +1,19 @@
-from django.http import Http404
-from rest_framework import status
-from rest_framework.views import APIView
-from rest_framework.response import Response
-from rest_framework.viewsets import ViewSet
-
 import constants
-from django.shortcuts import get_object_or_404
-from django.db import transaction
 from .models import Order
 from coupon.services import add_coupon_to_redis
 from .pagination import OrderPageNumberPagination
 from .serializers import OrderModelSerializer, OrderListModelSerializer
-from rest_framework.generics import CreateAPIView, ListAPIView
+
+from django.http import Http404
+from django.db import transaction
+from django.shortcuts import get_object_or_404
+
+from rest_framework import status
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework.viewsets import ViewSet
 from rest_framework.permissions import IsAuthenticated
+from rest_framework.generics import CreateAPIView, ListAPIView
 
 
 # Create your views here.
@@ -75,6 +76,6 @@ class OrderViewSet(ViewSet):
                 order.order_status = 2
                 order.save()
                 return Response({"errmsg": "当前订单已取消"}, status=status.HTTP_200_OK)
-            except Exception as e:
+            except Exception:
                 transaction.savepoint_rollback(s1)
                 return Response({"errmsg": "订单取消发生错误！"}, status=status.HTTP_400_BAD_REQUEST)

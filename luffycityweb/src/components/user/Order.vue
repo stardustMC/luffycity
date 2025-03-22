@@ -92,9 +92,10 @@
 </template>
 
 <script setup>
-import {orders} from "../../api/order.js";
+import {order, orders} from "../../api/order.js";
 import {ElMessage} from "element-plus";
 import {watch} from "vue";
+import router from "../../router/index.js";
 
 const get_order_status_choices = () =>{
   orders.get_order_status_choices().then(response=>{
@@ -107,13 +108,32 @@ const get_order_list = () =>{
   let token = localStorage.getItem("token") || sessionStorage.getItem("token");
   orders.get_order_list(token).then(response=>{
     orders.order_list = response.data.results;
-    orders.count = response.data.count;
   })
 }
 get_order_list();
 
-const pay_now = (order_info)=>{
-  // 订单继续支付
+const pay_now = (order_info) =>{
+  order.order_number = order_info.order_number;
+  let token = localStorage.getItem("token") || sessionStorage.getItem("token");
+  // 提交订单后，根据返回的订单号，跳转到支付页面
+  order.alipay_page_pay(token).then(response => {
+    clearInterval(order.timer);
+    order.timeout = 180;
+    order.timer = setInterval(() => {
+      if (order.timeout > 1){
+        order.timeout -= 1;
+        order.query_order(token).then(response=>{
+          order_info.order_status = 1;
+          clearInterval(order.timer);
+        }).catch(err=>{
+          console.log(err.response.data);
+        })
+      } else {
+        clearInterval(order.timer);
+      }
+    }, 8000)
+    window.open(response.data.link, "_blank");
+  })
 }
 
 const pay_cancel = (order_info)=>{
@@ -129,7 +149,6 @@ const pay_cancel = (order_info)=>{
     }
   })
 }
-
 
 const evaluate_now = (order_info)=>{
   // 订单评价

@@ -1,5 +1,5 @@
 import http from "../utils/http";
-import {reactive, ref} from "vue";
+import {computed, reactive, ref} from "vue";
 
 const order = reactive({
     total_price: 0,         // 勾选商品的总价格
@@ -54,30 +54,36 @@ const order = reactive({
             }
         })
     },
-    alipay_page_pay(){
-        return http.get(`payment/alipay/${this.order_number}`);
+    alipay_page_pay(token){
+        return http.get(`payment/alipay/${this.order_number}`, {
+            headers: {
+                Authorization: "jwt " + token,
+            }
+        });
     },
     alipay_post_display(query_string){
         return http.get(`payment/alipay/result/${query_string}`);
     },
     query_order(token){
     // 查询订单支付结果
-    return http.get(`/payment/alipay/query/${this.order_number}`,{
-      headers:{
-        Authorization: "jwt " + token,
-      }
-    })
+        return http.get(`/payment/alipay/query/${this.order_number}`, {
+            headers: {
+                Authorization: "jwt " + token,
+            }
+        })
   }
 })
 
 const orders = reactive({
     page: 1,
     size: 3,
-    count: ref(this.order_list.length),
     ordering: "-id",
     status: -1, // 0未支付, 1已支付, 2已取消, 3超时取消，-1全选
     order_list: [],
     order_status_choices: [],
+    count: computed(()=>{
+        return orders.order_list.length;
+    }),
     get_order_list(token){
         let params = {
             page: this.page,

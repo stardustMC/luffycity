@@ -7834,3 +7834,385 @@ INFO "GET /orders/list/?page=1&size=3&status=1&ordering=-id HTTP/1.1" 200 52
 INFO "GET /orders/list/?page=1&size=3&status=2&ordering=-id HTTP/1.1" 200 597
 INFO "GET /orders/list/?page=1&size=3&status=0&ordering=-id HTTP/1.1" 200 597
 INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/payment/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/orders/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+INFO "GET /orders/list/?page=1&size=3&status=0&ordering=-id HTTP/1.1" 200 597
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+INFO "GET /orders/list/?page=1&size=3&status=0&ordering=-id HTTP/1.1" 200 597
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+INFO "GET /orders/list/?page=1&size=3&status=0&ordering=-id HTTP/1.1" 200 597
+INFO "GET /orders/list/?page=1&size=3&status=1&ordering=-id HTTP/1.1" 200 52
+INFO "GET /orders/list/?page=1&size=3&status=0&ordering=-id HTTP/1.1" 200 597
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+INFO "OPTIONS /payment/alipay/202503040000000100000002 HTTP/1.1" 200 0
+INFO "GET /payment/alipay/202503040000000100000002 HTTP/1.1" 301 0
+INFO "OPTIONS /payment/alipay/202503040000000100000002/ HTTP/1.1" 200 0
+INFO "GET /payment/alipay/202503040000000100000002/ HTTP/1.1" 200 963
+INFO "OPTIONS /payment/alipay/query/202503040000000100000002 HTTP/1.1" 200 0
+INFO "GET /payment/alipay/query/202503040000000100000002 HTTP/1.1" 301 0
+INFO "OPTIONS /payment/alipay/query/202503040000000100000002/ HTTP/1.1" 200 0
+WARNING Bad Request: /payment/alipay/query/202503040000000100000002/
+WARNING "GET /payment/alipay/query/202503040000000100000002/ HTTP/1.1" 400 37
+WARNING Bad Request: /payment/alipay/query/202503040000000100000002/
+WARNING "GET /payment/alipay/query/202503040000000100000002/ HTTP/1.1" 400 37
+WARNING Bad Request: /payment/alipay/query/202503040000000100000002/
+WARNING "GET /payment/alipay/query/202503040000000100000002/ HTTP/1.1" 400 37
+WARNING Bad Request: /payment/alipay/query/202503040000000100000002/
+WARNING "GET /payment/alipay/query/202503040000000100000002/ HTTP/1.1" 400 37
+WARNING Bad Request: /payment/alipay/query/202503040000000100000002/
+WARNING "GET /payment/alipay/query/202503040000000100000002/ HTTP/1.1" 400 37
+WARNING Bad Request: /payment/alipay/query/202503040000000100000002/
+WARNING "GET /payment/alipay/query/202503040000000100000002/ HTTP/1.1" 400 37
+WARNING Bad Request: /payment/alipay/query/202503040000000100000002/
+WARNING "GET /payment/alipay/query/202503040000000100000002/ HTTP/1.1" 400 37
+WARNING Bad Request: /payment/alipay/query/202503040000000100000002/
+WARNING "GET /payment/alipay/query/202503040000000100000002/ HTTP/1.1" 400 37
+ERROR Internal Server Error: /payment/alipay/query/202503040000000100000002/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/payment/views.py", line 113, in query
+    result = alipay.query(order_number)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/utils/alipaysdk.py", line 61, in query
+    return self.server_api(
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/alipay/__init__.py", line 229, in server_api
+    return self.verified_sync_response(data, response_type)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/alipay/__init__.py", line 612, in verified_sync_response
+    raw_string = urlopen(url, timeout=self._config.timeout).read().decode()
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 531, in open
+    response = meth(req, response)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 640, in http_response
+    response = self.parent.error(
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 569, in error
+    return self._call_chain(*args)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 502, in _call_chain
+    result = func(*args)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 649, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+ERROR "GET /payment/alipay/query/202503040000000100000002/ HTTP/1.1" 500 149157
+ERROR Internal Server Error: /payment/alipay/query/202503040000000100000002/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/payment/views.py", line 113, in query
+    result = alipay.query(order_number)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/utils/alipaysdk.py", line 61, in query
+    return self.server_api(
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/alipay/__init__.py", line 229, in server_api
+    return self.verified_sync_response(data, response_type)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/alipay/__init__.py", line 612, in verified_sync_response
+    raw_string = urlopen(url, timeout=self._config.timeout).read().decode()
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 531, in open
+    response = meth(req, response)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 640, in http_response
+    response = self.parent.error(
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 569, in error
+    return self._call_chain(*args)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 502, in _call_chain
+    result = func(*args)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 649, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+ERROR "GET /payment/alipay/query/202503040000000100000002/ HTTP/1.1" 500 149181
+WARNING Bad Request: /payment/alipay/query/202503040000000100000002/
+WARNING "GET /payment/alipay/query/202503040000000100000002/ HTTP/1.1" 400 37
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+WARNING Bad Request: /payment/alipay/query/202503040000000100000002/
+WARNING "GET /payment/alipay/query/202503040000000100000002/ HTTP/1.1" 400 37
+INFO "GET /payment/alipay/202503040000000100000002/ HTTP/1.1" 200 953
+INFO "GET /payment/alipay/202503040000000100000002/ HTTP/1.1" 200 965
+WARNING Bad Request: /payment/alipay/query/202503040000000100000002/
+WARNING "GET /payment/alipay/query/202503040000000100000002/ HTTP/1.1" 400 37
+WARNING Bad Request: /payment/alipay/query/202503040000000100000002/
+WARNING "GET /payment/alipay/query/202503040000000100000002/ HTTP/1.1" 400 37
+ERROR Internal Server Error: /payment/alipay/query/202503040000000100000002/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/payment/views.py", line 113, in query
+    result = alipay.query(order_number)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/utils/alipaysdk.py", line 61, in query
+    return self.server_api(
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/alipay/__init__.py", line 229, in server_api
+    return self.verified_sync_response(data, response_type)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/alipay/__init__.py", line 612, in verified_sync_response
+    raw_string = urlopen(url, timeout=self._config.timeout).read().decode()
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 531, in open
+    response = meth(req, response)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 640, in http_response
+    response = self.parent.error(
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 569, in error
+    return self._call_chain(*args)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 502, in _call_chain
+    result = func(*args)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 649, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+ERROR "GET /payment/alipay/query/202503040000000100000002/ HTTP/1.1" 500 149151
+WARNING Bad Request: /payment/alipay/query/202503040000000100000002/
+WARNING "GET /payment/alipay/query/202503040000000100000002/ HTTP/1.1" 400 37
+WARNING Bad Request: /payment/alipay/query/202503040000000100000002/
+WARNING "GET /payment/alipay/query/202503040000000100000002/ HTTP/1.1" 400 37
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+ERROR Internal Server Error: /payment/alipay/query/202503040000000100000002/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/payment/views.py", line 113, in query
+    result = alipay.query(order_number)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/utils/alipaysdk.py", line 61, in query
+    return self.server_api(
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/alipay/__init__.py", line 229, in server_api
+    return self.verified_sync_response(data, response_type)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/alipay/__init__.py", line 612, in verified_sync_response
+    raw_string = urlopen(url, timeout=self._config.timeout).read().decode()
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 531, in open
+    response = meth(req, response)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 640, in http_response
+    response = self.parent.error(
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 569, in error
+    return self._call_chain(*args)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 502, in _call_chain
+    result = func(*args)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 649, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+ERROR "GET /payment/alipay/query/202503040000000100000002/ HTTP/1.1" 500 149175
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+INFO "GET /payment/alipay/202503040000000100000002/ HTTP/1.1" 200 949
+WARNING Bad Request: /payment/alipay/query/202503040000000100000002/
+WARNING "GET /payment/alipay/query/202503040000000100000002/ HTTP/1.1" 400 37
+ERROR Internal Server Error: /payment/alipay/query/202503040000000100000002/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/payment/views.py", line 113, in query
+    result = alipay.query(order_number)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/utils/alipaysdk.py", line 61, in query
+    return self.server_api(
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/alipay/__init__.py", line 229, in server_api
+    return self.verified_sync_response(data, response_type)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/alipay/__init__.py", line 612, in verified_sync_response
+    raw_string = urlopen(url, timeout=self._config.timeout).read().decode()
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 531, in open
+    response = meth(req, response)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 640, in http_response
+    response = self.parent.error(
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 569, in error
+    return self._call_chain(*args)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 502, in _call_chain
+    result = func(*args)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 649, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+ERROR "GET /payment/alipay/query/202503040000000100000002/ HTTP/1.1" 500 149211
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+INFO "GET /payment/alipay/202503040000000100000002/ HTTP/1.1" 200 961
+WARNING Bad Request: /payment/alipay/query/202503040000000100000002/
+WARNING "GET /payment/alipay/query/202503040000000100000002/ HTTP/1.1" 400 37
+ERROR Internal Server Error: /payment/alipay/query/202503040000000100000002/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/payment/views.py", line 113, in query
+    result = alipay.query(order_number)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/utils/alipaysdk.py", line 61, in query
+    return self.server_api(
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/alipay/__init__.py", line 229, in server_api
+    return self.verified_sync_response(data, response_type)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/alipay/__init__.py", line 612, in verified_sync_response
+    raw_string = urlopen(url, timeout=self._config.timeout).read().decode()
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 531, in open
+    response = meth(req, response)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 640, in http_response
+    response = self.parent.error(
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 569, in error
+    return self._call_chain(*args)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 502, in _call_chain
+    result = func(*args)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 649, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+ERROR "GET /payment/alipay/query/202503040000000100000002/ HTTP/1.1" 500 149163
+ERROR Internal Server Error: /payment/alipay/query/202503040000000100000002/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/payment/views.py", line 113, in query
+    result = alipay.query(order_number)
+  File "/home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/utils/alipaysdk.py", line 61, in query
+    return self.server_api(
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/alipay/__init__.py", line 229, in server_api
+    return self.verified_sync_response(data, response_type)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/alipay/__init__.py", line 612, in verified_sync_response
+    raw_string = urlopen(url, timeout=self._config.timeout).read().decode()
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 531, in open
+    response = meth(req, response)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 640, in http_response
+    response = self.parent.error(
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 569, in error
+    return self._call_chain(*args)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 502, in _call_chain
+    result = func(*args)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/urllib/request.py", line 649, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+ERROR "GET /payment/alipay/query/202503040000000100000002/ HTTP/1.1" 500 149169
+WARNING Bad Request: /payment/alipay/query/202503040000000100000002/
+WARNING "GET /payment/alipay/query/202503040000000100000002/ HTTP/1.1" 400 37
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+WARNING Bad Request: /payment/alipay/query/202503040000000100000002/
+WARNING "GET /payment/alipay/query/202503040000000100000002/ HTTP/1.1" 400 37
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+INFO "GET /payment/alipay/202503040000000100000002/ HTTP/1.1" 200 961
+WARNING Bad Request: /payment/alipay/query/202503040000000100000002/
+WARNING "GET /payment/alipay/query/202503040000000100000002/ HTTP/1.1" 400 37
+WARNING Bad Request: /payment/alipay/query/202503040000000100000002/
+WARNING "GET /payment/alipay/query/202503040000000100000002/ HTTP/1.1" 400 37
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
