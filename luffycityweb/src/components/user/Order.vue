@@ -108,6 +108,7 @@ const get_order_list = () =>{
   let token = localStorage.getItem("token") || sessionStorage.getItem("token");
   orders.get_order_list(token).then(response=>{
     orders.order_list = response.data.results;
+    console.log(response.data.results);
   })
 }
 get_order_list();

@@ -5,6 +5,7 @@ from rest_framework import serializers
 from django_redis import get_redis_connection
 
 import constants
+from orders.tasks import order_timeout
 from coupon.models import CouponLog
 from .models import Order, OrderDetail, Course
 
@@ -102,7 +103,6 @@ class OrderModelSerializer(serializers.ModelSerializer):
                     # 统计订单的总价和实付总价
                     total_price += float(course.price)
                     real_price += discount_price if discount_price is not None else float(course.price)
-
                 # 一次性批量添加本次下单的商品记录
                 OrderDetail.objects.bulk_create(detail_list)
 
@@ -160,8 +160,11 @@ class OrderModelSerializer(serializers.ModelSerializer):
                 # 保存订单的总价格
                 order.total_price = total_price
                 order.save()
+
+                order_timeout.apply_async(kwargs={"order_id": order.id}, countdown=constants.ORDER_EXPIRE_TIME)
+                order.time_out = constants.ORDER_EXPIRE_TIME
+                return order
             except Exception as e:
                 logging.error("order create failed! %s" % e)
                 transaction.savepoint_rollback(t1)
                 raise serializers.ValidationError(detail="order create failed!")
-        return order

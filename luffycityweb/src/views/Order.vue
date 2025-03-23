@@ -211,7 +211,7 @@ const create_order = () =>{
       ElMessage.success("Success! Now ready to start payment...");
       store.commit("cart_count", response.data.cart_count);
       // 提交订单后，根据返回的订单号，跳转到支付页面
-      order.alipay_page_pay().then(response=>{
+      order.alipay_page_pay(token).then(response=>{
         window.open(response.data.link,"_blank");
       })
     }

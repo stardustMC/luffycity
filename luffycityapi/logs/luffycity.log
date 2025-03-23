@@ -8216,3 +8216,544 @@ WARNING Bad Request: /payment/alipay/query/202503040000000100000002/
 WARNING "GET /payment/alipay/query/202503040000000100000002/ HTTP/1.1" 400 37
 INFO "GET /orders/status/ HTTP/1.1" 200 68
 INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1143
+INFO "GET /admin/ HTTP/1.1" 200 27084
+INFO "GET /static/admin/simpleui-x/css/index.css?_=3.2 HTTP/1.1" 200 6994
+INFO "GET /static/admin/simpleui-x/waves/waves.min.css?_=2.1 HTTP/1.1" 200 3861
+INFO "GET /static/admin/simpleui-x/automatic/dicts.js?_=2025.01.13 HTTP/1.1" 200 12677
+INFO "GET /static/admin/simpleui-x/automatic/segment.js?_=2025.01.13 HTTP/1.1" 200 1194
+INFO "GET /static/admin/simpleui-x/js/vue.min.js?_=2025.01.13 HTTP/1.1" 200 93675
+INFO "GET /static/admin/simpleui-x/fontawesome-free-6.2.0-web/css/all.min.css HTTP/1.1" 200 101784
+INFO "GET /static/admin/simpleui-x/elementui/theme-chalk/index.css HTTP/1.1" 200 238628
+INFO "GET /static/admin/simpleui-x/elementui/index.js?_=2025.01.13 HTTP/1.1" 200 586253
+INFO "GET /static/admin/simpleui-x/locale/en-us.js?_=2025.01.13 HTTP/1.1" 200 811
+INFO "GET /static/admin/simpleui-x/locale/zh-hans.js?_=2025.01.13 HTTP/1.1" 200 1254
+INFO "GET /static/admin/simpleui-x/js/cookie.js?_=2025.01.13 HTTP/1.1" 200 524
+INFO "GET /static/admin/simpleui-x/theme/theme.js?_=2025.01.13 HTTP/1.1" 200 4274
+INFO "GET /static/admin/simpleui-x/waves/waves.min.js?_=2025.01.13 HTTP/1.1" 200 6329
+INFO "GET /static/admin/simpleui-x/js/menu.js?_=2025.01.13 HTTP/1.1" 200 1216
+INFO "GET /static/admin/simpleui-x/js/index.js?_=2025.01.13 HTTP/1.1" 200 21589
+WARNING Not Found: /uploads/logo.png
+WARNING "GET /uploads/logo.png HTTP/1.1" 404 2698
+INFO "GET /static/admin/simpleui-x/elementui/theme-chalk/fonts/element-icons.woff HTTP/1.1" 200 28200
+INFO "GET /static/admin/simpleui-x/fontawesome-free-6.2.0-web/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 150472
+INFO "GET /static/admin/simpleui-x/fontawesome-free-6.2.0-web/webfonts/fa-brands-400.woff2 HTTP/1.1" 200 107460
+INFO "GET /static/admin/simpleui-x/fontawesome-free-6.2.0-web/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 25096
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 3105
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/settings/dev.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/__init__.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/__init__.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO "OPTIONS /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 0
+INFO "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /cart/ HTTP/1.1" 200 338
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/apps/cart/views.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO "GET /home/nav/header/ HTTP/1.1" 200 290
+INFO "GET /home/nav/footer/ HTTP/1.1" 200 386
+INFO "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO "POST /users/login/ HTTP/1.1" 200 291
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 2
+INFO "GET /courses/category/0/ HTTP/1.1" 200 1464
+INFO "GET /courses/directions/ HTTP/1.1" 200 266
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1761
+INFO "GET /cart/ HTTP/1.1" 200 338
+INFO "PATCH /cart/ HTTP/1.1" 200 41
+INFO "OPTIONS /cart/order/ HTTP/1.1" 200 0
+INFO "OPTIONS /coupons/avail/ HTTP/1.1" 200 0
+INFO "GET /cart/order/ HTTP/1.1" 200 324
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
+INFO "OPTIONS /orders/ HTTP/1.1" 200 0
+INFO "POST /orders/ HTTP/1.1" 201 70
+INFO "OPTIONS /payment/alipay/202503230000000100000042 HTTP/1.1" 200 0
+INFO "GET /payment/alipay/202503230000000100000042 HTTP/1.1" 301 0
+INFO "OPTIONS /payment/alipay/202503230000000100000042/ HTTP/1.1" 200 0
+ERROR Internal Server Error: /payment/alipay/202503230000000100000042/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/jwt/api_jws.py", line 180, in _load
+    signing_input, crypto_segment = jwt.rsplit(b'.', 1)
+ValueError: not enough values to unpack (expected 2, got 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework_jwt/authentication.py", line 33, in authenticate
+    payload = jwt_decode_handler(jwt_value)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework_jwt/utils.py", line 104, in jwt_decode_handler
+    unverified_payload = jwt.decode(token, None, False)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/jwt/api_jwt.py", line 84, in decode
+    payload, _, _, _ = self._load(jwt)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/jwt/api_jws.py", line 183, in _load
+    raise DecodeError('Not enough segments')
+jwt.exceptions.DecodeError: Not enough segments
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/request.py", line 231, in user
+    self._authenticate()
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/request.py", line 384, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework_jwt/authentication.py", line 39, in authenticate
+    raise exceptions.AuthenticationFailed(msg)
+rest_framework.exceptions.AuthenticationFailed: Error decoding signature.
+ERROR "GET /payment/alipay/202503230000000100000042/ HTTP/1.1" 500 140781
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "OPTIONS /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 0
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1609
+INFO "OPTIONS /orders/list/?page=1&size=3&status=2&ordering=-id HTTP/1.1" 200 0
+INFO "GET /orders/list/?page=1&size=3&status=2&ordering=-id HTTP/1.1" 200 597
+INFO "OPTIONS /orders/list/?page=1&size=3&status=0&ordering=-id HTTP/1.1" 200 0
+INFO "GET /orders/list/?page=1&size=3&status=0&ordering=-id HTTP/1.1" 200 1063
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1609
+INFO "OPTIONS /orders/list/?page=1&size=3&status=1&ordering=-id HTTP/1.1" 200 0
+INFO "GET /orders/list/?page=1&size=3&status=1&ordering=-id HTTP/1.1" 200 52
+INFO "GET /orders/list/?page=1&size=3&status=0&ordering=-id HTTP/1.1" 200 1063
+INFO "GET /orders/list/?page=1&size=3&status=2&ordering=-id HTTP/1.1" 200 597
+INFO "GET /orders/list/?page=1&size=3&status=0&ordering=-id HTTP/1.1" 200 1063
+INFO "GET /orders/list/?page=1&size=3&status=2&ordering=-id HTTP/1.1" 200 597
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1609
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 2
+INFO "GET /courses/directions/ HTTP/1.1" 200 266
+INFO "GET /courses/category/0/ HTTP/1.1" 200 1464
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1762
+WARNING Bad Request: /cart/
+WARNING "POST /cart/ HTTP/1.1" 400 37
+INFO "GET /courses/category/7/ HTTP/1.1" 200 249
+INFO "GET /courses/7/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1758
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "GET /cart/ HTTP/1.1" 200 552
+INFO "PUT /cart/ HTTP/1.1" 200 45
+INFO "PUT /cart/ HTTP/1.1" 200 45
+INFO "PATCH /cart/ HTTP/1.1" 200 41
+INFO "GET /cart/order/ HTTP/1.1" 200 259
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
+INFO "POST /orders/ HTTP/1.1" 201 70
+INFO "OPTIONS /payment/alipay/202503230000000100000043 HTTP/1.1" 200 0
+INFO "GET /payment/alipay/202503230000000100000043 HTTP/1.1" 301 0
+INFO "OPTIONS /payment/alipay/202503230000000100000043/ HTTP/1.1" 200 0
+ERROR Internal Server Error: /payment/alipay/202503230000000100000043/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/jwt/api_jws.py", line 180, in _load
+    signing_input, crypto_segment = jwt.rsplit(b'.', 1)
+ValueError: not enough values to unpack (expected 2, got 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework_jwt/authentication.py", line 33, in authenticate
+    payload = jwt_decode_handler(jwt_value)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework_jwt/utils.py", line 104, in jwt_decode_handler
+    unverified_payload = jwt.decode(token, None, False)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/jwt/api_jwt.py", line 84, in decode
+    payload, _, _, _ = self._load(jwt)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/jwt/api_jws.py", line 183, in _load
+    raise DecodeError('Not enough segments')
+jwt.exceptions.DecodeError: Not enough segments
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/request.py", line 231, in user
+    self._authenticate()
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/request.py", line 384, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework_jwt/authentication.py", line 39, in authenticate
+    raise exceptions.AuthenticationFailed(msg)
+rest_framework.exceptions.AuthenticationFailed: Error decoding signature.
+ERROR "GET /payment/alipay/202503230000000100000043/ HTTP/1.1" 500 140781
+INFO "OPTIONS /payment/alipay/query/202503230000000100000043 HTTP/1.1" 200 0
+INFO "GET /payment/alipay/query/202503230000000100000043 HTTP/1.1" 301 0
+INFO "OPTIONS /payment/alipay/query/202503230000000100000043/ HTTP/1.1" 200 0
+WARNING Bad Request: /payment/alipay/query/202503230000000100000043/
+WARNING "GET /payment/alipay/query/202503230000000100000043/ HTTP/1.1" 400 37
+WARNING Bad Request: /payment/alipay/query/202503230000000100000043/
+WARNING "GET /payment/alipay/query/202503230000000100000043/ HTTP/1.1" 400 37
+WARNING Bad Request: /payment/alipay/query/202503230000000100000043/
+WARNING "GET /payment/alipay/query/202503230000000100000043/ HTTP/1.1" 400 37
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1685
+INFO "GET /orders/list/?page=1&size=3&status=0&ordering=-id HTTP/1.1" 200 1519
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1685
+INFO "GET /orders/list/?page=1&size=3&status=1&ordering=-id HTTP/1.1" 200 52
+INFO "GET /orders/list/?page=1&size=3&status=2&ordering=-id HTTP/1.1" 200 597
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1685
+INFO "POST /users/login/ HTTP/1.1" 200 291
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1685
+INFO "GET /orders/list/?page=1&size=3&status=1&ordering=-id HTTP/1.1" 200 52
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1685
+INFO "OPTIONS /orders/2/ HTTP/1.1" 200 0
+INFO "PUT /orders/2/ HTTP/1.1" 200 34
+INFO "GET /cart/ HTTP/1.1" 200 327
+INFO "PATCH /cart/ HTTP/1.1" 200 41
+INFO "GET /cart/order/ HTTP/1.1" 200 315
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
+INFO "POST /orders/ HTTP/1.1" 201 70
+INFO "OPTIONS /payment/alipay/202503230000000100000044 HTTP/1.1" 200 0
+INFO "GET /payment/alipay/202503230000000100000044 HTTP/1.1" 301 0
+INFO "OPTIONS /payment/alipay/202503230000000100000044/ HTTP/1.1" 200 0
+ERROR Internal Server Error: /payment/alipay/202503230000000100000044/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/jwt/api_jws.py", line 180, in _load
+    signing_input, crypto_segment = jwt.rsplit(b'.', 1)
+ValueError: not enough values to unpack (expected 2, got 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework_jwt/authentication.py", line 33, in authenticate
+    payload = jwt_decode_handler(jwt_value)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework_jwt/utils.py", line 104, in jwt_decode_handler
+    unverified_payload = jwt.decode(token, None, False)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/jwt/api_jwt.py", line 84, in decode
+    payload, _, _, _ = self._load(jwt)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/jwt/api_jws.py", line 183, in _load
+    raise DecodeError('Not enough segments')
+jwt.exceptions.DecodeError: Not enough segments
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/request.py", line 231, in user
+    self._authenticate()
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/request.py", line 384, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework_jwt/authentication.py", line 39, in authenticate
+    raise exceptions.AuthenticationFailed(msg)
+rest_framework.exceptions.AuthenticationFailed: Error decoding signature.
+ERROR "GET /payment/alipay/202503230000000100000044/ HTTP/1.1" 500 140781
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1685
+INFO "GET /orders/list/?page=1&size=3&status=0&ordering=-id HTTP/1.1" 200 1432
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1685
+INFO "GET /orders/list/?page=1&size=3&status=0&ordering=-id HTTP/1.1" 200 1432
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1685
+INFO "GET /courses/category/0/ HTTP/1.1" 200 1464
+INFO "GET /courses/directions/ HTTP/1.1" 200 266
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 2
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1762
+INFO "GET /courses/0/11/?page=1&size=5&ordering=-id HTTP/1.1" 200 1811
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "GET /cart/ HTTP/1.1" 200 278
+INFO "GET /cart/order/ HTTP/1.1" 200 265
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1803
+INFO "GET /cart/order/ HTTP/1.1" 200 265
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1803
+INFO "POST /orders/ HTTP/1.1" 201 70
+INFO "OPTIONS /payment/alipay/202503230000000100000045 HTTP/1.1" 200 0
+INFO "GET /payment/alipay/202503230000000100000045 HTTP/1.1" 301 0
+INFO "OPTIONS /payment/alipay/202503230000000100000045/ HTTP/1.1" 200 0
+ERROR Internal Server Error: /payment/alipay/202503230000000100000045/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/jwt/api_jws.py", line 180, in _load
+    signing_input, crypto_segment = jwt.rsplit(b'.', 1)
+ValueError: not enough values to unpack (expected 2, got 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework_jwt/authentication.py", line 33, in authenticate
+    payload = jwt_decode_handler(jwt_value)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework_jwt/utils.py", line 104, in jwt_decode_handler
+    unverified_payload = jwt.decode(token, None, False)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/jwt/api_jwt.py", line 84, in decode
+    payload, _, _, _ = self._load(jwt)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/jwt/api_jws.py", line 183, in _load
+    raise DecodeError('Not enough segments')
+jwt.exceptions.DecodeError: Not enough segments
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/request.py", line 231, in user
+    self._authenticate()
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/request.py", line 384, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework_jwt/authentication.py", line 39, in authenticate
+    raise exceptions.AuthenticationFailed(msg)
+rest_framework.exceptions.AuthenticationFailed: Error decoding signature.
+ERROR "GET /payment/alipay/202503230000000100000045/ HTTP/1.1" 500 140781
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1685
+INFO /home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/jwt/api_jws.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO /home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/jwt/api_jws.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 2
+INFO "GET /courses/directions/ HTTP/1.1" 200 266
+INFO "GET /courses/category/0/ HTTP/1.1" 200 1464
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1761
+INFO "GET /courses/0/5/?page=1&size=5&ordering=-id HTTP/1.1" 200 1785
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "GET /cart/ HTTP/1.1" 200 324
+INFO "GET /cart/order/ HTTP/1.1" 200 311
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1803
+INFO /home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/jwt/api_jws.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1803
+INFO "GET /cart/order/ HTTP/1.1" 200 311
+INFO "GET /cart/order/ HTTP/1.1" 200 311
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1803
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1685
+INFO "GET /courses/hot_words/ HTTP/1.1" 200 2
+INFO "GET /courses/category/0/ HTTP/1.1" 200 1464
+INFO "GET /courses/directions/ HTTP/1.1" 200 266
+INFO "GET /courses/0/0/?page=1&size=5&ordering=-id HTTP/1.1" 200 1762
+INFO "GET /courses/0/7/?page=1&size=5&ordering=-id HTTP/1.1" 200 1727
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "POST /cart/ HTTP/1.1" 201 49
+INFO "GET /cart/ HTTP/1.1" 200 775
+INFO "PATCH /cart/ HTTP/1.1" 200 41
+INFO "PATCH /cart/ HTTP/1.1" 200 41
+INFO "GET /cart/order/ HTTP/1.1" 200 261
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
+INFO "POST /orders/ HTTP/1.1" 201 70
+INFO "OPTIONS /payment/alipay/202503230000000100000046 HTTP/1.1" 200 0
+INFO "GET /payment/alipay/202503230000000100000046 HTTP/1.1" 301 0
+INFO "OPTIONS /payment/alipay/202503230000000100000046/ HTTP/1.1" 200 0
+ERROR Internal Server Error: /payment/alipay/202503230000000100000046/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/jwt/api_jws.py", line 180, in _load
+    signing_input, crypto_segment = jwt.rsplit(b'.', 1)
+ValueError: not enough values to unpack (expected 2, got 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework_jwt/authentication.py", line 33, in authenticate
+    payload = jwt_decode_handler(jwt_value)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework_jwt/utils.py", line 104, in jwt_decode_handler
+    unverified_payload = jwt.decode(token, None, False)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/jwt/api_jwt.py", line 84, in decode
+    payload, _, _, _ = self._load(jwt)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/jwt/api_jws.py", line 183, in _load
+    raise DecodeError('Not enough segments')
+jwt.exceptions.DecodeError: Not enough segments
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/request.py", line 231, in user
+    self._authenticate()
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/request.py", line 384, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework_jwt/authentication.py", line 39, in authenticate
+    raise exceptions.AuthenticationFailed(msg)
+rest_framework.exceptions.AuthenticationFailed: Error decoding signature.
+ERROR "GET /payment/alipay/202503230000000100000046/ HTTP/1.1" 500 140781
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1685
+INFO /home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/jwt/api_jws.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1685
+INFO "GET /cart/ HTTP/1.1" 200 544
+INFO "PATCH /cart/ HTTP/1.1" 200 41
+INFO "GET /cart/order/ HTTP/1.1" 200 256
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1287
+INFO "POST /orders/ HTTP/1.1" 201 70
+INFO "OPTIONS /payment/alipay/202503230000000100000047 HTTP/1.1" 200 0
+INFO "GET /payment/alipay/202503230000000100000047 HTTP/1.1" 301 0
+INFO "OPTIONS /payment/alipay/202503230000000100000047/ HTTP/1.1" 200 0
+ERROR Internal Server Error: /payment/alipay/202503230000000100000047/
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/jwt/api_jws.py", line 181, in _load
+    signing_input, crypto_segment = jwt.rsplit(b'.', 1)
+ValueError: not enough values to unpack (expected 2, got 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework_jwt/authentication.py", line 33, in authenticate
+    payload = jwt_decode_handler(jwt_value)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework_jwt/utils.py", line 104, in jwt_decode_handler
+    unverified_payload = jwt.decode(token, None, False)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/jwt/api_jwt.py", line 84, in decode
+    payload, _, _, _ = self._load(jwt)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/jwt/api_jws.py", line 184, in _load
+    raise DecodeError('Not enough segments')
+jwt.exceptions.DecodeError: Not enough segments
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/request.py", line 231, in user
+    self._authenticate()
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework/request.py", line 384, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/rest_framework_jwt/authentication.py", line 39, in authenticate
+    raise exceptions.AuthenticationFailed(msg)
+rest_framework.exceptions.AuthenticationFailed: Error decoding signature.
+ERROR "GET /payment/alipay/202503230000000100000047/ HTTP/1.1" 500 140689
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1685
+INFO /home/caoruchen/anaconda3/envs/luffycity/lib/python3.8/site-packages/jwt/api_jws.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1685
+INFO "GET /cart/ HTTP/1.1" 200 323
+INFO "PATCH /cart/ HTTP/1.1" 200 41
+INFO "GET /coupons/avail/ HTTP/1.1" 200 1803
+INFO "GET /cart/order/ HTTP/1.1" 200 311
+INFO "POST /orders/ HTTP/1.1" 201 70
+INFO "OPTIONS /payment/alipay/202503230000000100000048 HTTP/1.1" 200 0
+INFO "GET /payment/alipay/202503230000000100000048 HTTP/1.1" 301 0
+INFO "OPTIONS /payment/alipay/202503230000000100000048/ HTTP/1.1" 200 0
+INFO "GET /payment/alipay/202503230000000100000048/ HTTP/1.1" 200 947
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1685
+INFO "GET /orders/list/?page=1&size=3&status=0&ordering=-id HTTP/1.1" 200 1507
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1685
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1685
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1685
+INFO "OPTIONS /orders/list/?page=1&size=10&status=-1&ordering=-id HTTP/1.1" 200 0
+INFO "GET /orders/list/?page=1&size=10&status=-1&ordering=-id HTTP/1.1" 200 2601
+INFO "OPTIONS /orders/list/?page=1&size=10&status=0&ordering=-id HTTP/1.1" 200 0
+INFO "GET /orders/list/?page=1&size=10&status=0&ordering=-id HTTP/1.1" 200 2428
+INFO "GET /orders/list/?page=1&size=10&status=-1&ordering=-id HTTP/1.1" 200 2601
+INFO "OPTIONS /orders/list/?page=1&size=5&status=-1&ordering=-id HTTP/1.1" 200 0
+INFO "GET /orders/list/?page=1&size=5&status=-1&ordering=-id HTTP/1.1" 200 2600
+INFO "OPTIONS /orders/list/?page=1&size=15&status=-1&ordering=-id HTTP/1.1" 200 0
+INFO "GET /orders/list/?page=1&size=15&status=-1&ordering=-id HTTP/1.1" 200 2601
+INFO "OPTIONS /orders/list/?page=1&size=15&status=0&ordering=-id HTTP/1.1" 200 0
+INFO "GET /orders/list/?page=1&size=15&status=0&ordering=-id HTTP/1.1" 200 2428
+INFO "GET /orders/status/ HTTP/1.1" 200 68
+INFO "GET /orders/list/?page=1&size=3&status=-1&ordering=-id HTTP/1.1" 200 1685
+INFO "OPTIONS /orders/list/?page=1&size=3&status=3&ordering=-id HTTP/1.1" 200 0
+INFO "GET /orders/list/?page=1&size=3&status=3&ordering=-id HTTP/1.1" 200 1507
+INFO "OPTIONS /orders/list/?page=1&size=10&status=3&ordering=-id HTTP/1.1" 200 0
+INFO "GET /orders/list/?page=1&size=10&status=3&ordering=-id HTTP/1.1" 200 2428
+INFO /home/caoruchen/Desktop/luffycity/luffycityapi/luffycityapi/utils/constants.py changed, reloading.
+INFO Watching for file changes with StatReloader
