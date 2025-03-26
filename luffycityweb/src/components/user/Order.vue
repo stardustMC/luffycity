@@ -84,6 +84,7 @@
               :total="orders.count"
               :page-sizes="[5, 10, 15, 20]"
               :page-size="orders.size"
+              :current-page=orders.page
               @current-change="current_page"
               @size-change="current_size"
           ></el-pagination>
@@ -108,7 +109,7 @@ const get_order_list = () =>{
   let token = localStorage.getItem("token") || sessionStorage.getItem("token");
   orders.get_order_list(token).then(response=>{
     orders.order_list = response.data.results;
-    console.log(response.data.results);
+    orders.count = response.data.count;
   })
 }
 get_order_list();
@@ -178,6 +179,7 @@ const current_size = (size)=>{
 }
 
 watch(()=>orders.status, ()=>{
+  orders.page = 1;
   get_order_list();
 })
 

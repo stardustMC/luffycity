@@ -81,9 +81,7 @@ const orders = reactive({
     status: -1, // 0未支付, 1已支付, 2已取消, 3超时取消，-1全选
     order_list: [],
     order_status_choices: [],
-    count: computed(()=>{
-        return orders.order_list.length;
-    }),
+    count: 0,
     get_order_list(token){
         let params = {
             page: this.page,

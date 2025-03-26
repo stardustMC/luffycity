@@ -1,7 +1,7 @@
-from datetime import datetime
-
+from rest_framework import status
 from rest_framework.generics import ListAPIView, RetrieveAPIView
 from rest_framework.filters import OrderingFilter
+from rest_framework.views import APIView
 from .pagination import CoursePageNumberPagination
 from .models import CourseDirection, CourseCategory, Course, CourseChapter
 from .serializers import CourseDirectionModelSerializer, CourseCategoryModelSerializer, CourseInfoModelSerializer, \
@@ -26,6 +26,7 @@ class CourseCategoryListAPIView(ListAPIView):
             queryset = queryset.filter(direction_id=direction)
 
         return queryset.order_by("orders", "id").all()
+
 
 class CourseListAPIView(ListAPIView):
     """课程列表接口"""

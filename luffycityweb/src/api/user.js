@@ -9,12 +9,21 @@ const user = reactive({
     code: "",
     mobile: "",
     alipay_account:  "darbfc7920@sandbox.com",
+    courses: [],
+    course_count: 0,
     login(){
         return http.post("/users/login/", {
             username: this.username,
             password: this.password
         })
-    }
+    },
+    get_course_list(token){
+        return http.get("/users/course/", {
+            headers: {
+                Authorization: "jwt " + token
+            }
+        })
+    },
 })
 
 export default user;

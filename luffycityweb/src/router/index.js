@@ -49,6 +49,16 @@ const routes = [
                 name: "UserInfo",
                 component: () => import("../components/user/Info.vue")
             },
+            {
+                meta: {
+                    title: "个人课程",
+                    keepAlive: true,
+                    authorization: true,
+                },
+                path: 'course',
+                name: "UserCourse",
+                component: () => import("../components/user/Course.vue")
+            }
         ]
     },
     {
