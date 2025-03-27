@@ -1,13 +1,12 @@
 from django.db import models
 from model import BaseModel
+from stdimage import StdImageField
 from django.utils.safestring import mark_safe
 from django.contrib.auth.models import AbstractUser
-from stdimage import StdImageField
+from courses.models import Course, CourseChapter, CourseLesson
 
 
 # Create your models here.
-
-
 class User(AbstractUser):
     mobile = models.CharField(max_length=15, unique=True, verbose_name='手机号')
     money = models.DecimalField(max_digits=9, default=0.0, decimal_places=2, verbose_name="钱包余额")
@@ -42,6 +41,21 @@ class User(AbstractUser):
     avatar_medium.allow_tags = True
     avatar_medium.admin_order_field = "avatar"
 
+
+class UserCourse(models.Model):
+
+    user = models.ForeignKey(User, related_name="user_courses", db_constraint=False, verbose_name="用户", on_delete=models.CASCADE)
+    course = models.ForeignKey(Course, related_name="course_users", db_constraint=False, verbose_name="课程名称", on_delete=models.CASCADE)
+    chapter = models.ForeignKey(CourseChapter, related_name="user_chapter", db_constraint=False, null=True, blank=True,
+                                verbose_name="章节", on_delete=models.DO_NOTHING)
+    lesson = models.ForeignKey(CourseLesson, related_name="user_lesson", db_constraint=False, null=True, blank=True,
+                               verbose_name="课时", on_delete=models.DO_NOTHING)
+    study_time = models.IntegerField(verbose_name="学习时长", default=0)
+
+    class Meta:
+        db_table = 'lf_user_courses'
+        verbose_name = "用户购买课程记录"
+        verbose_name_plural = verbose_name
 
 class Credit(BaseModel):
     """积分流水"""

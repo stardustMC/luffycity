@@ -1,22 +1,41 @@
 import logging
-from django.db import transaction
 from datetime import datetime
+from django.db import transaction
 from rest_framework import serializers
 from django_redis import get_redis_connection
 
 import constants
+from orders.tasks import order_timeout
 from coupon.models import CouponLog
 from .models import Order, OrderDetail, Course
 
+class OrderDetailModelSerializer(serializers.ModelSerializer):
+    course_id = serializers.IntegerField(source='course.id')
+    course_name = serializers.CharField(source='course.name')
+    course_cover = serializers.ImageField(source='course.course_cover')
+
+    class Meta:
+        model = OrderDetail
+        fields = ["id", "price", "real_price", "discount_name", "course_id", "course_name", "course_cover"]
+
+class OrderListModelSerializer(serializers.ModelSerializer):
+    """订单列表序列化器"""
+    order_courses = OrderDetailModelSerializer(many=True)
+
+    class Meta:
+        model = Order
+        fields = ["id", "order_number", "total_price", "real_price", "pay_time", "created_time", "credit", "coupon",
+                  "pay_type", "order_status", "order_courses"]
 
 class OrderModelSerializer(serializers.ModelSerializer):
-    pay_link = serializers.CharField(read_only=True)
+    # pay_link = serializers.CharField(read_only=True)
     coupon_id = serializers.IntegerField(write_only=True, default=-1)
     discount_type = serializers.IntegerField(write_only=True, default=0)
 
     class Meta:
         model = Order
-        fields = ["pay_type", "id", "order_number", "pay_link", "coupon_id", "discount_type"]
+        # fields = ["pay_type", "id", "order_number", "pay_link", "coupon_id", "discount_type"]
+        fields = ["pay_type", "id", "order_number", "coupon_id", "discount_type"]
         read_only_fields = ["id", "order_number"]
         extra_kwargs = {
             "pay_type": {"write_only": True},
@@ -72,7 +91,7 @@ class OrderModelSerializer(serializers.ModelSerializer):
                         course=course,
                         name=course.name,
                         price=course.price,
-                        real_price=discount_price or course.price,
+                        real_price=discount_price if discount_price is not None else course.price,
                         discount_name=discount_name,
                     ))
 
@@ -83,12 +102,11 @@ class OrderModelSerializer(serializers.ModelSerializer):
 
                     # 统计订单的总价和实付总价
                     total_price += float(course.price)
-                    real_price += discount_price or float(course.price)
-
+                    real_price += discount_price if discount_price is not None else float(course.price)
                 # 一次性批量添加本次下单的商品记录
                 OrderDetail.objects.bulk_create(detail_list)
 
-                discount_type = validated_data.get("discount_type", 0)
+                discount_type = validated_data.get("discount_type", -1)
                 # 使用优惠券
                 if discount_type == 0 and user_coupon:
                     coupon_discount_price = 0
@@ -127,6 +145,10 @@ class OrderModelSerializer(serializers.ModelSerializer):
                     # 用户扣除积分
                     user.credit -= credit
                     user.save()
+                else:
+                    order.real_price = real_price
+                # 课程可以免费赠送的，但支付宝要求交易金额 至少是0.01
+                order.real_price = order.real_price or 0.01
 
                 cart = {key: value for key, value in cart_hash.items() if value == b'0'}
                 pipe = redis.pipeline()
@@ -138,11 +160,11 @@ class OrderModelSerializer(serializers.ModelSerializer):
                 # 保存订单的总价格
                 order.total_price = total_price
                 order.save()
+
+                order_timeout.apply_async(kwargs={"order_id": order.id}, countdown=constants.ORDER_EXPIRE_TIME)
+                order.time_out = constants.ORDER_EXPIRE_TIME
+                return order
             except Exception as e:
                 logging.error("order create failed! %s" % e)
                 transaction.savepoint_rollback(t1)
                 raise serializers.ValidationError(detail="order create failed!")
-
-        # todo 支付链接地址[后面实现支付功能的时候，再做]
-        order.pay_link = ""
-        return order

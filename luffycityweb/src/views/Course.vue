@@ -162,14 +162,13 @@ const add_cart = (course_info) =>{
   let token = localStorage.getItem("token") || sessionStorage.getItem("token");
   cart.add_course_to_cart(course_info.id, token).then(response=>{
     store.commit("cart_count", response.data.cart_count);
-    ElMessage.success(response.data.errmsg);
+    ElMessage.success(response.data.errmsg)
   }).catch(err => {
-    console.log(err);
     if(err.response.status === 401){
       store.commit("logout");
       ElMessage.error("You may not have logged in or account expired. Try again after logging in.");
     }else{
-      ElMessage.error("Operation failed...");
+      ElMessage.warning(err.response.data.errmsg);
     }
   })
 }

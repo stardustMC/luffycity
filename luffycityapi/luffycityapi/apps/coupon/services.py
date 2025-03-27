@@ -1,9 +1,10 @@
 import json
 from . models import Course
+from datetime import datetime
 from django_redis import get_redis_connection
 
 
-def get_coupon_list(user_id):
+def get_coupon_list(user_id: int):
     redis = get_redis_connection("coupon")
     coupon_hkeys = redis.keys("*:%s" % user_id)
     try:
@@ -72,3 +73,31 @@ def get_available_coupons(user_id: int):
                 coupon["avail_courses"] = ret
                 avail_coupons.append(coupon)
     return avail_coupons
+
+
+def add_coupon_to_redis(coupon_log):
+    # store coupon log in redis
+    redis = get_redis_connection("coupon")
+    hkey = "%s:%s" % (coupon_log.coupon.id, coupon_log.user.id)
+    pipe = redis.pipeline()
+    pipe.multi()
+    pipe.hset(hkey, "coupon_id", coupon_log.coupon.id)
+    pipe.hset(hkey, "name", coupon_log.coupon.name)
+    pipe.hset(hkey, "discount", coupon_log.coupon.discount)
+    pipe.hset(hkey, "get_discount_display", coupon_log.coupon.get_discount_display())
+    pipe.hset(hkey, "coupon_type", coupon_log.coupon.coupon_type)
+    pipe.hset(hkey, "get_coupon_type_display", coupon_log.coupon.get_coupon_type_display())
+    pipe.hset(hkey, "start_time", coupon_log.coupon.start_time.strftime("%Y-%m-%d %H:%M:%S"))
+    pipe.hset(hkey, "end_time", coupon_log.coupon.end_time.strftime("%Y-%m-%d %H:%M:%S"))
+    pipe.hset(hkey, "get_type", coupon_log.coupon.get_type)
+    pipe.hset(hkey, "get_get_type_display", coupon_log.coupon.get_get_type_display())
+    pipe.hset(hkey, "condition", coupon_log.coupon.condition)
+    pipe.hset(hkey, "sale", coupon_log.coupon.sale)
+    pipe.hset(hkey, "to_direction",
+              json.dumps(list(coupon_log.coupon.to_direction.values("direction__id", "direction__name"))))
+    pipe.hset(hkey, "to_category",
+              json.dumps(list(coupon_log.coupon.to_category.values("category__id", "category__name"))))
+    pipe.hset(hkey, "to_course",
+              json.dumps(list(coupon_log.coupon.to_course.values("course__id", "course__name"))))
+    pipe.expire(hkey, int(coupon_log.coupon.end_time.timestamp() - datetime.now().timestamp()))
+    pipe.execute()

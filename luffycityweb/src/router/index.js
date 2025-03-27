@@ -21,13 +21,45 @@ const routes = [
         component: ()=> import("../views/Login.vue")
     },
     {
-    meta:{
-        title: "luffy2.0-个人中心",
-        keepAlive: true,
-    },
-    path: '/user',
-    name: "User",
-    component: ()=> import("../views/User.vue"),
+        meta: {
+            title: "luffy2.0-个人中心",
+            keepAlive: true,
+        },
+        path: '/user',
+        name: "User",
+        component: () => import("../views/User.vue"),
+        children:[
+            {
+                meta: {
+                    title: "个人订单",
+                    keepAlive: true,
+                    authorization: true,
+                },
+                path: 'order',
+                name: "UserOrder",
+                component: () => import("../components/user/Order.vue")
+            },
+            {
+                meta: {
+                    title: "个人信息",
+                    keepAlive: true,
+                    authorization: true,
+                },
+                path: '',
+                name: "UserInfo",
+                component: () => import("../components/user/Info.vue")
+            },
+            {
+                meta: {
+                    title: "个人课程",
+                    keepAlive: true,
+                    authorization: true,
+                },
+                path: 'course',
+                name: "UserCourse",
+                component: () => import("../components/user/Course.vue")
+            }
+        ]
     },
     {
         meta: {
@@ -65,6 +97,14 @@ const routes = [
         name: "Order",
         component: ()=>import("../views/Order.vue"),
     },
+    {
+        meta: {
+            title: "luffy2.0-订单详情"
+        },
+        path: "/feedback",
+        name: "Feedback",
+        component: ()=>import("../views/AlipaySuccess.vue"),
+    }
 ]
 
 const router = createRouter({

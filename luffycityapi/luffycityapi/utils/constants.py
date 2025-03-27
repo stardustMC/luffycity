@@ -21,3 +21,8 @@ HOT_WORD_EXPIRE = 7
 
 # 积分抵扣现金的比例 10:1
 CREDIT_TO_DISCOUNT_PRICE = 10
+# 订单支付时间
+ORDER_EXPIRE_TIME = 15 * 60
+
+# 订单每页展示数量
+ORDER_PAGE_SIZE = 5

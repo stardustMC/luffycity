@@ -30,6 +30,18 @@ class Order(BaseModel):
     user = models.ForeignKey(User, related_name='user_orders', on_delete=models.DO_NOTHING, db_constraint=False, verbose_name="下单用户")
     credit = models.IntegerField(default=0, null=True, blank=True, verbose_name="积分")
 
+    def coupon(self):
+        coupon_related = self.to_coupon.first()
+        if coupon_related:
+            return {
+                "id": coupon_related.coupon.id,
+                "name": coupon_related.coupon.name,
+                "sale": coupon_related.coupon.sale,
+                "discount": coupon_related.coupon.discount,
+                "condition": coupon_related.coupon.condition,
+            }
+        return {}
+
     class Meta:
         db_table = "ly_order"
         verbose_name = "订单记录"

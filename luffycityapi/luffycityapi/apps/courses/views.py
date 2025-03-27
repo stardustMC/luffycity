@@ -1,7 +1,7 @@
-from datetime import datetime
-
+from rest_framework import status
 from rest_framework.generics import ListAPIView, RetrieveAPIView
 from rest_framework.filters import OrderingFilter
+from rest_framework.views import APIView
 from .pagination import CoursePageNumberPagination
 from .models import CourseDirection, CourseCategory, Course, CourseChapter
 from .serializers import CourseDirectionModelSerializer, CourseCategoryModelSerializer, CourseInfoModelSerializer, \
@@ -47,6 +47,12 @@ class CourseListAPIView(ListAPIView):
             queryset = queryset.filter(category=category)
 
         return queryset.all()
+
+class CourseTypeChoiceAPIView(APIView):
+
+    def get(self, request, *args, **kwargs):
+        return Response(Course.course_type_choices, status=status.HTTP_200_OK)
+
 
 from drf_haystack.viewsets import HaystackViewSet
 from drf_haystack.filters import HaystackFilter
