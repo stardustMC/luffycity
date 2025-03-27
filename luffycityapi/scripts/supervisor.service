@@ -1,0 +1,15 @@
+[Unit]
+Description=supervisor
+After=network.target
+
+[Service]
+Type=forking
+ExecStart=/home/caoruchen/anaconda3/envs/luffycity/bin/supervisord -n -c /home/caoruchen/Desktop/luffycity/luffycityapi/scripts/supervisord.conf
+ExecStop=/home/caoruchen/anaconda3/envs/luffycity/bin/supervisorctl $OPTIONS shutdown
+ExecReload=/home/caoruchen/anaconda3/envs/luffycity/bin/supervisorctl $OPTIONS reload
+KillMode=process
+Restart=on-failure
+RestartSec=42s
+
+[Install]
+WantedBy=multi-user.target
