@@ -26,7 +26,7 @@ class UserCourseListAPIView(ListAPIView):
         user_id = self.request.user.id
         user_courses = UserCourse.objects.filter(user_id=user_id)
 
-        course_type = self.request.query_params.get('course_type', -1)
+        course_type = int(self.request.query_params.get('course_type', -1))
         if course_type > -1:
-            user_courses = user_courses.filter(course_course_type=course_type)
+            user_courses = user_courses.filter(course__course_type=course_type)
         return user_courses.all().order_by('id')

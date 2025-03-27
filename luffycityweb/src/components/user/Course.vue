@@ -3,10 +3,12 @@
     <div class="right-title">
       <h2>我的课程</h2>
       <ul>
-        <li :class="{action: course.current_course_type===-1}"><a href="" @click.prevent="course.current_course_type=-1">全部<i v-if="course.current_course_type===-1">{{course.user_count}}</i></a></li>
-        <li :class="{action: course.current_course_type===0}"><a href="" @click.prevent="course.current_course_type=0">免费课<i v-if="course.current_course_type===0">{{course.user_count}}</i></a></li>
-        <li :class="{action: course.current_course_type===1}"><a href="" @click.prevent="course.current_course_type=1">项目课<i v-if="course.current_course_type===1">{{course.user_count}}</i></a></li>
-        <li :class="{action: course.current_course_type===2}"><a href="" @click.prevent="course.current_course_type=2">学位课<i v-if="course.current_course_type===2">{{course.user_count}}</i></a></li>
+        <li :class="{action: user.current_course_type===-1}">
+          <a href="" @click.prevent="user.current_course_type=-1">全部<i v-if="user.current_course_type===-1">{{user.course_count}}</i></a>
+        </li>
+        <li :class="{action: user.current_course_type===type[0]}" v-for="type in user.course_types">
+          <a href="" @click.prevent="user.current_course_type=type[0]">{{type[1]}}<i v-if="user.current_course_type===type[0]">{{user.course_count}}</i></a>
+        </li>
       </ul>
     </div>
     <div class="all-course-main">
@@ -21,39 +23,8 @@
               <a href="" class="hd">{{course.info.name}}</a>
             </div>
             <div class="study-info">
-              <span class="i-left">已学0%</span>
-              <span class="i-mid">用时13分</span>
-              <span class="i-right">学习至7.01 课程回顾</span>
-            </div>
-            <div class="catog-points">
-              <span> <a href="">笔记 <i>0</i></a> </span>
-              <span class="i-mid"> <a href="">代码 <i>0</i></a> </span>
-              <span class="i-right"> <a href="">问答 <i>0</i></a> </span>
-              <a href="" class="continute-btn">继续学习</a>
-            </div>
-            <div class="share-box clearfix">
-              <div class="show-btn">
-                <i class="el-icon-arrow-down"></i>
-              </div>
-              <div class="share-box-con">
-                <a href="javascript:;" title="删除" class="del"><i class="el-icon-delete"></i></a>
-                <a href="javascript:;" title="置顶课程"><i class="el-icon-top"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="courseitem">
-          <div class="img-box">
-            <a href=""><img alt="3天javascript入门到进阶" src="https://luffycity35.oss-cn-beijing.aliyuncs.com/uploads/course/cover/course-9.png" /> </a>
-          </div>
-          <div class="info-box">
-            <div class="title">
-              <span>免费课</span>
-              <a href="" class="hd">3天javascript入门到进阶</a>
-            </div>
-            <div class="study-info">
-              <span class="i-left">已学0%</span>
-              <span class="i-mid">用时13分</span>
+              <span class="i-left">已学{{(course.study_time * 100 / user.course_duration(course.id)).toFixed()}}%</span>
+              <span class="i-mid">用时{{format_seconds(course.study_time)}}</span>
               <span class="i-right">学习至7.01 课程回顾</span>
             </div>
             <div class="catog-points">
@@ -75,13 +46,33 @@
         </div>
       </div>
       <!-- 分页 -->
+      <div class="page" style="text-align: center">
+          <el-pagination
+              background
+              layout="sizes, prev, pager, next, jumper"
+              :total="user.course_count"
+              :page-sizes="[3, 5, 10]"
+              :page-size="user.size"
+              :current-page=user.page
+              @current-change="current_page"
+              @size-change="current_size"
+          ></el-pagination>
+        </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import course from "../../api/course";
 import user from "../../api/user";
+import {format_seconds} from "../../utils/helper.js";
+import {watch} from "vue";
+
+const get_course_type_list = ()=>{
+  user.get_course_type().then(response=>{
+    user.course_types = response.data;
+  })
+};
+get_course_type_list();
 
 const get_course_list = ()=>{
   let token = localStorage.getItem("token") || sessionStorage.getItem("token");
@@ -91,6 +82,24 @@ const get_course_list = ()=>{
   })
 }
 get_course_list();
+
+const current_page = (page)=>{
+  user.page = page;
+}
+
+const current_size = (size)=>{
+  user.size = size;
+  user.page = 1;
+}
+
+watch(()=>user.page, ()=>{
+  get_course_list();
+})
+
+watch(()=>user.current_course_type, ()=>{
+  user.page = 1;
+  get_course_list();
+})
 
 </script>
 

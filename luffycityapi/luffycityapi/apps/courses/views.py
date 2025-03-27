@@ -27,7 +27,6 @@ class CourseCategoryListAPIView(ListAPIView):
 
         return queryset.order_by("orders", "id").all()
 
-
 class CourseListAPIView(ListAPIView):
     """课程列表接口"""
     serializer_class = CourseInfoModelSerializer
@@ -48,6 +47,12 @@ class CourseListAPIView(ListAPIView):
             queryset = queryset.filter(category=category)
 
         return queryset.all()
+
+class CourseTypeChoiceAPIView(APIView):
+
+    def get(self, request, *args, **kwargs):
+        return Response(Course.course_type_choices, status=status.HTTP_200_OK)
+
 
 from drf_haystack.viewsets import HaystackViewSet
 from drf_haystack.filters import HaystackFilter
